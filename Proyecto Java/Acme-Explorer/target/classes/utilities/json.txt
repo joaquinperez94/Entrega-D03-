@@ -73,14 +73,14 @@
 	{"name":"playa 1"},
 	{"name":"playa 2"},
 	{"name":"playa 3"},
-	{"name":"playa 4"},
+	{"name":"playa 4"}
 	],
 "Tag":
 	[
 	{"name":"TAG 1"},
 	{"name":"TAG 2"},
 	{"name":"TAG 3"},
-	{"name":"TAG 4"},
+	{"name":"TAG 4"}
 	]
  
     
