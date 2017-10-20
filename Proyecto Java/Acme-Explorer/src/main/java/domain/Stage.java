@@ -4,6 +4,7 @@ package domain;
 import javax.persistence.Access;
 import javax.persistence.AccessType;
 import javax.persistence.Entity;
+import javax.persistence.Transient;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.NotBlank;
@@ -54,6 +55,7 @@ public class Stage extends DomainEntity {
 		this.iva = iva;
 	}
 
+	@Transient
 	public double getTotalPrice() {
 		return this.price + (this.price * this.iva);
 	}
