@@ -4,12 +4,24 @@ package domain;
 import java.util.Collection;
 import java.util.Date;
 
+import javax.persistence.Access;
+import javax.persistence.AccessType;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.NotBlank;
+import org.hibernate.validator.constraints.NotEmpty;
 
+@Entity
+@Access(AccessType.PROPERTY)
 public class Trip extends DomainEntity {
 
 	private String				ticker;
@@ -30,7 +42,7 @@ public class Trip extends DomainEntity {
 		return this.ticker;
 	}
 
-	public void setTicker(String ticker) {
+	public void setTicker(final String ticker) {
 		this.ticker = ticker;
 	}
 
@@ -40,7 +52,7 @@ public class Trip extends DomainEntity {
 		return this.title;
 	}
 
-	public void setTitle(String title) {
+	public void setTitle(final String title) {
 		this.title = title;
 	}
 
@@ -50,7 +62,7 @@ public class Trip extends DomainEntity {
 		return this.description;
 	}
 
-	public void setDescription(String description) {
+	public void setDescription(final String description) {
 		this.description = description;
 	}
 
@@ -58,7 +70,7 @@ public class Trip extends DomainEntity {
 		return this.price;
 	}
 
-	public void setPrice(double price) {
+	public void setPrice(final double price) {
 		this.price = price;
 	}
 
@@ -66,7 +78,7 @@ public class Trip extends DomainEntity {
 		return this.requirementsExplorers;
 	}
 
-	public void setRequirementsExplorers(Collection<String> requirementsExplorers) {
+	public void setRequirementsExplorers(final Collection<String> requirementsExplorers) {
 		this.requirementsExplorers = requirementsExplorers;
 	}
 
@@ -79,7 +91,7 @@ public class Trip extends DomainEntity {
 		return this.startDate;
 	}
 
-	public void setStartDate(Date startDate) {
+	public void setStartDate(final Date startDate) {
 		this.startDate = startDate;
 	}
 
@@ -88,7 +100,7 @@ public class Trip extends DomainEntity {
 		return this.finishDate;
 	}
 
-	public void setFinishDate(Date finishDate) {
+	public void setFinishDate(final Date finishDate) {
 		this.finishDate = finishDate;
 	}
 
@@ -96,9 +108,149 @@ public class Trip extends DomainEntity {
 		return this.reasonWhy;
 	}
 
-	public void setReasonWhy(String reasonWhy) {
+	public void setReasonWhy(final String reasonWhy) {
 		if (!this.publicationDate.equals(null))
 			this.reasonWhy = reasonWhy;
+	}
+
+
+	// Relationships ----------------------------------------------------------
+	private Ranger						ranger;
+	private Collection<Manager>			managers;
+	private Collection<Class>			classes;
+	private Collection<Story>			stories;
+	private Collection<ApplicationFor>	applicationsFor;
+	private Collection<AuditRecord>		auditRecords;
+	private Collection<Note>			notes;
+	private Collection<Category>		categories;
+	private Collection<Sponsorship>		sponsorships;
+	private Collection<Stage>			stages;
+	private LegalText					legalText;
+	private Collection<Tag>				tags;
+
+
+	@NotNull
+	@Valid
+	@ManyToOne(optional = false)
+	public Ranger getRanger() {
+		return this.ranger;
+	}
+
+	public void setRanger(final Ranger ranger) {
+		this.ranger = ranger;
+	}
+	@NotNull
+	@NotEmpty
+	@ManyToMany
+	public Collection<Manager> getManagers() {
+		return this.managers;
+	}
+
+	public void setManagers(final Collection<Manager> managers) {
+		this.managers = managers;
+	}
+
+	@NotNull
+	@OneToMany(mappedBy = "trip")
+	public Collection<Class> getClasses() {
+		return this.classes;
+	}
+
+	public void setClasses(final Collection<Class> classes) {
+		this.classes = classes;
+	}
+
+	@NotNull
+	@OneToMany(mappedBy = "trip")
+	public Collection<Story> getStories() {
+		return this.stories;
+	}
+
+	public void setStories(final Collection<Story> stories) {
+		this.stories = stories;
+	}
+
+	@NotNull
+	@OneToMany(mappedBy = "trip")
+	public Collection<ApplicationFor> getApplicationsFor() {
+		return this.applicationsFor;
+	}
+
+	public void setApplicationsFor(final Collection<ApplicationFor> applicationsFor) {
+		this.applicationsFor = applicationsFor;
+	}
+
+	@NotNull
+	@OneToMany(mappedBy = "trip")
+	public Collection<AuditRecord> getAuditRecords() {
+		return this.auditRecords;
+	}
+
+	public void setAuditRecords(final Collection<AuditRecord> auditRecords) {
+		this.auditRecords = auditRecords;
+	}
+
+	@NotNull
+	@OneToMany(mappedBy = "trip")
+	public Collection<Note> getNotes() {
+		return this.notes;
+	}
+
+	public void setNotes(final Collection<Note> notes) {
+		this.notes = notes;
+	}
+
+	@NotNull
+	@NotEmpty
+	@ManyToMany(mappedBy = "trips")
+	public Collection<Category> getCategories() {
+		return this.categories;
+	}
+
+	public void setCategories(final Collection<Category> categories) {
+		this.categories = categories;
+	}
+
+	@NotNull
+	@OneToMany(mappedBy = "trip")
+	public Collection<Sponsorship> getSponsorships() {
+		return this.sponsorships;
+	}
+
+	public void setSponsorships(final Collection<Sponsorship> sponsorships) {
+		this.sponsorships = sponsorships;
+	}
+
+	@NotNull
+	@NotEmpty
+	@OneToMany(cascade = CascadeType.ALL)
+	public Collection<Stage> getStages() {
+		return this.stages;
+	}
+
+	public void setStages(final Collection<Stage> stages) {
+		this.stages = stages;
+	}
+
+	@Valid
+	@NotNull
+	@OneToOne(optional = false)
+	public LegalText getLegalText() {
+		return this.legalText;
+	}
+
+	public void setLegalText(final LegalText legalText) {
+		this.legalText = legalText;
+	}
+
+	@NotNull
+	@ManyToMany
+	public Collection<Tag> getTags() {
+		return this.tags;
+	}
+
+	public void setTags(final Collection<Tag> tags) {
+		this.tags = tags;
 	}
 
 }

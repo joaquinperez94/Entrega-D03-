@@ -58,7 +58,6 @@ public class Sponsorship extends DomainEntity {
 
 	@NotNull
 	@Valid
-	//@ManyToOne(mappedBy = "sponsorships")
 	@ManyToOne(optional = false)
 	public Trip getTrip() {
 		return this.trip;
