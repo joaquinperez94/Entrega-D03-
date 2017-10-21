@@ -34,7 +34,7 @@ public class Manager extends Actor {
 	private Collection<ApplicationFor>	applicationFor;
 
 
-	@ManyToMany(mappedBy = "manager")
+	@ManyToMany(mappedBy = "managers")
 	public Collection<Class> getClas() {
 		return this.clas;
 	}
