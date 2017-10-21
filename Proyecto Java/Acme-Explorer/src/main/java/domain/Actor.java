@@ -1,12 +1,24 @@
 
 package domain;
 
+import java.util.Collection;
+
+import javax.persistence.Access;
+import javax.persistence.AccessType;
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotBlank;
 
+import security.UserAccount;
+
+@Entity
+@Access(AccessType.PROPERTY)
 public abstract class Actor extends DomainEntity {
 
 	// Attributes -------------------------------------------------------------
@@ -35,7 +47,7 @@ public abstract class Actor extends DomainEntity {
 	}
 
 	public void setSurname(String surname) {
-		this.surname = surname;
+		this.surname = this.surname;
 	}
 
 	@NotNull
@@ -71,5 +83,43 @@ public abstract class Actor extends DomainEntity {
 
 	public void setActivated(boolean activated) {
 		this.activated = activated;
+	}
+
+
+	// Relationships ----------------------------------------------------------
+
+	private Collection<Message>		messagesSend;
+	private Collection<Message>		messagesRecieve;
+	private Collection<UserAccount>	usersAccounts;
+
+
+	@NotNull
+	@ManyToMany
+	public Collection<Message> getMessagesSend() {
+		return this.messagesSend;
+	}
+
+	public void setMessagesSend(Collection<Message> messagesSend) {
+		this.messagesSend = messagesSend;
+	}
+
+	@NotNull
+	@ManyToMany
+	public Collection<Message> getMessagesRecieve() {
+		return this.messagesRecieve;
+	}
+
+	public void setMessagesRecieve(Collection<Message> messagesRecieve) {
+		this.messagesRecieve = messagesRecieve;
+	}
+
+	@NotNull
+	@OneToMany(cascade = CascadeType.ALL)
+	public Collection<UserAccount> getUsersAccounts() {
+		return this.usersAccounts;
+	}
+
+	public void setUsersAccounts(Collection<UserAccount> usersAccounts) {
+		this.usersAccounts = usersAccounts;
 	}
 }

@@ -1,14 +1,21 @@
 
 package domain;
 
+import java.util.Collection;
 import java.util.Date;
 
+import javax.persistence.Access;
+import javax.persistence.AccessType;
+import javax.persistence.Entity;
+import javax.persistence.ManyToMany;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.NotBlank;
 
+@Entity
+@Access(AccessType.PROPERTY)
 public class Message extends DomainEntity {
 
 	// Attributes -------------------------------------------------------------
@@ -73,6 +80,22 @@ public class Message extends DomainEntity {
 
 	public void setPriority(String priority) {
 		this.priority = priority;
+	}
+
+
+	// Relationships ----------------------------------------------------------
+
+	private Collection<MessageFolder>	messagesFolders;
+
+
+	@NotNull
+	@ManyToMany
+	public Collection<MessageFolder> getMessagesFolders() {
+		return this.messagesFolders;
+	}
+
+	public void setMessagesFolders(Collection<MessageFolder> messagesFolders) {
+		this.messagesFolders = messagesFolders;
 	}
 
 }
