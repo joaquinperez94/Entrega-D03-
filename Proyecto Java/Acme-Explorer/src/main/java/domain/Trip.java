@@ -13,6 +13,8 @@ import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
@@ -83,11 +85,14 @@ public class Trip extends DomainEntity {
 		this.requirementsExplorers = requirementsExplorers;
 	}
 
+	@NotNull
+	@Temporal(TemporalType.TIMESTAMP)
 	public Date getPublicationDate() {
 		return this.publicationDate;
 	}
 
 	@NotNull
+	@Temporal(TemporalType.TIMESTAMP)
 	public Date getStartDate() {
 		return this.startDate;
 	}
@@ -97,6 +102,7 @@ public class Trip extends DomainEntity {
 	}
 
 	@NotNull
+	@Temporal(TemporalType.TIMESTAMP)
 	public Date getFinishDate() {
 		return this.finishDate;
 	}

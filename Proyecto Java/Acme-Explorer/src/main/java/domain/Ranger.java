@@ -24,7 +24,7 @@ public class Ranger extends Actor {
 		return this.suspicious;
 	}
 
-	public void setSuspicious(boolean suspicious) {
+	public void setSuspicious(final boolean suspicious) {
 		this.suspicious = suspicious;
 	}
 
@@ -42,17 +42,17 @@ public class Ranger extends Actor {
 		return this.curricula;
 	}
 
-	public void setCurricula(Curricula curricula) {
+	public void setCurricula(final Curricula curricula) {
 		this.curricula = curricula;
 	}
 
-	@OneToMany(mappedBy = "trip")
+	@OneToMany(mappedBy = "ranger")
 	@Valid
 	public Collection<Trip> getTrips() {
 		return this.trips;
 	}
 
-	public void setTrips(Collection<Trip> trips) {
+	public void setTrips(final Collection<Trip> trips) {
 		this.trips = trips;
 	}
 
