@@ -70,29 +70,27 @@ public class Class extends DomainEntity {
 
 	// Relationships ----------------------------------------------------------
 
-	private Collection<Manager>	manager;
-	private Trip				trip;
-	private Explorer			explorer;
+	private Collection<Manager>		managers;
+	private Trip					trip;
+	private Collection<Explorer>	explorers;
 
 
-	@NotNull
-	@Valid
-	@ManyToOne(optional = false)
-	public Explorer getExplorer() {
-		return this.explorer;
+	@ManyToMany
+	public Collection<Explorer> getExplorers() {
+		return this.explorers;
 	}
 
-	public void setExplorer(final Explorer explorer) {
-		this.explorer = explorer;
+	public void setExplorers(final Collection<Explorer> explorers) {
+		this.explorers = explorers;
 	}
 
 	@ManyToMany
 	public Collection<Manager> getManager() {
-		return this.manager;
+		return this.managers;
 	}
 
 	public void setManager(final Collection<Manager> manager) {
-		this.manager = manager;
+		this.managers = manager;
 	}
 
 	@NotNull

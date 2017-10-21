@@ -29,20 +29,21 @@ public class Manager extends Actor {
 
 	// Relationships ----------------------------------------------------------
 
-	private Collection<Class>			clas;
+	private Collection<Class>			classes;
 	private Collection<Trip>			trip;
 	private Collection<ApplicationFor>	applicationFor;
 
 
 	@ManyToMany(mappedBy = "managers")
 	public Collection<Class> getClas() {
-		return this.clas;
+		return this.classes;
 	}
 
 	public void setClas(final Collection<Class> clas) {
-		this.clas = clas;
+		this.classes = clas;
 	}
 
+	@NotNull
 	@ManyToMany(mappedBy = "managers")
 	public Collection<Trip> getTrip() {
 		return this.trip;
