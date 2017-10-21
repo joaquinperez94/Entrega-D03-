@@ -4,6 +4,7 @@ package domain;
 import java.util.Collection;
 import java.util.Date;
 
+import javax.persistence.ElementCollection;
 import javax.persistence.ManyToOne;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
@@ -42,6 +43,7 @@ public class ApplicationFor extends DomainEntity {
 		this.status = status;
 	}
 
+	@ElementCollection
 	public Collection<String> getComments() {
 		return this.comments;
 	}
