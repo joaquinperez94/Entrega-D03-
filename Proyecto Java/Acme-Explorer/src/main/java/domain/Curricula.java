@@ -1,6 +1,8 @@
 
 package domain;
 
+import java.util.Collection;
+
 import javax.persistence.Access;
 import javax.persistence.AccessType;
 import javax.persistence.Column;
@@ -34,11 +36,11 @@ public class Curricula extends DomainEntity {
 
 	// Relationships ----------------------------------------------------------
 
-	private PersonalRecord		personalRecord;
-	private EducationRecord		educationRecords;
-	private ProfessionalRecord	profesionalRecords;
-	private EndorserRecord		endorseRecords;
-	private MiscellaneousRecord	miscellaneousRecords;
+	private PersonalRecord					personalRecord;
+	private Collection<EducationRecord>		educationRecords;
+	private Collection<ProfessionalRecord>	profesionalRecords;
+	private Collection<EndorserRecord>		endorseRecords;
+	private Collection<MiscellaneousRecord>	miscellaneousRecords;
 
 
 	@OneToOne(optional = false)
@@ -51,39 +53,40 @@ public class Curricula extends DomainEntity {
 	public void setPersonalRecord(final PersonalRecord personalRecord) {
 		this.personalRecord = personalRecord;
 	}
+	@NotNull
 	@OneToMany
-	public EducationRecord getEducationRecords() {
+	public Collection<EducationRecord> getEducationRecords() {
 		return this.educationRecords;
 	}
 
-	public void setEducationRecords(final EducationRecord educationRecords) {
+	public void setEducationRecords(final Collection<EducationRecord> educationRecords) {
 		this.educationRecords = educationRecords;
 	}
-
+	@NotNull
 	@OneToMany
-	public ProfessionalRecord getProfesionalRecords() {
+	public Collection<ProfessionalRecord> getProfesionalRecords() {
 		return this.profesionalRecords;
 	}
 
-	public void setProfesionalRecords(final ProfessionalRecord profesionalRecords) {
+	public void setProfesionalRecords(final Collection<ProfessionalRecord> profesionalRecords) {
 		this.profesionalRecords = profesionalRecords;
 	}
-
+	@NotNull
 	@OneToMany
-	public EndorserRecord getEndorseRecords() {
+	public Collection<EndorserRecord> getEndorseRecords() {
 		return this.endorseRecords;
 	}
 
-	public void setEndorseRecords(final EndorserRecord endorseRecords) {
+	public void setEndorseRecords(final Collection<EndorserRecord> endorseRecords) {
 		this.endorseRecords = endorseRecords;
 	}
-
+	@NotNull
 	@OneToMany
-	public MiscellaneousRecord getMiscellaneousRecords() {
+	public Collection<MiscellaneousRecord> getMiscellaneousRecords() {
 		return this.miscellaneousRecords;
 	}
 
-	public void setMiscellaneousRecords(final MiscellaneousRecord miscellaneousRecords) {
+	public void setMiscellaneousRecords(final Collection<MiscellaneousRecord> miscellaneousRecords) {
 		this.miscellaneousRecords = miscellaneousRecords;
 	}
 
