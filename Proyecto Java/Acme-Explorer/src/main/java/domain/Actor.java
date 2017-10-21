@@ -88,9 +88,9 @@ public abstract class Actor extends DomainEntity {
 
 	// Relationships ----------------------------------------------------------
 
-	private Collection<Message>		messagesSend;
-	private Collection<Message>		messagesRecieve;
-	private Collection<UserAccount>	usersAccounts;
+	private Collection<Message>	messagesSend;
+	private Collection<Message>	messagesRecieve;
+	private UserAccount			userAccount;
 
 
 	@NotNull
@@ -115,11 +115,11 @@ public abstract class Actor extends DomainEntity {
 
 	@NotNull
 	@OneToMany(cascade = CascadeType.ALL)
-	public Collection<UserAccount> getUsersAccounts() {
-		return this.usersAccounts;
+	public UserAccount getUserAccount() {
+		return this.userAccount;
 	}
 
-	public void setUsersAccounts(Collection<UserAccount> usersAccounts) {
-		this.usersAccounts = usersAccounts;
+	public void setUsersAccounts(UserAccount userAccount) {
+		this.userAccount = userAccount;
 	}
 }

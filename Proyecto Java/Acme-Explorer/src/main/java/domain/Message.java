@@ -86,6 +86,7 @@ public class Message extends DomainEntity {
 	// Relationships ----------------------------------------------------------
 
 	private Collection<MessageFolder>	messagesFolders;
+	private Actor						actor;
 
 
 	@NotNull
@@ -96,6 +97,14 @@ public class Message extends DomainEntity {
 
 	public void setMessagesFolders(Collection<MessageFolder> messagesFolders) {
 		this.messagesFolders = messagesFolders;
+	}
+
+	public Actor getActor() {
+		return this.actor;
+	}
+
+	public void setActor(Actor actor) {
+		this.actor = actor;
 	}
 
 }
