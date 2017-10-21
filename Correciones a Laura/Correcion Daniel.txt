@@ -1,0 +1,7 @@
+--He añadido una s al final en coleccion de sponsorship en la clase sponsor
+
+
+**DEBES CORREGIR**
+--En Actor no tienes messageFolder
+--En Actor no tienes socialIdentity
+--En Message no tienes Actor 
