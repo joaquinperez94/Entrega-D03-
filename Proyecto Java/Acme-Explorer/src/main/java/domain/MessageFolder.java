@@ -1,14 +1,26 @@
 
 package domain;
 
+import java.util.Collection;
+
+import javax.persistence.Access;
+import javax.persistence.AccessType;
+import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.NotBlank;
 
+@Entity
+@Access(AccessType.PROPERTY)
 public class MessageFolder extends DomainEntity {
 
+	// Attributes -------------------------------------------------------------
 	private String	name;
 	private boolean	modifiable;
+
 
 	@NotNull
 	@NotBlank
@@ -19,7 +31,7 @@ public class MessageFolder extends DomainEntity {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+
 	public boolean isModificable() {
 		return this.modifiable;
 	}
@@ -28,6 +40,29 @@ public class MessageFolder extends DomainEntity {
 		this.modifiable = modifiable;
 	}
 
-	
 
+	//Relationships-------------------------------------------------------------------------------------
+	private Collection<Message>	messages;
+	private Actor				actor;
+
+
+	public Collection<Message> getMessages() {
+		return this.messages;
+	}
+	@Valid
+	@NotNull
+	@OneToMany(mappedBy = "messageFolder")
+	public void setMessages(Collection<Message> messages) {
+		this.messages = messages;
+	}
+
+	@Valid
+	@ManyToOne(optional = false)
+	public Actor getActor() {
+		return this.actor;
+	}
+
+	public void setActor(Actor actor) {
+		this.actor = actor;
+	}
 }

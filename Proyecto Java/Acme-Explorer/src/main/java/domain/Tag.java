@@ -15,6 +15,7 @@ import org.hibernate.validator.constraints.NotBlank;
 @Access(AccessType.PROPERTY)
 public class Tag extends DomainEntity {
 
+	// Attributes -------------------------------------------------------------
 	private String	name;
 
 

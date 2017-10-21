@@ -13,6 +13,7 @@ import org.hibernate.validator.constraints.URL;
 @Access(AccessType.PROPERTY)
 public class SocialIdentity extends DomainEntity {
 
+	// Attributes -------------------------------------------------------------
 	private String	nick;
 	private String	name;
 	private String	link;

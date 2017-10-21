@@ -24,6 +24,7 @@ import org.hibernate.validator.constraints.NotEmpty;
 @Access(AccessType.PROPERTY)
 public class Trip extends DomainEntity {
 
+	// Attributes -------------------------------------------------------------
 	private String				ticker;
 	private String				title;
 	private String				description;

@@ -16,8 +16,7 @@ import org.hibernate.validator.constraints.URL;
 @Access(AccessType.PROPERTY)
 public class ProfessionalRecord extends DomainEntity {
 
-	//---------------------------------------Atributtes------------------------------------------------
-
+	// Attributes -------------------------------------------------------------
 	private String				companyName;
 	private String				workPeriod;
 	private String				role;

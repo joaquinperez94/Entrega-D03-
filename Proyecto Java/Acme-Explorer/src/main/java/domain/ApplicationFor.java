@@ -4,6 +4,7 @@ package domain;
 import java.util.Collection;
 import java.util.Date;
 
+import javax.persistence.ManyToOne;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
@@ -13,6 +14,7 @@ import org.hibernate.validator.constraints.CreditCardNumber;
 
 public class ApplicationFor extends DomainEntity {
 
+	// Attributes -------------------------------------------------------------
 	private Date				moment;
 	private String				status;
 	private Collection<String>	comments;
@@ -63,6 +65,43 @@ public class ApplicationFor extends DomainEntity {
 
 	public void setCreditCard(final CreditCard creditCard) {
 		this.creditCard = creditCard;
+	}
+
+
+	//Relationships------------------------------------------------------------
+	private Explorer	explorer;
+	private Manager		manager;
+	private Trip		trip;
+
+
+	@Valid
+	@ManyToOne(optional = false)
+	public Explorer getExplorer() {
+		return this.explorer;
+	}
+
+	public void setExplorer(Explorer explorer) {
+		this.explorer = explorer;
+	}
+
+	@Valid
+	@ManyToOne(optional = true)
+	public Manager getManager() {
+		return this.manager;
+	}
+
+	public void setManager(Manager manager) {
+		this.manager = manager;
+	}
+
+	@Valid
+	@ManyToOne(optional = false)
+	public Trip getTrip() {
+		return this.trip;
+	}
+
+	public void setTrip(Trip trip) {
+		this.trip = trip;
 	}
 
 }

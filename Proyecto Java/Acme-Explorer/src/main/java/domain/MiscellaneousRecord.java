@@ -15,6 +15,7 @@ import org.hibernate.validator.constraints.URL;
 @Access(AccessType.PROPERTY)
 public class MiscellaneousRecord extends DomainEntity {
 
+	// Attributes -------------------------------------------------------------
 	private String				title;
 	private String				link;
 	private Collection<String>	comments;

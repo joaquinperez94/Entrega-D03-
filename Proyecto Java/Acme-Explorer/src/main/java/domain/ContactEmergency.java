@@ -1,12 +1,21 @@
 
 package domain;
 
+import java.util.Collection;
+
+import javax.persistence.Access;
+import javax.persistence.AccessType;
+import javax.persistence.Entity;
+import javax.persistence.ManyToMany;
+import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotBlank;
 
+@Entity
+@Access(AccessType.PROPERTY)
 public class ContactEmergency extends DomainEntity {
 
 	// Attributes -------------------------------------------------------------
@@ -43,6 +52,21 @@ public class ContactEmergency extends DomainEntity {
 
 	public void setPhone(String phone) {
 		this.phone = phone;
+	}
+
+
+	//Relationships-------------------------------------------------------------------------------------
+	private Collection<Explorer>	explorers;
+
+
+	@Valid
+	@ManyToMany
+	public Collection<Explorer> getExplorers() {
+		return this.explorers;
+	}
+
+	public void setExplorers(Collection<Explorer> explorers) {
+		this.explorers = explorers;
 	}
 
 }

@@ -14,6 +14,7 @@ import javax.validation.constraints.NotNull;
 @Access(AccessType.PROPERTY)
 public class Manager extends Actor {
 
+	// Attributes -------------------------------------------------------------
 	private boolean	suspicious;
 
 

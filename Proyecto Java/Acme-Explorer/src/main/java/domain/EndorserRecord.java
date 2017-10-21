@@ -17,6 +17,7 @@ import org.hibernate.validator.constraints.URL;
 @Access(AccessType.PROPERTY)
 public class EndorserRecord extends DomainEntity {
 
+	// Attributes -------------------------------------------------------------
 	private String				fullName;
 	private String				email;
 	private String				linkedProfile;

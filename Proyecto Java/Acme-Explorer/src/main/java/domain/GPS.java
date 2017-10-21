@@ -12,6 +12,7 @@ import org.hibernate.validator.constraints.NotBlank;
 @Access(AccessType.PROPERTY)
 public class GPS {
 
+	// Attributes -------------------------------------------------------------
 	private double	longitude;
 	private double	latitude;
 	private String	name;

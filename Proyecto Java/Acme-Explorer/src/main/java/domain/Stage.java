@@ -13,6 +13,7 @@ import org.hibernate.validator.constraints.NotBlank;
 @Access(AccessType.PROPERTY)
 public class Stage extends DomainEntity {
 
+	// Attributes -------------------------------------------------------------
 	private String	title;
 	private String	description;
 	private double	price;
