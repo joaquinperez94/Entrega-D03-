@@ -43,7 +43,7 @@ public class Manager extends Actor {
 		this.clas = clas;
 	}
 
-	@ManyToMany(mappedBy = "manager")
+	@ManyToMany(mappedBy = "managers")
 	public Collection<Trip> getTrip() {
 		return this.trip;
 	}
