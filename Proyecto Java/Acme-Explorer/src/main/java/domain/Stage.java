@@ -4,6 +4,7 @@ package domain;
 import javax.persistence.Access;
 import javax.persistence.AccessType;
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 import javax.persistence.Transient;
 import javax.validation.constraints.NotNull;
 
@@ -60,6 +61,20 @@ public class Stage extends DomainEntity {
 	public double getTotalPrice() {
 		return this.price + (this.price * this.iva);
 	}
+
+
 	// Relationships ----------------------------------------------------------
+
+	private Trip	trip;
+
+
+	@ManyToOne(optional = false)
+	public Trip getTrip() {
+		return this.trip;
+	}
+
+	public void setTrip(final Trip trip) {
+		this.trip = trip;
+	}
 
 }
