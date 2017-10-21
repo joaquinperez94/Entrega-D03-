@@ -17,16 +17,16 @@ public class Sponsor extends Actor {
 
 	// Relationships ----------------------------------------------------------
 
-	private Collection<Sponsorship>	sponsorship;
+	private Collection<Sponsorship>	sponsorships;
 
 
 	@NotNull
 	@OneToMany(mappedBy = "sponsor")
-	public Collection<Sponsorship> getSponsorship() {
-		return this.sponsorship;
+	public Collection<Sponsorship> getSponsorships() {
+		return this.sponsorships;
 	}
 
-	public void setSponsorship(Collection<Sponsorship> sponsorship) {
-		this.sponsorship = sponsorship;
+	public void setSponsorship(Collection<Sponsorship> sponsorships) {
+		this.sponsorships = sponsorships;
 	}
 }

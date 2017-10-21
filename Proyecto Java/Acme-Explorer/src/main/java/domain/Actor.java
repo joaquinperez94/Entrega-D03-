@@ -47,7 +47,7 @@ public abstract class Actor extends DomainEntity {
 	}
 
 	public void setSurname(String surname) {
-		this.surname = this.surname;
+		this.surname = surname;
 	}
 
 	@NotNull
