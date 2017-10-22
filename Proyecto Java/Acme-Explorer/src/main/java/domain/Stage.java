@@ -18,6 +18,7 @@ public class Stage extends DomainEntity {
 	private String	title;
 	private String	description;
 	private double	price;
+	private int		number;
 	private double	iva;
 
 
@@ -47,6 +48,14 @@ public class Stage extends DomainEntity {
 
 	public void setPrice(final double price) {
 		this.price = price;
+	}
+
+	public int getNumber() {
+		return this.number;
+	}
+
+	public void setNumber(int number) {
+		this.number = number;
 	}
 
 	public double getIva() {
