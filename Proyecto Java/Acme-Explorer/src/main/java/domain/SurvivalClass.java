@@ -18,7 +18,7 @@ import org.hibernate.validator.constraints.NotBlank;
 
 @Entity
 @Access(AccessType.PROPERTY)
-public class Class extends DomainEntity {
+public class SurvivalClass extends DomainEntity {
 
 	// Attributes -------------------------------------------------------------
 	private String	title;

@@ -126,7 +126,7 @@ public class Trip extends DomainEntity {
 	// Relationships ----------------------------------------------------------
 	private Ranger						ranger;
 	private Manager						manager;
-	private Collection<Class>			classes;
+	private Collection<SurvivalClass>	classes;
 	private Collection<Story>			stories;
 	private Collection<ApplicationFor>	applicationsFor;
 	private Collection<AuditRecord>		auditRecords;
@@ -161,11 +161,11 @@ public class Trip extends DomainEntity {
 
 	@NotNull
 	@OneToMany(mappedBy = "trip")
-	public Collection<Class> getClasses() {
+	public Collection<SurvivalClass> getClasses() {
 		return this.classes;
 	}
 
-	public void setClasses(final Collection<Class> classes) {
+	public void setClasses(final Collection<SurvivalClass> classes) {
 		this.classes = classes;
 	}
 
