@@ -1,0 +1,10 @@
+
+package domain;
+
+public class Tool {
+
+	private String	name;
+	private Integer	verMayor;
+	private Integer	verMin;
+
+}

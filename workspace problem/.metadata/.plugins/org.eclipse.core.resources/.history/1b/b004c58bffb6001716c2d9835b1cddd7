@@ -1,0 +1,35 @@
+
+package domain;
+
+public class Tool {
+
+	private String	name;
+	private Integer	verMayor;
+	private Integer	verMin;
+	
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public Integer getVerMayor() {
+		return verMayor;
+	}
+	
+	public void setVerMayor(Integer verMayor) {
+		this.verMayor = verMayor;
+	}
+	
+	public Integer getVerMin() {
+		return verMin;
+	}
+	
+	public void setVerMin(Integer verMin) {
+		this.verMin = verMin;
+	}
+
+	
+}

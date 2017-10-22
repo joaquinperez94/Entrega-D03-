@@ -1,0 +1,9 @@
+
+package domain;
+
+public class License {
+
+	private Double	fee;
+	private Integer	serialnumber;
+
+}

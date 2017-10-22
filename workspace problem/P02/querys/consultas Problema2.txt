@@ -1,0 +1,7 @@
+select b from BookRecord b where id=4;
+
+select avg(l.bookrecords.size) from Library l;
+
+select l from Library l where l.bookrecords.size>=2;
+
+select l.name,l.bookrecords.size from Library l;

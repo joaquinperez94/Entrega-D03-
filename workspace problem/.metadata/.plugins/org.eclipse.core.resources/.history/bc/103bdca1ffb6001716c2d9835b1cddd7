@@ -1,0 +1,17 @@
+
+package domain;
+
+public class LegalText {
+
+	private String	text;
+
+	@Notblank
+	public String getText() {
+		return this.text;
+	}
+
+	public void setText(final String text) {
+		this.text = text;
+	}
+
+}

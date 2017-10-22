@@ -1,0 +1,38 @@
+
+package domain;
+
+import java.util.Collection;
+
+import javax.persistence.OneToMany;
+
+import org.hibernate.validator.constraints.NotBlank;
+
+public class Customer {
+
+	private String	name;
+
+
+	@NotBlank
+	public String getName() {
+		return this.name;
+	}
+
+	public void setName(final String name) {
+		this.name = name;
+	}
+
+
+	// Relationships ----------------------------------------------------------
+	private Collection<License>	licenses;
+
+
+	@OneToMany(mappedBy = "customer", optional = false)
+	public Collection<License> getLicenses() {
+		return this.licenses;
+	}
+
+	public void setLicenses(final Collection<License> licenses) {
+		this.licenses = licenses;
+	}
+
+}

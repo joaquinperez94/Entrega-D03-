@@ -1,0 +1,5 @@
+select c from Customer c where c.licenses.size>=2;
+
+select t from Tool t where t.licenses.size=0;
+
+select l.serialnumber,t.name from License l join l.tool t;

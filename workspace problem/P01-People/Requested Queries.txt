@@ -1,0 +1,22 @@
+Requested Queries.txt
+---------------------
+
+- Select every person
+
+select p from Person p;
+
+- Select every person and their roles
+
+select p, p.roles from Person p;
+
+- Select people who were born before October 31, 1980
+
+select p from Person p where p.birthDate < '1980/10/31';
+
+- Select customers who have paid more than five orders
+
+select c from Customer c where c.numberOfOrdersPaid > 5;
+
+- Select vendors whose discount is greater than 25.00%
+
+select v from Vendor v where v.discount > 25.00;

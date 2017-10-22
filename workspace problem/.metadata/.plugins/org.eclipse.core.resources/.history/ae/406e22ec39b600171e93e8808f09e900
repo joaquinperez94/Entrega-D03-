@@ -1,0 +1,63 @@
+
+package domain;
+
+import java.util.Collection;
+
+import javax.persistence.Access;
+import javax.persistence.AccessType;
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.OneToMany;
+
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotBlank;
+
+@Entity
+@Access(AccessType.PROPERTY)
+public class Library extends DomainEntity {
+
+	private String	name;
+	private String	address;
+	private String	email;
+
+
+	@NotBlank
+	public String getName() {
+		return this.name;
+	}
+
+	public void setName(final String name) {
+		this.name = name;
+	}
+	@NotBlank
+	public String getAddress() {
+		return this.address;
+	}
+
+	public void setAddress(final String address) {
+		this.address = address;
+	}
+	@Email
+	public String getEmail() {
+		return this.email;
+	}
+
+	public void setEmail(final String email) {
+		this.email = email;
+	}
+
+
+	// Relationships ----------------------------------------------------------
+	private Collection<BookRecord>	bookrecords;
+
+
+	@OneToMany(mappedBy = "library",cascade = CascadeType.ALL)
+	public Collection<BookRecord> getBookrecords() {
+		return this.bookrecords;
+	}
+
+	public void setBookrecords(final Collection<BookRecord> bookrecords) {
+		this.bookrecords = bookrecords;
+	}
+
+}

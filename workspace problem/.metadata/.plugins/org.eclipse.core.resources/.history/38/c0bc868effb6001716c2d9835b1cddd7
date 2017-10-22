@@ -1,0 +1,27 @@
+
+package domain;
+
+public class License {
+
+	private Double	fee;
+	private Integer	serialnumber;
+	
+	public Double getFee() {
+		return fee;
+	}
+	
+	public void setFee(Double fee) {
+		this.fee = fee;
+	}
+	
+	public Integer getSerialnumber() {
+		return serialnumber;
+	}
+	
+	public void setSerialnumber(Integer serialnumber) {
+		this.serialnumber = serialnumber;
+	}
+	
+	
+
+}

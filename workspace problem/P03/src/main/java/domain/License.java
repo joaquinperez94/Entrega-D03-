@@ -1,0 +1,77 @@
+
+package domain;
+
+import javax.persistence.Access;
+import javax.persistence.AccessType;
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+import javax.validation.Valid;
+import javax.validation.constraints.Digits;
+import javax.validation.constraints.Min;
+
+@Entity
+@Access(AccessType.PROPERTY)
+public class License extends DomainEntity {
+
+	private Double	fee;
+	private Integer	serialnumber;
+
+
+	@Min(0)
+	@Digits(integer = 99, fraction = 2)
+	public Double getFee() {
+		return this.fee;
+	}
+
+	public void setFee(final Double fee) {
+		this.fee = fee;
+	}
+	@Min(0)
+	public Integer getSerialnumber() {
+		return this.serialnumber;
+	}
+
+	public void setSerialnumber(final Integer serialnumber) {
+		this.serialnumber = serialnumber;
+	}
+
+
+	// Relationships ----------------------------------------------------------
+	private Customer	customer;
+	private Tool		tool;
+	private LegalText	legaltext;
+
+
+	@ManyToOne(optional = false)
+	@Valid
+	public Customer getCustomer() {
+		return this.customer;
+	}
+
+	public void setCustomer(final Customer customer) {
+		this.customer = customer;
+	}
+
+	@ManyToOne(optional = false)
+	@Valid
+	public Tool getTool() {
+		return this.tool;
+	}
+
+	public void setTool(final Tool tool) {
+		this.tool = tool;
+	}
+
+	@ManyToOne(cascade = {
+		CascadeType.PERSIST, CascadeType.MERGE, CascadeType.DETACH, CascadeType.REFRESH
+	})
+	public LegalText getLegaltext() {
+		return this.legaltext;
+	}
+
+	public void setLegaltext(final LegalText legaltext) {
+		this.legaltext = legaltext;
+	}
+
+}

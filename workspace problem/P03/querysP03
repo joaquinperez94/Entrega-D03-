@@ -1,0 +1,9 @@
+select c from Customer c where c.licenses.size>=2;
+
+select t from Tool t where t.licenses.size=0;
+
+select l.serialnumber,c.name,t.name from License l join l.tool t join l.customer c;
+
+
+seleccione los nombres de las herramientas y la suma de las tarifas que ellos vendieron-->
+select t.name,sum(l.fee) from License l join l.tool t group by t;

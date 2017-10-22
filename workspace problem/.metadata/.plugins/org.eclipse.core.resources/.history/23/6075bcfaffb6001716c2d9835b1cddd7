@@ -1,0 +1,29 @@
+
+package domain;
+
+import javax.validation.constraints.Min;
+
+public class License {
+
+	private Double	fee;
+	private Integer	serialnumber;
+
+
+	@Min(0)
+	public Double getFee() {
+		return this.fee;
+	}
+
+	public void setFee(final Double fee) {
+		this.fee = fee;
+	}
+
+	public Integer getSerialnumber() {
+		return this.serialnumber;
+	}
+
+	public void setSerialnumber(final Integer serialnumber) {
+		this.serialnumber = serialnumber;
+	}
+
+}

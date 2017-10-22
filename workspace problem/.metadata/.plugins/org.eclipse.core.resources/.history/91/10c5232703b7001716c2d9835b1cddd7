@@ -1,0 +1,40 @@
+
+package domain;
+
+import java.util.Collection;
+
+import org.hibernate.validator.constraints.NotBlank;
+
+public class Customer {
+
+	private String	name;
+
+
+	@NotBlank
+	public String getName() {
+		return this.name;
+	}
+
+	public void setName(final String name) {
+		this.name = name;
+	}
+
+
+	// Relationships ----------------------------------------------------------
+	private Collection<License>	licenses;
+
+
+	
+	public Collection<License> getLicenses() {
+		return licenses;
+	}
+
+	
+	public void setLicenses(Collection<License> licenses) {
+		this.licenses = licenses;
+	}
+	
+	
+	
+
+}
