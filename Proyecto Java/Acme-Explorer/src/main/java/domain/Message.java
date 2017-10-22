@@ -7,12 +7,13 @@ import java.util.Date;
 import javax.persistence.Access;
 import javax.persistence.AccessType;
 import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
-
-import org.hibernate.validator.constraints.NotBlank;
 
 @Entity
 @Access(AccessType.PROPERTY)
@@ -20,34 +21,15 @@ public class Message extends DomainEntity {
 
 	// Attributes -------------------------------------------------------------
 
-	private String	sender;
-	private String	recipient;
 	private Date	moment;
 	private String	subject;
 	private String	body;
 	private String	priority;
 
 
-	@NotBlank
-	@NotNull
-	public String getSender() {
-		return this.sender;
-	}
-
-	public void setSender(String sender) {
-		this.sender = sender;
-	}
-	@NotBlank
-	@NotNull
-	public String getRecipient() {
-		return this.recipient;
-	}
-
-	public void setRecipient(String recipient) {
-		this.recipient = recipient;
-	}
 	@Past
 	@NotNull
+	@Temporal(TemporalType.TIMESTAMP)
 	public Date getMoment() {
 		return this.moment;
 	}
@@ -85,26 +67,42 @@ public class Message extends DomainEntity {
 
 	// Relationships ----------------------------------------------------------
 
-	private Collection<MessageFolder>	messagesFolders;
-	private Actor						actor;
+	private Collection<MessageFolder>	messageFolders;
+	private Actor						sender;
+	private Actor						recipient;
 
 
 	@NotNull
-	@ManyToMany
-	public Collection<MessageFolder> getMessagesFolders() {
-		return this.messagesFolders;
+	@ManyToOne(optional = false)
+	@Valid
+	public Collection<MessageFolder> getMessageFolders() {
+		return this.messageFolders;
 	}
 
-	public void setMessagesFolders(Collection<MessageFolder> messagesFolders) {
-		this.messagesFolders = messagesFolders;
+	public void setMessageFolders(Collection<MessageFolder> messageFolders) {
+		this.messageFolders = messageFolders;
 	}
 
-	public Actor getActor() {
-		return this.actor;
+	@NotNull
+	@ManyToOne(optional = false)
+	@Valid
+	public Actor getSender() {
+		return this.sender;
 	}
 
-	public void setActor(Actor actor) {
-		this.actor = actor;
+	public void setSender(Actor sender) {
+		this.sender = sender;
+	}
+
+	@NotNull
+	@ManyToOne(optional = false)
+	@Valid
+	public Actor getRecipient() {
+		return this.recipient;
+	}
+
+	public void setRecipient(Actor recipient) {
+		this.recipient = recipient;
 	}
 
 }

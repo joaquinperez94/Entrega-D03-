@@ -7,8 +7,8 @@ import javax.persistence.Access;
 import javax.persistence.AccessType;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
@@ -88,38 +88,38 @@ public abstract class Actor extends DomainEntity {
 
 	// Relationships ----------------------------------------------------------
 
-	private Collection<Message>	messagesSend;
-	private Collection<Message>	messagesRecieve;
-	private UserAccount			userAccount;
+	private Collection<MessageFolder>	messagesFolders;
+	private Collection<SocialIdentity>	socialsIdentities;
+	private UserAccount					userAccount;
 
+
+	@OneToMany
+	@NotNull
+	public Collection<MessageFolder> getMessagesFolders() {
+		return this.messagesFolders;
+	}
+
+	public void setMessagesFolders(Collection<MessageFolder> messagesFolders) {
+		this.messagesFolders = messagesFolders;
+	}
+
+	@OneToMany
+	@NotNull
+	public Collection<SocialIdentity> getSocialsIdentities() {
+		return this.socialsIdentities;
+	}
+
+	public void setSocialsIdentities(Collection<SocialIdentity> socialsIdentities) {
+		this.socialsIdentities = socialsIdentities;
+	}
 
 	@NotNull
-	@ManyToMany
-	public Collection<Message> getMessagesSend() {
-		return this.messagesSend;
-	}
-
-	public void setMessagesSend(Collection<Message> messagesSend) {
-		this.messagesSend = messagesSend;
-	}
-
-	@NotNull
-	@ManyToMany
-	public Collection<Message> getMessagesRecieve() {
-		return this.messagesRecieve;
-	}
-
-	public void setMessagesRecieve(Collection<Message> messagesRecieve) {
-		this.messagesRecieve = messagesRecieve;
-	}
-
-	@NotNull
-	@OneToMany(cascade = CascadeType.ALL)
+	@OneToOne(cascade = CascadeType.ALL, optional = false)
 	public UserAccount getUserAccount() {
 		return this.userAccount;
 	}
 
-	public void setUsersAccounts(UserAccount userAccount) {
+	public void setUserAccount(UserAccount userAccount) {
 		this.userAccount = userAccount;
 	}
 }
