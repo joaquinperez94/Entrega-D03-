@@ -26,7 +26,7 @@ public class Sponsor extends Actor {
 		return this.sponsorships;
 	}
 
-	public void setSponsorship(Collection<Sponsorship> sponsorships) {
+	public void setSponsorships(Collection<Sponsorship> sponsorships) {
 		this.sponsorships = sponsorships;
 	}
 }

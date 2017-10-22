@@ -34,8 +34,16 @@ public class Note extends DomainEntity {
 		return this.createdMoment;
 	}
 
+	public void setCreatedMoment(Date createdMoment) {
+		this.createdMoment = createdMoment;
+	}
+
 	public int getRemark() {
 		return this.remark;
+	}
+
+	public void setRemark(int remark) {
+		this.remark = remark;
 	}
 
 	@NotBlank

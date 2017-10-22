@@ -38,7 +38,7 @@ public class Manager extends Actor {
 		return this.trips;
 	}
 
-	public void setTrip(final Collection<Trip> trips) {
+	public void setTrips(final Collection<Trip> trips) {
 		this.trips = trips;
 	}
 
@@ -48,7 +48,7 @@ public class Manager extends Actor {
 		return this.applicationsFor;
 	}
 
-	public void setApplicationFor(final Collection<ApplicationFor> applicationsFor) {
+	public void setApplicationsFor(final Collection<ApplicationFor> applicationsFor) {
 		this.applicationsFor = applicationsFor;
 	}
 

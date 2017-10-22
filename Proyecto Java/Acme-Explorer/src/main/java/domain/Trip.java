@@ -93,6 +93,10 @@ public class Trip extends DomainEntity {
 		return this.publicationDate;
 	}
 
+	public void setPublicationDate(Date publicationDate) {
+		this.publicationDate = publicationDate;
+	}
+
 	@NotNull
 	@Temporal(TemporalType.TIMESTAMP)
 	public Date getStartDate() {
@@ -155,7 +159,7 @@ public class Trip extends DomainEntity {
 		return this.manager;
 	}
 
-	public void setManagers(final Manager manager) {
+	public void setManager(final Manager manager) {
 		this.manager = manager;
 	}
 
