@@ -5,6 +5,7 @@ import java.util.Collection;
 
 import javax.persistence.Access;
 import javax.persistence.AccessType;
+import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.validation.Valid;
@@ -43,6 +44,7 @@ public class Story extends DomainEntity {
 		this.text = text;
 	}
 
+	@ElementCollection
 	public Collection<String> getAttachments() {
 		return this.attachments;
 	}

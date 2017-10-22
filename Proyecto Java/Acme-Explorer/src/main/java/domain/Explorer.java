@@ -24,7 +24,7 @@ public class Explorer extends Actor {
 
 
 	@NotNull
-	@ManyToMany(mappedBy = "explorers")
+	@ManyToMany
 	public Collection<Class> getClasses() {
 		return this.classes;
 	}

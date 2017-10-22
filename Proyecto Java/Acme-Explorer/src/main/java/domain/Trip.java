@@ -8,6 +8,7 @@ import javax.persistence.Access;
 import javax.persistence.AccessType;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
@@ -77,6 +78,7 @@ public class Trip extends DomainEntity {
 		this.price = price;
 	}
 
+	@ElementCollection
 	public Collection<String> getRequirementsExplorers() {
 		return this.requirementsExplorers;
 	}
@@ -123,7 +125,7 @@ public class Trip extends DomainEntity {
 
 	// Relationships ----------------------------------------------------------
 	private Ranger						ranger;
-	private Collection<Manager>			managers;
+	private Manager						manager;			//CAMBIAR
 	private Collection<Class>			classes;
 	private Collection<Story>			stories;
 	private Collection<ApplicationFor>	applicationsFor;
@@ -147,14 +149,14 @@ public class Trip extends DomainEntity {
 		this.ranger = ranger;
 	}
 	@NotNull
-	@NotEmpty
-	@ManyToMany
-	public Collection<Manager> getManagers() {
-		return this.managers;
+	@Valid
+	@ManyToOne(optional = false)
+	public Manager getManager() {
+		return this.manager;
 	}
 
-	public void setManagers(final Collection<Manager> managers) {
-		this.managers = managers;
+	public void setManagers(final Manager manager) {
+		this.manager = manager;
 	}
 
 	@NotNull
@@ -209,7 +211,7 @@ public class Trip extends DomainEntity {
 
 	@NotNull
 	@NotEmpty
-	@ManyToMany(mappedBy = "trips")
+	@ManyToMany
 	public Collection<Category> getCategories() {
 		return this.categories;
 	}
