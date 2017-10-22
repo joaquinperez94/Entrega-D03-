@@ -125,7 +125,7 @@ public class Trip extends DomainEntity {
 
 	// Relationships ----------------------------------------------------------
 	private Ranger						ranger;
-	private Manager						manager;			//CAMBIAR
+	private Manager						manager;
 	private Collection<Class>			classes;
 	private Collection<Story>			stories;
 	private Collection<ApplicationFor>	applicationsFor;
