@@ -32,7 +32,7 @@ public class AuditRecord extends DomainEntity {
 
 	@NotNull
 	@Past
-	@Temporal(TemporalType.DATE)
+	@Temporal(TemporalType.TIMESTAMP)
 	public Date getRealisedMoment() {
 		return this.realisedMoment;
 	}

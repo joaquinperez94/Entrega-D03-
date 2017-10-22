@@ -6,7 +6,6 @@ import java.util.Collection;
 import javax.persistence.Access;
 import javax.persistence.AccessType;
 import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.validation.constraints.NotNull;
 
@@ -29,38 +28,28 @@ public class Manager extends Actor {
 
 	// Relationships ----------------------------------------------------------
 
-	private Collection<Class>			classes;
-	private Collection<Trip>			trip;
-	private Collection<ApplicationFor>	applicationFor;
+	private Collection<Trip>			trips;
+	private Collection<ApplicationFor>	applicationsFor;
 
-
-	@ManyToMany(mappedBy = "managers")
-	public Collection<Class> getClas() {
-		return this.classes;
-	}
-
-	public void setClas(final Collection<Class> clas) {
-		this.classes = clas;
-	}
 
 	@NotNull
-	@ManyToMany(mappedBy = "managers")
-	public Collection<Trip> getTrip() {
-		return this.trip;
+	@OneToMany(mappedBy = "manager")
+	public Collection<Trip> getTrips() {
+		return this.trips;
 	}
 
-	public void setTrip(final Collection<Trip> trip) {
-		this.trip = trip;
+	public void setTrip(final Collection<Trip> trips) {
+		this.trips = trips;
 	}
 
 	@NotNull
 	@OneToMany(mappedBy = "manager")
-	public Collection<ApplicationFor> getApplicationFor() {
-		return this.applicationFor;
+	public Collection<ApplicationFor> getApplicationsFor() {
+		return this.applicationsFor;
 	}
 
-	public void setApplicationFor(final Collection<ApplicationFor> applicationFor) {
-		this.applicationFor = applicationFor;
+	public void setApplicationFor(final Collection<ApplicationFor> applicationsFor) {
+		this.applicationsFor = applicationsFor;
 	}
 
 }

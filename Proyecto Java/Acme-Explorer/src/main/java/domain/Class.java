@@ -48,7 +48,7 @@ public class Class extends DomainEntity {
 	}
 
 	@NotNull
-	@Temporal(TemporalType.DATE)
+	@Temporal(TemporalType.TIMESTAMP)
 	public Date getOrganisedMoment() {
 		return this.organisedMoment;
 	}
@@ -70,7 +70,7 @@ public class Class extends DomainEntity {
 
 	// Relationships ----------------------------------------------------------
 
-	private Collection<Manager>		managers;
+	private Manager					manager;
 	private Trip					trip;
 	private Collection<Explorer>	explorers;
 
@@ -84,13 +84,15 @@ public class Class extends DomainEntity {
 		this.explorers = explorers;
 	}
 
-	@ManyToMany
-	public Collection<Manager> getManager() {
-		return this.managers;
+	@NotNull
+	@Valid
+	@ManyToOne(optional = false)
+	public Manager getManager() {
+		return this.manager;
 	}
 
-	public void setManager(final Collection<Manager> manager) {
-		this.managers = manager;
+	public void setManager(final Manager manager) {
+		this.manager = manager;
 	}
 
 	@NotNull
