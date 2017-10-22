@@ -6,9 +6,7 @@ import java.util.Collection;
 import javax.persistence.Access;
 import javax.persistence.AccessType;
 import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
-import javax.persistence.ManyToOne;
-import javax.validation.Valid;
+import javax.persistence.OneToMany;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.NotBlank;
@@ -43,12 +41,10 @@ public class MessageFolder extends DomainEntity {
 
 	//Relationships-------------------------------------------------------------------------------------
 	private Collection<Message>	messages;
-	private Actor				actor;
 
 
-	@Valid
 	@NotNull
-	@ManyToMany
+	@OneToMany
 	public Collection<Message> getMessages() {
 		return this.messages;
 	}
@@ -57,13 +53,4 @@ public class MessageFolder extends DomainEntity {
 		this.messages = messages;
 	}
 
-	@Valid
-	@ManyToOne(optional = false)
-	public Actor getActor() {
-		return this.actor;
-	}
-
-	public void setActor(Actor actor) {
-		this.actor = actor;
-	}
 }
