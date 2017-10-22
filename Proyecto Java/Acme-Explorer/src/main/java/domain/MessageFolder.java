@@ -44,7 +44,7 @@ public class MessageFolder extends DomainEntity {
 
 
 	@NotNull
-	@OneToMany
+	@OneToMany(mappedBy = "messageFolders")
 	public Collection<Message> getMessages() {
 		return this.messages;
 	}

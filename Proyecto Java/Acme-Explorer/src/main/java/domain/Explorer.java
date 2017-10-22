@@ -17,7 +17,7 @@ public class Explorer extends Actor {
 	// Attributes -------------------------------------------------------------
 
 	// Relationships ----------------------------------------------------------
-	private Collection<Class>				classes;
+	private Collection<SurvivalClass>		classes;
 	private Collection<Story>				stories;
 	private Collection<ApplicationFor>		applicationsFor;
 	private Collection<ContactEmergency>	contactsEmergency;
@@ -25,11 +25,11 @@ public class Explorer extends Actor {
 
 	@NotNull
 	@ManyToMany
-	public Collection<Class> getClasses() {
+	public Collection<SurvivalClass> getClasses() {
 		return this.classes;
 	}
 
-	public void setClasses(final Collection<Class> classes) {
+	public void setClasses(final Collection<SurvivalClass> classes) {
 		this.classes = classes;
 	}
 
