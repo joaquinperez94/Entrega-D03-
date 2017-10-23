@@ -32,8 +32,8 @@ public class LegalText extends DomainEntity {
 	}
 
 	public void setTitle(final String title) {
-		if (this.draftMode == true)
-			this.title = title;
+		//if (this.draftMode == true)
+		this.title = title;
 	}
 
 	@NotBlank
