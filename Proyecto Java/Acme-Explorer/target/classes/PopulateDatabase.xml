@@ -438,33 +438,219 @@
 	</bean>
 	
 	<!-- SocialIdentity -->
-	<bean id="socialIdentity1" class="domain.SocialIdentity">
-		<property name="nick" value="nick1"/>
-		<property name="name" value="identity 1"/>
+	
+		
+	<!-- SocialIdentity -->
+	<bean id="socialIdentityAdmin1" class="domain.SocialIdentity">
+		<property name="nick" value="nickadmin1"/>
+		<property name="name" value="identityadmin 1"/>
 		<property name="link" value="http://www.sample.com"/>
 		<property name="photo" value="http://www.sample.com"/>
 	</bean>
 	
-	<bean id="socialIdentity2" class="domain.SocialIdentity">
-		<property name="nick" value="nick2"/>
-		<property name="name" value="identity 2"/>
+	<bean id="socialIdentityAdmin2" class="domain.SocialIdentity">
+		<property name="nick" value="nickadmin2"/>
+		<property name="name" value="identityadmin 2"/>
 		<property name="link" value="http://www.sample.com"/>
 		<property name="photo" value="http://www.sample.com"/>
 	</bean>
 	
-	<bean id="socialIdentity3" class="domain.SocialIdentity">
-		<property name="nick" value="nick3"/>
-		<property name="name" value="identity 3"/>
+	<bean id="socialIdentityAdmin3" class="domain.SocialIdentity">
+		<property name="nick" value="nickadmin3"/>
+		<property name="name" value="identityadmin 3"/>
 		<property name="link" value="http://www.sample.com"/>
 		<property name="photo" value="http://www.sample.com"/>
 	</bean>
 	
-	<bean id="socialIdentity4" class="domain.SocialIdentity">
-		<property name="nick" value="nick4"/>
-		<property name="name" value="identity 4"/>
+	<bean id="socialIdentityAdmin4" class="domain.SocialIdentity">
+		<property name="nick" value="nickadmin4"/>
+		<property name="name" value="identityadmin 4"/>
 		<property name="link" value="http://www.sample.com"/>
 		<property name="photo" value="http://www.sample.com"/>
 	</bean>
+	
+	<bean id="socialIdentityAdmin5" class="domain.SocialIdentity">
+		<property name="nick" value="nickadmin5"/>
+		<property name="name" value="identityadmin 5"/>
+		<property name="link" value="http://www.sample.com"/>
+		<property name="photo" value="http://www.sample.com"/>
+	</bean>
+	
+	<bean id="socialIdentityManager1" class="domain.SocialIdentity">
+		<property name="nick" value="nickmanager1"/>
+		<property name="name" value="identitymanager 1"/>
+		<property name="link" value="http://www.sample.com"/>
+		<property name="photo" value="http://www.sample.com"/>
+	</bean>
+	
+	<bean id="socialIdentityManager2" class="domain.SocialIdentity">
+		<property name="nick" value="nickmanager2"/>
+		<property name="name" value="identitymanager 2"/>
+		<property name="link" value="http://www.sample.com"/>
+		<property name="photo" value="http://www.sample.com"/>
+	</bean>
+	
+	<bean id="socialIdentityManager3" class="domain.SocialIdentity">
+		<property name="nick" value="nickmanager3"/>
+		<property name="name" value="identitymanager 3"/>
+		<property name="link" value="http://www.sample.com"/>
+		<property name="photo" value="http://www.sample.com"/>
+	</bean>
+	
+	<bean id="socialIdentityManager4" class="domain.SocialIdentity">
+		<property name="nick" value="nickmanager4"/>
+		<property name="name" value="identitymanager 4"/>
+		<property name="link" value="http://www.sample.com"/>
+		<property name="photo" value="http://www.sample.com"/>
+	</bean>
+	
+	<bean id="socialIdentityManager5" class="domain.SocialIdentity">
+		<property name="nick" value="nickmanager5"/>
+		<property name="name" value="identitymanager 5"/>
+		<property name="link" value="http://www.sample.com"/>
+		<property name="photo" value="http://www.sample.com"/>
+	</bean>
+	
+	<bean id="socialIdentityRanger1" class="domain.SocialIdentity">
+		<property name="nick" value="nickranger1"/>
+		<property name="name" value="identityranger 1"/>
+		<property name="link" value="http://www.sample.com"/>
+		<property name="photo" value="http://www.sample.com"/>
+	</bean>
+	
+	<bean id="socialIdentityRanger2" class="domain.SocialIdentity">
+		<property name="nick" value="nickranger2"/>
+		<property name="name" value="identityranger 2"/>
+		<property name="link" value="http://www.sample.com"/>
+		<property name="photo" value="http://www.sample.com"/>
+	</bean>
+	
+	<bean id="socialIdentityRanger3" class="domain.SocialIdentity">
+		<property name="nick" value="nickranger3"/>
+		<property name="name" value="identityranger 3"/>
+		<property name="link" value="http://www.sample.com"/>
+		<property name="photo" value="http://www.sample.com"/>
+	</bean>
+	
+	<bean id="socialIdentityRanger4" class="domain.SocialIdentity">
+		<property name="nick" value="nickranger4"/>
+		<property name="name" value="identityranger 4"/>
+		<property name="link" value="http://www.sample.com"/>
+		<property name="photo" value="http://www.sample.com"/>
+	</bean>
+	
+	<bean id="socialIdentityRanger5" class="domain.SocialIdentity">
+		<property name="nick" value="nickranger5"/>
+		<property name="name" value="identityranger 5"/>
+		<property name="link" value="http://www.sample.com"/>
+		<property name="photo" value="http://www.sample.com"/>
+	</bean>
+	
+	<bean id="socialIdentitySponsor1" class="domain.SocialIdentity">
+		<property name="nick" value="nicksponsor1"/>
+		<property name="name" value="identityexponsor 1"/>
+		<property name="link" value="http://www.sample.com"/>
+		<property name="photo" value="http://www.sample.com"/>
+	</bean>
+	
+	<bean id="socialIdentitySponsor2" class="domain.SocialIdentity">
+		<property name="nick" value="nicksxponsor2"/>
+		<property name="name" value="identitysponsor 2"/>
+		<property name="link" value="http://www.sample.com"/>
+		<property name="photo" value="http://www.sample.com"/>
+	</bean>
+	
+	<bean id="socialIdentitySponsor3" class="domain.SocialIdentity">
+		<property name="nick" value="nickSponsor3"/>
+		<property name="name" value="identitySponsor 3"/>
+		<property name="link" value="http://www.sample.com"/>
+		<property name="photo" value="http://www.sample.com"/>
+	</bean>
+	
+	<bean id="socialIdentitySponsor4" class="domain.SocialIdentity">
+		<property name="nick" value="nickSponsor4"/>
+		<property name="name" value="identitySponsor 4"/>
+		<property name="link" value="http://www.sample.com"/>
+		<property name="photo" value="http://www.sample.com"/>
+	</bean>
+	
+	<bean id="socialIdentitySponsor5" class="domain.SocialIdentity">
+		<property name="nick" value="nickSponsor5"/>
+		<property name="name" value="identitySponsor 5"/>
+		<property name="link" value="http://www.sample.com"/>
+		<property name="photo" value="http://www.sample.com"/>
+	</bean>
+	
+	<bean id="socialIdentityExplorer" class="domain.SocialIdentity">
+		<property name="nick" value="nickexplorer 1"/>
+		<property name="name" value="identityexplorer 1"/>
+		<property name="link" value="http://www.sample.com"/>
+		<property name="photo" value="http://www.sample.com"/>
+	</bean>
+	
+	<bean id="socialIdentityExplorer2" class="domain.SocialIdentity">
+		<property name="nick" value="nickexplorer 2"/>
+		<property name="name" value="identityexplorer 2"/>
+		<property name="link" value="http://www.sample.com"/>
+		<property name="photo" value="http://www.sample.com"/>
+	</bean>
+	
+	<bean id="socialIdentityExplorer3" class="domain.SocialIdentity">
+		<property name="nick" value="nickexplorer3"/>
+		<property name="name" value="identityexplorer 3"/>
+		<property name="link" value="http://www.sample.com"/>
+		<property name="photo" value="http://www.sample.com"/>
+	</bean>
+	
+	<bean id="socialIdentityExplorer4" class="domain.SocialIdentity">
+		<property name="nick" value="nickexplorer 4"/>
+		<property name="name" value="identityexplorer 4"/>
+		<property name="link" value="http://www.sample.com"/>
+		<property name="photo" value="http://www.sample.com"/>
+	</bean>
+	
+	<bean id="socialIdentityExplorer5" class="domain.SocialIdentity">
+		<property name="nick" value="nickexplorer 5"/>
+		<property name="name" value="identityexplorer 5"/>
+		<property name="link" value="http://www.sample.com"/>
+		<property name="photo" value="http://www.sample.com"/>
+	</bean>
+	
+	<bean id="socialIdentityAuditor1" class="domain.SocialIdentity">
+		<property name="nick" value="nickauditor 1"/>
+		<property name="name" value="identityauditor 1"/>
+		<property name="link" value="http://www.sample.com"/>
+		<property name="photo" value="http://www.sample.com"/>
+	</bean>
+	
+	<bean id="socialIdentityAuditor2" class="domain.SocialIdentity">
+		<property name="nick" value="nickauditor 2"/>
+		<property name="name" value="identityauditor 2"/>
+		<property name="link" value="http://www.sample.com"/>
+		<property name="photo" value="http://www.sample.com"/>
+	</bean>
+	
+	<bean id="socialIdentityAuditor3" class="domain.SocialIdentity">
+		<property name="nick" value="nickauditor 3"/>
+		<property name="name" value="identityauditor 3"/>
+		<property name="link" value="http://www.sample.com"/>
+		<property name="photo" value="http://www.sample.com"/>
+	</bean>
+	
+	<bean id="socialIdentityAuditor4" class="domain.SocialIdentity">
+		<property name="nick" value="nickauditor 4"/>
+		<property name="name" value="identityauditor 4"/>
+		<property name="link" value="http://www.sample.com"/>
+		<property name="photo" value="http://www.sample.com"/>
+	</bean>
+	
+	<bean id="socialIdentityAuditor5" class="domain.SocialIdentity">
+		<property name="nick" value="nickauditor 5"/>
+		<property name="name" value="identityauditor 5"/>
+		<property name="link" value="http://www.sample.com"/>
+		<property name="photo" value="http://www.sample.com"/>
+	</bean>
+	
 	<!-- Administradores que me hace falta -->
 	
 	<bean id="administrator1" class="domain.Administrator">
