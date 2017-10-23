@@ -1162,6 +1162,84 @@
 </bean>
 	
 	
+	<!-- SponsorShip -->
+<!--NECESITO TRIP-->
+
+<!-- SponsorShip 1-->
+<bean id="sponsorShip1" class="domain.SponsorShip">
+		<property name="bannerURL"  value="www.banner.com"/>
+		<property name="link" value="www.link-banner.com"/>
+		<property name="creditCard">
+			<ref bean="creditCard1"/>
+		</property>
+		<property name="trip">
+			<ref bean="trip1"/>
+		</property>
+		<property name="sponsor">
+			<ref bean="Sponsor1"/>
+		</property>
+</bean>
+
+<!-- SponsorShip 2-->
+<bean id="sponsorShip2" class="domain.SponsorShip">
+		<property name="bannerURL"  value="www.banner.com"/>
+		<property name="link" value="www.link-banner.com"/>
+		<property name="creditCard">
+			<ref bean="creditCard1"/>
+		</property>
+		<property name="trip">
+			<ref bean="trip2"/>
+		</property>
+		<property name="sponsor">
+			<ref bean="Sponsor2"/>
+		</property>
+</bean>
+
+<!-- SponsorShip 3-->
+<bean id="sponsorShip3" class="domain.SponsorShip">
+		<property name="bannerURL"  value="www.banner.com"/>
+		<property name="link" value="www.link-banner.com"/>
+		<property name="creditCard">
+			<ref bean="creditCard2"/>
+		</property>
+		<property name="trip">
+			<ref bean="trip3"/>
+		</property>
+		<property name="sponsor">
+			<ref bean="Sponsor3"/>
+		</property>
+</bean>
+
+<!-- SponsorShip 4-->
+<bean id="sponsorShip4" class="domain.SponsorShip">
+		<property name="bannerURL"  value="www.banner.com"/>
+		<property name="link" value="www.link-banner.com"/>
+		<property name="creditCard">
+			<ref bean="creditCard2"/>
+		</property>
+		<property name="trip">
+			<ref bean="trip4"/>
+		</property>
+		<property name="sponsor">
+			<ref bean="Sponsor4"/>
+		</property>
+</bean>
+
+<!-- SponsorShip 5-->
+<bean id="sponsorShip5" class="domain.SponsorShip">
+		<property name="bannerURL"  value="www.banner.com"/>
+		<property name="link" value="www.link-banner.com"/>
+		<property name="creditCard">
+			<ref bean="creditCard2"/>
+		</property>
+		<property name="trip">
+			<ref bean="trip5"/>
+		</property>
+		<property name="sponsor">
+			<ref bean="Sponsor5"/>
+		</property>
+</bean>
+	
 	
 	<!-- Other domain beans come here -->	
 	
