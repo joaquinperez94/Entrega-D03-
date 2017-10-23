@@ -1,0 +1,536 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fcharset0 Arial;}{\f1\fnil Courier New;}}
+{\colortbl ;\red0\green128\blue128;\red63\green127\blue127;\red212\green212\blue212;\red127\green0\blue127;\red0\green0\blue0;\red42\green0\blue255;\red63\green95\blue191;}
+{\*\generator Msftedit 5.41.21.2500;}\viewkind4\uc1\pard\f0\fs20 CAMBIOS JAVA:\par
+\b 1)He quitado la Collection<SurvivalClass> classes en la clase Explorer puesto que quitamos su navegabilidad\b0 .\par
+\b 2)Quitar en SurvivalClass la anotaci\'f3n @NotBlanck que tiene en getGPS\par
+\b0 TENER EN CUENTA:\par
+\pard\ri-450\tx8910\tx9090\tx9540 SurvivalClass : A\'f1adir el atributo \b Trip\b0  y \b GPS(he creado los GPS yo)\b0  a todos los survivalClass creados\par
+\pard Manager (UserAccount): Cambiar los \b UsserAccount\b0  por los de Maria pero creo que no hace falta cambiar nada en mis Managers porque tiene el nombre de id de UserAccount que yo propuse.\par
+Explorer (UserAccount): Idem que Manager con los \b UserAccount\b0\par
+Story : A\'f1adir el atributo \b Trip\b0  \par
+ApplicacionFor: A\'f1adir el atributo \b Trip\b0 ,\b creditCard\b0   \cf1\f1\par
+\par
+<\cf2\highlight3 bean\cf0\highlight0  \cf4 id\cf5 =\cf6\i "manager1"\cf0\i0  \cf4 class\cf5 =\cf6\i "domain.Manager"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "name"\cf0\i0  \cf4 value\cf5 =\cf6\i "Manager 1"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "surname"\cf0\i0  \cf4 value\cf5 =\cf6\i "surname Manager 1"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "email"\cf0\i0  \cf4 value\cf5 =\cf6\i "manager1@mail.com"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "phone"\cf0\i0  \cf4 value\cf5 =\cf6\i "+313(987)1111"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "address"\cf0\i0  \cf4 value\cf5 =\cf6\i "Address Manager 1"\cf0\i0  \cf1 />\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "activated"\cf0\i0  \cf4 value\cf5 =\cf6\i "false"\cf0\i0  \cf1 />\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "userAccount"\cf0\i0  \cf4 ref\cf5 =\cf6\i "userAccountManager1"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "socialsIdentities"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "messagesFolders"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "trips"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "applicationsFor"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5   \tab\cf1 </\cf2\highlight3 bean\cf1\highlight0 >\cf0\par
+\cf5   \tab\cf1 <\cf2 bean\cf0  \cf4 id\cf5 =\cf6\i "manager2"\cf0\i0  \cf4 class\cf5 =\cf6\i "domain.Manager"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "name"\cf0\i0  \cf4 value\cf5 =\cf6\i "Manager 2"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "surname"\cf0\i0  \cf4 value\cf5 =\cf6\i "surname Manager 2"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "email"\cf0\i0  \cf4 value\cf5 =\cf6\i "manager2@mail.com"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "phone"\cf0\i0  \cf4 value\cf5 =\cf6\i "+313(987)1112"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "address"\cf0\i0  \cf4 value\cf5 =\cf6\i "Address Manager 2"\cf0\i0  \cf1 />\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "activated"\cf0\i0  \cf4 value\cf5 =\cf6\i "false"\cf0\i0  \cf1 />\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "userAccount"\cf0\i0  \cf4 ref\cf5 =\cf6\i "userAccountManager2"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "socialsIdentities"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "messagesFolders"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "trips"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "applicationsFor"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5   \tab\cf1 </\cf2 bean\cf1 >\cf0\par
+\cf5   \tab\cf1 <\cf2 bean\cf0  \cf4 id\cf5 =\cf6\i "manager3"\cf0\i0  \cf4 class\cf5 =\cf6\i "domain.Manager"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "name"\cf0\i0  \cf4 value\cf5 =\cf6\i "Manager 3"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "surname"\cf0\i0  \cf4 value\cf5 =\cf6\i "surname Manager 3"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "email"\cf0\i0  \cf4 value\cf5 =\cf6\i "manager3@mail.com"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "phone"\cf0\i0  \cf4 value\cf5 =\cf6\i "+313(987)1113"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "address"\cf0\i0  \cf4 value\cf5 =\cf6\i "Address Manager 3"\cf0\i0  \cf1 />\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "activated"\cf0\i0  \cf4 value\cf5 =\cf6\i "false"\cf0\i0  \cf1 />\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "userAccount"\cf0\i0  \cf4 ref\cf5 =\cf6\i "userAccountManager3"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "socialsIdentities"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "messagesFolders"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "trips"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "applicationsFor"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5   \tab\cf1 </\cf2 bean\cf1 >\cf0\par
+\cf5   \tab\cf1 <\cf2 bean\cf0  \cf4 id\cf5 =\cf6\i "manager4"\cf0\i0  \cf4 class\cf5 =\cf6\i "domain.Manager"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "name"\cf0\i0  \cf4 value\cf5 =\cf6\i "Manager 4"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "surname"\cf0\i0  \cf4 value\cf5 =\cf6\i "surname Manager 4"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "email"\cf0\i0  \cf4 value\cf5 =\cf6\i "manager4@mail.com"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "phone"\cf0\i0  \cf4 value\cf5 =\cf6\i "+313(987)1114"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "address"\cf0\i0  \cf4 value\cf5 =\cf6\i "Address Manager 4"\cf0\i0  \cf1 />\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "activated"\cf0\i0  \cf4 value\cf5 =\cf6\i "false"\cf0\i0  \cf1 />\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "userAccount"\cf0\i0  \cf4 ref\cf5 =\cf6\i "userAccountManager4"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "socialsIdentities"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "messagesFolders"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "trips"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "applicationsFor"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5   \tab\cf1 </\cf2 bean\cf1 >\cf0\par
+\cf5   \tab\cf1 <\cf2 bean\cf0  \cf4 id\cf5 =\cf6\i "manager5"\cf0\i0  \cf4 class\cf5 =\cf6\i "domain.Manager"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "name"\cf0\i0  \cf4 value\cf5 =\cf6\i "Manager 5"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "surname"\cf0\i0  \cf4 value\cf5 =\cf6\i "surname Manager 5"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "email"\cf0\i0  \cf4 value\cf5 =\cf6\i "manager5@mail.com"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "phone"\cf0\i0  \cf4 value\cf5 =\cf6\i "+313(987)1115"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "address"\cf0\i0  \cf4 value\cf5 =\cf6\i "Address Manager 5"\cf0\i0  \cf1 />\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "activated"\cf0\i0  \cf4 value\cf5 =\cf6\i "false"\cf0\i0  \cf1 />\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "userAccount"\cf0\i0  \cf4 ref\cf5 =\cf6\i "userAccountManager5"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "socialsIdentities"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "messagesFolders"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "trips"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "applicationsFor"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5   \tab\cf1 </\cf2 bean\cf1 >\cf0\par
+\cf5   \tab\cf7 <!-- Explorer -->\cf0\par
+\cf5   \tab\cf0\par
+\cf5\tab\cf1 <\cf2 bean\cf0  \cf4 id\cf5 =\cf6\i "explorer1"\cf0\i0  \cf4 class\cf5 =\cf6\i "domain.Explorer"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "name"\cf0\i0  \cf4 value\cf5 =\cf6\i "Explorer 1"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "surname"\cf0\i0  \cf4 value\cf5 =\cf6\i "surname Explorer 1"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "email"\cf0\i0  \cf4 value\cf5 =\cf6\i "explorer1@mail.com"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "phone"\cf0\i0  \cf4 value\cf5 =\cf6\i "+313(987)1121"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "address"\cf0\i0  \cf4 value\cf5 =\cf6\i "Address explorer 1"\cf0\i0  \cf1 />\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "activated"\cf0\i0  \cf4 value\cf5 =\cf6\i "false"\cf0\i0  \cf1 />\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "userAccount"\cf0\i0  \cf4 ref\cf5 =\cf6\i "userAccountExplorer1"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "socialsIdentities"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "messagesFolders"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "stories"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "applicationsFor"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "contactsEmergency"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5   \tab\cf1 </\cf2 bean\cf1 >\cf0\par
+\cf5   \tab\cf1 <\cf2 bean\cf0  \cf4 id\cf5 =\cf6\i "explorer2"\cf0\i0  \cf4 class\cf5 =\cf6\i "domain.Explorer"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "name"\cf0\i0  \cf4 value\cf5 =\cf6\i "Explorer 2"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "surname"\cf0\i0  \cf4 value\cf5 =\cf6\i "surname Explorer 2"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "email"\cf0\i0  \cf4 value\cf5 =\cf6\i "explorer2@mail.com"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "phone"\cf0\i0  \cf4 value\cf5 =\cf6\i "+313(987)1131"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "address"\cf0\i0  \cf4 value\cf5 =\cf6\i "Address explorer 2"\cf0\i0  \cf1 />\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "activated"\cf0\i0  \cf4 value\cf5 =\cf6\i "false"\cf0\i0  \cf1 />\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "userAccount"\cf0\i0  \cf4 ref\cf5 =\cf6\i "userAccountExplorer2"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "socialsIdentities"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "messagesFolders"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "stories"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "applicationsFor"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "contactsEmergency"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5   \tab\cf1 </\cf2 bean\cf1 >\cf0\par
+\cf5   \tab\cf1 <\cf2 bean\cf0  \cf4 id\cf5 =\cf6\i "explorer3"\cf0\i0  \cf4 class\cf5 =\cf6\i "domain.Explorer"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "name"\cf0\i0  \cf4 value\cf5 =\cf6\i "Explorer 3"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "surname"\cf0\i0  \cf4 value\cf5 =\cf6\i "surname Explorer 3"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "email"\cf0\i0  \cf4 value\cf5 =\cf6\i "explorer3@mail.com"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "phone"\cf0\i0  \cf4 value\cf5 =\cf6\i "+313(987)1141"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "address"\cf0\i0  \cf4 value\cf5 =\cf6\i "Address explorer 3"\cf0\i0  \cf1 />\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "activated"\cf0\i0  \cf4 value\cf5 =\cf6\i "false"\cf0\i0  \cf1 />\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "userAccount"\cf0\i0  \cf4 ref\cf5 =\cf6\i "userAccountExplorer3"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "socialsIdentities"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "messagesFolders"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "stories"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "applicationsFor"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "contactsEmergency"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5   \tab\cf1 </\cf2 bean\cf1 >\cf0\par
+\cf5   \tab\cf1 <\cf2 bean\cf0  \cf4 id\cf5 =\cf6\i "explorer4"\cf0\i0  \cf4 class\cf5 =\cf6\i "domain.Explorer"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "name"\cf0\i0  \cf4 value\cf5 =\cf6\i "Explorer 4"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "surname"\cf0\i0  \cf4 value\cf5 =\cf6\i "surname Explorer 4"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "email"\cf0\i0  \cf4 value\cf5 =\cf6\i "explorer4@mail.com"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "phone"\cf0\i0  \cf4 value\cf5 =\cf6\i "+313(987)1131"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "address"\cf0\i0  \cf4 value\cf5 =\cf6\i "Address explorer 4"\cf0\i0  \cf1 />\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "activated"\cf0\i0  \cf4 value\cf5 =\cf6\i "false"\cf0\i0  \cf1 />\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "userAccount"\cf0\i0  \cf4 ref\cf5 =\cf6\i "userAccountExplorer4"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "socialsIdentities"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "messagesFolders"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "stories"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "applicationsFor"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "contactsEmergency"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5   \tab\cf1 </\cf2 bean\cf1 >\cf0\par
+\cf5   \tab\cf1 <\cf2 bean\cf0  \cf4 id\cf5 =\cf6\i "explorer5"\cf0\i0  \cf4 class\cf5 =\cf6\i "domain.Explorer"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "name"\cf0\i0  \cf4 value\cf5 =\cf6\i "Explorer 5"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "surname"\cf0\i0  \cf4 value\cf5 =\cf6\i "surname Explorer 5"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "email"\cf0\i0  \cf4 value\cf5 =\cf6\i "explorer5@mail.com"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "phone"\cf0\i0  \cf4 value\cf5 =\cf6\i "+313(987)1131"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "address"\cf0\i0  \cf4 value\cf5 =\cf6\i "Address explorer 5"\cf0\i0  \cf1 />\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "activated"\cf0\i0  \cf4 value\cf5 =\cf6\i "false"\cf0\i0  \cf1 />\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "userAccount"\cf0\i0  \cf4 ref\cf5 =\cf6\i "userAccountExplorer5"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "socialsIdentities"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "messagesFolders"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "stories"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "applicationsFor"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "contactsEmergency"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5   \tab\cf1 </\cf2 bean\cf1 >\cf0\par
+\cf5   \tab\cf7 <!--  SurvivalClass -->\cf0\par
+\cf5   \tab\cf1 <\cf2 bean\cf0  \cf4 id\cf5 =\cf6\i "survivalClass1"\cf0\i0  \cf4 class\cf5 =\cf6\i "domain.SurvivalClass"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "title"\cf0\i0  \cf4 value\cf5 =\cf6\i "survivalClass 1"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "description"\cf0\i0  \cf4 value\cf5 =\cf6\i "description survivalClass 1"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "organisedMoment"\cf0\i0  \cf4 value\cf5 =\cf6\i "10/22/2017 10:10"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "location"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\tab\cf1 <\cf2 bean\cf0  \cf4 id\cf5 =\cf6\i "GPS6"\cf0\i0  \cf4 class\cf5 =\cf6\i "domain.GPS"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "longitude"\cf0\i0  \cf4 value\cf5 =\cf6\i "23.5"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "latitude"\cf0\i0  \cf4 value\cf5 =\cf6\i "22.5"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "name"\cf0\i0  \cf4 value\cf5 =\cf6\i "gps 6"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5  \tab\tab  \tab\cf1 </\cf2 bean\cf1 >\cf0\par
+\cf5   \tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "manager"\cf0\i0  \cf4 ref\cf5 =\cf6\i "manager1"\cf1\i0 />\cf0\par
+\cf5   \tab\tab\cf7 <!--  <property name="trip" \ul ref\ulnone ="trip1"/> -->\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "explorers"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 ref\cf0  \cf4 bean\cf5 =\cf6\i "explorer1"\cf0\i0  \cf1 />\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 ref\cf0  \cf4 bean\cf5 =\cf6\i "explorer2"\cf0\i0  \cf1 />\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5   \tab\cf1 </\cf2 bean\cf1 >\cf0\par
+\cf5   \tab\cf1 <\cf2 bean\cf0  \cf4 id\cf5 =\cf6\i "survivalClass2"\cf0\i0  \cf4 class\cf5 =\cf6\i "domain.SurvivalClass"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "title"\cf0\i0  \cf4 value\cf5 =\cf6\i "survivalClass 2"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "description"\cf0\i0  \cf4 value\cf5 =\cf6\i "description survivalClass 2"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "organisedMoment"\cf0\i0  \cf4 value\cf5 =\cf6\i "10/21/2017 10:10"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "location"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\tab\cf1 <\cf2 bean\cf0  \cf4 id\cf5 =\cf6\i "GPS7"\cf0\i0  \cf4 class\cf5 =\cf6\i "domain.GPS"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "longitude"\cf0\i0  \cf4 value\cf5 =\cf6\i "21.5"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "latitude"\cf0\i0  \cf4 value\cf5 =\cf6\i "22.5"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "name"\cf0\i0  \cf4 value\cf5 =\cf6\i "gps 7"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5  \tab\tab  \tab\cf1 </\cf2 bean\cf1 >\cf0\par
+\cf5   \tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "manager"\cf0\i0  \cf4 ref\cf5 =\cf6\i "manager2"\cf1\i0 />\cf0\par
+\cf5   \tab\tab\cf7 <!--  <property name="trip" \ul ref\ulnone ="trip2"/> -->\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "explorers"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 ref\cf0  \cf4 bean\cf5 =\cf6\i "explorer3"\cf0\i0  \cf1 />\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 ref\cf0  \cf4 bean\cf5 =\cf6\i "explorer4"\cf0\i0  \cf1 />\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5   \tab\cf1 </\cf2 bean\cf1 >\cf0\par
+\cf5   \tab\cf1 <\cf2 bean\cf0  \cf4 id\cf5 =\cf6\i "survivalClass3"\cf0\i0  \cf4 class\cf5 =\cf6\i "domain.SurvivalClass"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "title"\cf0\i0  \cf4 value\cf5 =\cf6\i "survivalClass 3"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "description"\cf0\i0  \cf4 value\cf5 =\cf6\i "description survivalClass 3"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "organisedMoment"\cf0\i0  \cf4 value\cf5 =\cf6\i "10/21/2017 10:10"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "location"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\tab\cf1 <\cf2 bean\cf0  \cf4 id\cf5 =\cf6\i "GPS8"\cf0\i0  \cf4 class\cf5 =\cf6\i "domain.GPS"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "longitude"\cf0\i0  \cf4 value\cf5 =\cf6\i "10.5"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "latitude"\cf0\i0  \cf4 value\cf5 =\cf6\i "22.5"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "name"\cf0\i0  \cf4 value\cf5 =\cf6\i "gps 8"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5  \tab\tab  \tab\cf1 </\cf2 bean\cf1 >\cf0\par
+\cf5   \tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "manager"\cf0\i0  \cf4 ref\cf5 =\cf6\i "manager3"\cf1\i0 />\cf0\par
+\cf5   \tab\tab\cf7 <!--  <property name="trip" \ul ref\ulnone ="trip3"/> -->\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "explorers"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 ref\cf0  \cf4 bean\cf5 =\cf6\i "explorer4"\cf0\i0  \cf1 />\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 ref\cf0  \cf4 bean\cf5 =\cf6\i "explorer5"\cf0\i0  \cf1 />\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5   \tab\cf1 </\cf2 bean\cf1 >\cf0\par
+\cf5   \tab\cf1 <\cf2 bean\cf0  \cf4 id\cf5 =\cf6\i "survivalClass4"\cf0\i0  \cf4 class\cf5 =\cf6\i "domain.SurvivalClass"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "title"\cf0\i0  \cf4 value\cf5 =\cf6\i "survivalClass 4"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "description"\cf0\i0  \cf4 value\cf5 =\cf6\i "description survivalClass 4"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "organisedMoment"\cf0\i0  \cf4 value\cf5 =\cf6\i "10/21/2017 08:10"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "location"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\tab\cf1 <\cf2 bean\cf0  \cf4 id\cf5 =\cf6\i "GPS9"\cf0\i0  \cf4 class\cf5 =\cf6\i "domain.GPS"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "longitude"\cf0\i0  \cf4 value\cf5 =\cf6\i "14.5"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "latitude"\cf0\i0  \cf4 value\cf5 =\cf6\i "22.5"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "name"\cf0\i0  \cf4 value\cf5 =\cf6\i "gps 9"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5  \tab\tab  \tab\cf1 </\cf2 bean\cf1 >\cf0\par
+\cf5   \tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "manager"\cf0\i0  \cf4 ref\cf5 =\cf6\i "manager4"\cf1\i0 />\cf0\par
+\cf5   \tab\tab\cf7 <!--  <property name="trip" \ul ref\ulnone ="trip4"/> -->\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "explorers"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 ref\cf0  \cf4 bean\cf5 =\cf6\i "explorer4"\cf0\i0  \cf1 />\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5   \tab\cf1 </\cf2 bean\cf1 >\cf0\par
+\cf5   \tab\cf1 <\cf2 bean\cf0  \cf4 id\cf5 =\cf6\i "survivalClass5"\cf0\i0  \cf4 class\cf5 =\cf6\i "domain.SurvivalClass"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "title"\cf0\i0  \cf4 value\cf5 =\cf6\i "survivalClass 5"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "description"\cf0\i0  \cf4 value\cf5 =\cf6\i "description survivalClass 5"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "organisedMoment"\cf0\i0  \cf4 value\cf5 =\cf6\i "10/21/2017 09:10"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "location"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\tab\cf1 <\cf2 bean\cf0  \cf4 id\cf5 =\cf6\i "GPS10"\cf0\i0  \cf4 class\cf5 =\cf6\i "domain.GPS"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "longitude"\cf0\i0  \cf4 value\cf5 =\cf6\i "14.5"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "latitude"\cf0\i0  \cf4 value\cf5 =\cf6\i "22.5"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "name"\cf0\i0  \cf4 value\cf5 =\cf6\i "gps 10"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5  \tab\tab  \tab\cf1 </\cf2 bean\cf1 >\cf0\par
+\cf5   \tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "manager"\cf0\i0  \cf4 ref\cf5 =\cf6\i "manager5"\cf1\i0 />\cf0\par
+\cf5   \tab\tab\cf7 <!--  <property name="trip" \ul ref\ulnone ="trip5"/> -->\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "explorers"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 ref\cf0  \cf4 bean\cf5 =\cf6\i "explorer1"\cf0\i0  \cf1 />\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 ref\cf0  \cf4 bean\cf5 =\cf6\i "explorer2"\cf0\i0  \cf1 />\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 ref\cf0  \cf4 bean\cf5 =\cf6\i "explorer3"\cf0\i0  \cf1 />\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 ref\cf0  \cf4 bean\cf5 =\cf6\i "explorer4"\cf0\i0  \cf1 />\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 ref\cf0  \cf4 bean\cf5 =\cf6\i "explorer5"\cf0\i0  \cf1 />\cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5   \tab\cf1 </\cf2 bean\cf1 >\cf0\par
+\cf5   \tab\cf7 <!-- Story -->\cf0\par
+\cf5   \tab\cf1 <\cf2 bean\cf0  \cf4 id\cf5 =\cf6\i "story1"\cf0\i0  \cf4 class\cf5 =\cf6\i "domain.Story"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "title"\cf0\i0  \cf4 value\cf5 =\cf6\i "Story 1"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "text"\cf0\i0  \cf4 value\cf5 =\cf6\i "text Story 1"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "attachments"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 value\cf1 >\cf5 attachments1 Story1\cf1 </\cf2 value\cf1 >\cf5  \cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 value\cf1 >\cf5 attachments2 Story1\cf1 </\cf2 value\cf1 >\cf5  \cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 value\cf1 >\cf5 attachments3 Story1\cf1 </\cf2 value\cf1 >\cf5  \cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf7 <!--  <property name="trip" \ul ref\ulnone ="trip1"/> -->\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "explorer"\cf0\i0  \cf4 ref\cf5 =\cf6\i "explorer1"\cf1\i0 />\cf0\par
+\cf5   \tab\cf1 </\cf2 bean\cf1 >\cf0\par
+\cf5   \tab\cf1 <\cf2 bean\cf0  \cf4 id\cf5 =\cf6\i "story2"\cf0\i0  \cf4 class\cf5 =\cf6\i "domain.Story"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "title"\cf0\i0  \cf4 value\cf5 =\cf6\i "Story 2"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "text"\cf0\i0  \cf4 value\cf5 =\cf6\i "text Story 2"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "attachments"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 value\cf1 >\cf5 attachments1 Story2\cf1 </\cf2 value\cf1 >\cf5  \cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 value\cf1 >\cf5 attachments2 Story2\cf1 </\cf2 value\cf1 >\cf5  \cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 value\cf1 >\cf5 attachments3 Story2\cf1 </\cf2 value\cf1 >\cf5  \cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf7 <!--  <property name="trip" \ul ref\ulnone ="trip2"/> -->\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "explorer"\cf0\i0  \cf4 ref\cf5 =\cf6\i "explorer2"\cf1\i0 />\cf0\par
+\cf5   \tab\cf1 </\cf2 bean\cf1 >\cf0\par
+\cf5   \tab\cf1 <\cf2 bean\cf0  \cf4 id\cf5 =\cf6\i "story3"\cf0\i0  \cf4 class\cf5 =\cf6\i "domain.Story"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "title"\cf0\i0  \cf4 value\cf5 =\cf6\i "Story 3"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "text"\cf0\i0  \cf4 value\cf5 =\cf6\i "text Story 3"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "attachments"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 value\cf1 >\cf5 attachments1 Story3\cf1 </\cf2 value\cf1 >\cf5  \cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 value\cf1 >\cf5 attachments2 Story3\cf1 </\cf2 value\cf1 >\cf5  \cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 value\cf1 >\cf5 attachments3 Story3\cf1 </\cf2 value\cf1 >\cf5  \cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf7 <!--  <property name="trip" \ul ref\ulnone ="trip3"/> -->\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "explorer"\cf0\i0  \cf4 ref\cf5 =\cf6\i "explorer3"\cf1\i0 />\cf0\par
+\cf5   \tab\cf1 </\cf2 bean\cf1 >\cf0\par
+\cf5   \tab\cf1 <\cf2 bean\cf0  \cf4 id\cf5 =\cf6\i "story4"\cf0\i0  \cf4 class\cf5 =\cf6\i "domain.Story"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "title"\cf0\i0  \cf4 value\cf5 =\cf6\i "Story 4"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "text"\cf0\i0  \cf4 value\cf5 =\cf6\i "text Story 4"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "attachments"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 value\cf1 >\cf5 attachments1 Story4\cf1 </\cf2 value\cf1 >\cf5  \cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 value\cf1 >\cf5 attachments2 Story4\cf1 </\cf2 value\cf1 >\cf5  \cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 value\cf1 >\cf5 attachments3 Story4\cf1 </\cf2 value\cf1 >\cf5  \cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf7 <!--  <property name="trip" \ul ref\ulnone ="trip4"/> -->\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "explorer"\cf0\i0  \cf4 ref\cf5 =\cf6\i "explorer4"\cf1\i0 />\cf0\par
+\cf5   \tab\cf1 </\cf2 bean\cf1 >\cf0\par
+\cf5   \tab\cf1 <\cf2 bean\cf0  \cf4 id\cf5 =\cf6\i "story5"\cf0\i0  \cf4 class\cf5 =\cf6\i "domain.Story"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "title"\cf0\i0  \cf4 value\cf5 =\cf6\i "Story 5"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "text"\cf0\i0  \cf4 value\cf5 =\cf6\i "text Story 5"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "attachments"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 value\cf1 >\cf5 attachments1 Story5\cf1 </\cf2 value\cf1 >\cf5  \cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 value\cf1 >\cf5 attachments2 Story5\cf1 </\cf2 value\cf1 >\cf5  \cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 value\cf1 >\cf5 attachments3 Story5\cf1 </\cf2 value\cf1 >\cf5  \cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf7 <!--  <property name="trip" \ul ref\ulnone ="trip5"/> -->\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "explorer"\cf0\i0  \cf4 ref\cf5 =\cf6\i "explorer5"\cf1\i0 />\cf0\par
+\cf5   \tab\cf1 </\cf2 bean\cf1 >\cf0\par
+\cf5   \tab\cf7 <!-- ApplicationFor -->\cf0\par
+\cf5   \tab\cf1 <\cf2 bean\cf0  \cf4 id\cf5 =\cf6\i "applicationFor1"\cf0\i0  \cf4 class\cf5 =\cf6\i "domain.ApplicationFor"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "moment"\cf0\i0  \cf4 value\cf5 =\cf6\i "10/21/2017 10:10"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "status"\cf0\i0  \cf4 value\cf5 =\cf6\i "PENDING"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "reasonWhy"\cf0\i0  \cf4 value\cf5 =\cf6\i ""\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "comments"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 value\cf1 >\cf5 comment1 ApplicaciontFor1\cf1 </\cf2 value\cf1 >\cf5  \cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 value\cf1 >\cf5 comment2 ApplicaciontFor1\cf1 </\cf2 value\cf1 >\cf5  \cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 value\cf1 >\cf5 comment3 ApplicaciontFor1\cf1 </\cf2 value\cf1 >\cf5  \cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf7 <!--  <property name="creditCard" \ul ref\ulnone ="creditCard1" />  -->\cf0\par
+\cf5\tab\tab\cf7 <!--  <property name="trip" \ul ref\ulnone ="trip1"/> -->\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "explorer"\cf0\i0  \cf4 ref\cf5 =\cf6\i "explorer1"\cf1\i0 />\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "manager"\cf0\i0  \cf4 ref\cf5 =\cf6\i "manager1"\cf1\i0 />\cf0\par
+\cf5   \tab\cf1 </\cf2 bean\cf1 >\cf0\par
+\cf5   \tab\cf1 <\cf2 bean\cf0  \cf4 id\cf5 =\cf6\i "applicationFor2"\cf0\i0  \cf4 class\cf5 =\cf6\i "domain.ApplicationFor"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "moment"\cf0\i0  \cf4 value\cf5 =\cf6\i "10/21/2017 00:10"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "status"\cf0\i0  \cf4 value\cf5 =\cf6\i "PENDING"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "reasonWhy"\cf0\i0  \cf4 value\cf5 =\cf6\i ""\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "comments"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 value\cf1 >\cf5 comment1 ApplicaciontFor2\cf1 </\cf2 value\cf1 >\cf5  \cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 value\cf1 >\cf5 comment2 ApplicaciontFor2\cf1 </\cf2 value\cf1 >\cf5  \cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 value\cf1 >\cf5 comment3 ApplicaciontFor2\cf1 </\cf2 value\cf1 >\cf5  \cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf7 <!--  <property name="creditCard" \ul ref\ulnone ="creditCard2" />  -->\cf0\par
+\cf5\tab\tab\cf7 <!--  <property name="trip" \ul ref\ulnone ="trip2"/> -->\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "explorer"\cf0\i0  \cf4 ref\cf5 =\cf6\i "explorer2"\cf1\i0 />\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "manager"\cf0\i0  \cf4 ref\cf5 =\cf6\i "manager2"\cf1\i0 />\cf0\par
+\cf5   \tab\cf1 </\cf2 bean\cf1 >\cf0\par
+\cf5   \tab\cf1 <\cf2 bean\cf0  \cf4 id\cf5 =\cf6\i "applicationFor3"\cf0\i0  \cf4 class\cf5 =\cf6\i "domain.ApplicationFor"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "moment"\cf0\i0  \cf4 value\cf5 =\cf6\i "10/21/2017 01:10"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "status"\cf0\i0  \cf4 value\cf5 =\cf6\i "PENDING"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "reasonWhy"\cf0\i0  \cf4 value\cf5 =\cf6\i ""\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "comments"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 value\cf1 >\cf5 comment1 ApplicaciontFor3\cf1 </\cf2 value\cf1 >\cf5  \cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 value\cf1 >\cf5 comment2 ApplicaciontFor3\cf1 </\cf2 value\cf1 >\cf5  \cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 value\cf1 >\cf5 comment3 ApplicaciontFor3\cf1 </\cf2 value\cf1 >\cf5  \cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf7 <!--  <property name="creditCard" \ul ref\ulnone ="creditCard3" />  -->\cf0\par
+\cf5\tab\tab\cf7 <!--  <property name="trip" \ul ref\ulnone ="trip3"/> -->\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "explorer"\cf0\i0  \cf4 ref\cf5 =\cf6\i "explorer3"\cf1\i0 />\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "manager"\cf0\i0  \cf4 ref\cf5 =\cf6\i "manager3"\cf1\i0 />\cf0\par
+\cf5   \tab\cf1 </\cf2 bean\cf1 >\cf0\par
+\cf5   \tab\cf1 <\cf2 bean\cf0  \cf4 id\cf5 =\cf6\i "applicationFor4"\cf0\i0  \cf4 class\cf5 =\cf6\i "domain.ApplicationFor"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "moment"\cf0\i0  \cf4 value\cf5 =\cf6\i "10/21/2017 02:10"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "status"\cf0\i0  \cf4 value\cf5 =\cf6\i "PENDING"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "reasonWhy"\cf0\i0  \cf4 value\cf5 =\cf6\i ""\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "comments"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 value\cf1 >\cf5 comment1 ApplicaciontFor4\cf1 </\cf2 value\cf1 >\cf5  \cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 value\cf1 >\cf5 comment2 ApplicaciontFor4\cf1 </\cf2 value\cf1 >\cf5  \cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 value\cf1 >\cf5 comment3 ApplicaciontFor4\cf1 </\cf2 value\cf1 >\cf5  \cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf7 <!--  <property name="creditCard" \ul ref\ulnone ="creditCard4" />  -->\cf0\par
+\cf5\tab\tab\cf7 <!--  <property name="trip" \ul ref\ulnone ="trip4"/> -->\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "explorer"\cf0\i0  \cf4 ref\cf5 =\cf6\i "explorer4"\cf1\i0 />\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "manager"\cf0\i0  \cf4 ref\cf5 =\cf6\i "manager4"\cf1\i0 />\cf0\par
+\cf5   \tab\cf1 </\cf2 bean\cf1 >\cf0\par
+\cf5   \tab\cf1 <\cf2 bean\cf0  \cf4 id\cf5 =\cf6\i "applicationFor5"\cf0\i0  \cf4 class\cf5 =\cf6\i "domain.ApplicationFor"\cf1\i0 >\cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "moment"\cf0\i0  \cf4 value\cf5 =\cf6\i "10/21/2017 03:10"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "status"\cf0\i0  \cf4 value\cf5 =\cf6\i "PENDING"\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5   \tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "reasonWhy"\cf0\i0  \cf4 value\cf5 =\cf6\i ""\cf0\i0  \cf1 />\cf5  \cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "comments"\cf1\i0 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 value\cf1 >\cf5 comment1 ApplicaciontFor5\cf1 </\cf2 value\cf1 >\cf5  \cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 value\cf1 >\cf5 comment2 ApplicaciontFor5\cf1 </\cf2 value\cf1 >\cf5  \cf0\par
+\cf5\tab\tab\tab\cf1 <\cf2 value\cf1 >\cf5 comment3 ApplicaciontFor5\cf1 </\cf2 value\cf1 >\cf5  \cf0\par
+\cf5\tab\tab\tab\cf1 </\cf2 list\cf1 >\cf0\par
+\cf5\tab\tab\cf1 </\cf2 property\cf1 >\cf0\par
+\cf5\tab\tab\cf7 <!--  <property name="creditCard" \ul ref\ulnone ="creditCard5" />  -->\cf0\par
+\cf5\tab\tab\cf7 <!--  <property name="trip" \ul ref\ulnone ="trip5"/> -->\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "explorer"\cf0\i0  \cf4 ref\cf5 =\cf6\i "explorer5"\cf1\i0 />\cf0\par
+\cf5\tab\tab\cf1 <\cf2 property\cf0  \cf4 name\cf5 =\cf6\i "manager"\cf0\i0  \cf4 ref\cf5 =\cf6\i "manager5"\cf1\i0 />\cf0\par
+\cf5   \tab\cf1 </\cf2 bean\cf1 >\cf0\f0\par
+}
+ 
