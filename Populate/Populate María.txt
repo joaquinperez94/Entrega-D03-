@@ -1,0 +1,276 @@
+	<!-- User accounts -->
+
+	<bean id="userAccountAdmin1" class="security.UserAccount">
+		<property name="username" value="administrator1" />
+		<property name="password" value="21232f297a57a5a743894a0e4a801fc3" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="ADMINISTRATOR" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccountAdmin2" class="security.UserAccount">
+		<property name="username" value="administrator2" />
+		<property name="password" value="21232f297a57a5a743894a0e4a801fc3" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="ADMINISTRATOR" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="userAccountManager1" class="security.UserAccount">
+		<property name="username" value="manager 1" />
+		<property name="password" value="1d0258c2440a8d19e716292b231e3190" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="MANAGER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="userAccountManager2" class="security.UserAccount">
+		<property name="username" value="manager 2" />
+		<property name="password" value="1d0258c2440a8d19e716292b231e3190" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="MANAGER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccountRanger1" class="security.UserAccount">
+		<property name="username" value="ranger 1" />
+		<property name="password" value="ad92694923612da0600d7be498cc2e08" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="RANGER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccountRanger2" class="security.UserAccount">
+		<property name="username" value="ranger 2" />
+		<property name="password" value="ad92694923612da0600d7be498cc2e08" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="RANGER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccountSponsor1" class="security.UserAccount">
+		<property name="username" value="sponsor 1" />
+		<property name="password" value="08391c959fc8bd0b672c596c4d6bcdcd" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="SPONSOR" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccountSponsor2" class="security.UserAccount">
+		<property name="username" value="sponsor 2" />
+		<property name="password" value="08391c959fc8bd0b672c596c4d6bcdcd" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="SPONSOR" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccountAuditor1" class="security.UserAccount">
+		<property name="username" value="auditor 1" />
+		<property name="password" value="f7d07071ed9431ecae3a8d45b4c82bb2" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="AUDITOR" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	
+	<bean id="userAccountAuditor2" class="security.UserAccount">
+		<property name="username" value="auditor 2" />
+		<property name="password" value="f7d07071ed9431ecae3a8d45b4c82bb2" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="AUDITOR" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	
+	<bean id="userAccount1Explorer1" class="security.UserAccount">
+		<property name="username" value="explorer 1" />
+		<property name="password" value="09e592c4a21a21b39f22aa7d7170f162" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="EXPLORER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccountExplorer2" class="security.UserAccount">
+		<property name="username" value="explorer 2" />
+		<property name="password" value="09e592c4a21a21b39f22aa7d7170f162" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="EXPLORER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<!-- Messages -->
+	
+	<bean id="message1" class="domain.Message">
+		<property name="moment" value="2017/10/01 15:20"/>
+		<property name="subject" value="subject 1"/>
+		<property name="body" value="body 1"/>
+		<property name="priority" value ="HIGH"/>
+		<property name="messageFolder" ref="messageFolder1"/>
+		<property name="sender" ref="administrator1"/>
+		<property name="recipient" ref="administrator2"/>
+	</bean>
+	
+	<bean id="message2" class="domain.Message">
+		<property name="moment" value="2017/10/01 15:25"/>
+		<property name="subject" value="subject 2"/>
+		<property name="body" value="body 2"/>
+		<property name="priority" value ="HIGH"/>
+		<property name="messageFolder" ref="messageFolder3"/>
+		<property name="sender" ref="auditor1"/>
+		<property name="recipient" ref="auditor2"/>
+	</bean>
+	
+
+	<!-- MessageFolder -->
+	
+	<bean id="messageFolder1" class="domain.MessageFolder">
+		<property name="name" value="folder 1"/>
+		<property name="modifiable" value="false"/>
+		<property name="messages">
+			<list>
+				<ref bean ="message1"/>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="messageFolder2" class="domain.MessageFolder">
+		<property name="name" value="folder 2"/>
+		<property name="modifiable" value="false"/>
+		<property name="messages">
+			<list>
+				<ref bean ="message1"/>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="messageFolder3" class="domain.MessageFolder">
+		<property name="name" value="folder 3"/>
+		<property name="modifiable" value="false"/>
+		<property name="messages">
+			<list>
+				<ref bean ="message2"/>
+			</list>
+		</property>
+	</bean>
+	<!-- SocialIdentity -->
+	<bean id="socialIdentity1" class="domain.SocialIdentity">
+		<property name="nick" value="nick1"/>
+		<property name="name" value="identity 1"/>
+		<property name="link" value="http://www.sample.com"/>
+		<property name="photo" value="http://www.sample.com"/>
+	</bean>
+	
+	<bean id="socialIdentity2" class="domain.SocialIdentity">
+		<property name="nick" value="nick2"/>
+		<property name="name" value="identity 2"/>
+		<property name="link" value="http://www.sample.com"/>
+		<property name="photo" value="http://www.sample.com"/>
+	</bean>
+	
+	<bean id="socialIdentity3" class="domain.SocialIdentity">
+		<property name="nick" value="nick3"/>
+		<property name="name" value="identity 3"/>
+		<property name="link" value="http://www.sample.com"/>
+		<property name="photo" value="http://www.sample.com"/>
+	</bean>
+	
+	<bean id="socialIdentity4" class="domain.SocialIdentity">
+		<property name="nick" value="nick4"/>
+		<property name="name" value="identity 4"/>
+		<property name="link" value="http://www.sample.com"/>
+		<property name="photo" value="http://www.sample.com"/>
+	</bean>
+	<!-- Administradores que me hace falta -->
+	
+	<bean id="administrator1" class="domain.Administrator">
+		<property name="name" value ="administrator 1"/>
+		<property name="surname" value="surname admin 1"/>
+		<property name="email" value="administrator1@gmail.com"/>
+		<property name="phone" value="+34 12345"/>
+		<property name="address" value="address admin 1"/>
+		<property name="activated" value="true"/>
+		<property name="messagesFolders">
+			<list>
+				<ref bean ="messageFolder2"/>
+			</list>
+		</property>
+		<property name="socialIdentities">
+			<list>
+				<ref bean ="socialIdentity1"/>
+			</list>
+		</property>
+		
+		<property name="userAccount" ref="userAccountAdmin1"/>
+		
+	</bean>
+	
+	<bean id="administrator2" class="domain.Administrator">
+		<property name="name" value ="administrator 2"/>
+		<property name="surname" value="surname admin 2"/>
+		<property name="email" value="administrator2@gmail.com"/>
+		<property name="phone" value="+55 888845"/>
+		<property name="address" value="address admin 2"/>
+		<property name="activated" value="true"/>
+		<property name="messagesFolders">
+			<list>
+				<ref bean ="messageFolder1"/>
+			</list>
+		</property>
+		
+		<property name="socialIdentities">
+			<list>
+				<ref bean ="socialIdentity2"/>
+			</list>
+		</property>
+		
+		<property name="userAccount" ref="userAccountAdmin2"/>
+	</bean>
+	
