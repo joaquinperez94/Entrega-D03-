@@ -48,6 +48,7 @@ public class Ranger extends Actor {
 
 	@NotNull
 	@OneToMany(mappedBy = "ranger")
+	@Valid
 	public Collection<Trip> getTrips() {
 		return this.trips;
 	}
