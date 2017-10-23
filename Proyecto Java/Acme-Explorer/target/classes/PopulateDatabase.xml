@@ -667,7 +667,7 @@
 		</property>
 		<property name="socialIdentities">
 			<list>
-				<ref bean ="socialIdentity1"/>
+				<ref bean ="socialIdentityAdmin1"/>
 			</list>
 		</property>
 		
@@ -690,7 +690,7 @@
 		
 		<property name="socialIdentities">
 			<list>
-				<ref bean ="socialIdentity2"/>
+				<ref bean ="socialIdentityAdmin2"/>
 			</list>
 		</property>
 		
