@@ -1,0 +1,118 @@
+	<!-- Category-->
+
+<!--
+Categorias Padres:	Hijas:
+	Category1	Category11,Category33,Category44
+	Category2	Category11,Category33
+	Category3	Category11,Category22,Category33,Category44,Category55
+	Category4	Category11
+	Category5	Category11,Category55
+-->
+
+
+
+<!--Categoria Hija 11 -->
+<bean id="Category11" class="domain.Category">
+		<property name="name"  value="category 11"/>
+		<property name="subCategories">
+			<list>
+			</list>	
+		</property>		
+</bean>
+
+<!--Categoria Hija 22 -->
+<bean id="Category22" class="domain.Category">
+		<property name="name"  value="category 22"/>
+		<property name="subCategories">
+			<list>
+			</list>
+		</property>				
+</bean>
+
+<!--Categoria Hija 33 -->
+<bean id="Category33" class="domain.Category">
+		<property name="name"  value="category 33"/>
+		<property name="subCategories">
+			<list>
+			</list>
+		</property>			
+</bean>
+
+<!--Categoria Hija 44 -->
+<bean id="Category44" class="domain.Category">
+		<property name="name"  value="category 44"/>
+		<property name="subCategories">
+			<list>
+			</list>
+		</property>			
+</bean>
+
+<!--Categoria Hija 55 -->
+<bean id="Category55" class="domain.Category">
+		<property name="name"  value="category 55"/>
+		<property name="subCategories">
+			<list>
+			</list>
+		</property>			
+</bean>
+
+
+<!--Categoria Padre 1 -->
+	<bean id="Category1" class="domain.Category">
+		<property name="name"  value="category 1"/>
+		<property name="subCategories">
+			<list>
+				<ref bean="Category11"/>
+				<ref bean="Category33"/>
+				<ref bean="Category44"/>
+			</list>
+		</property>				
+	</bean>
+
+<!--Categoria Padre 2 -->
+	<bean id="Category2" class="domain.Category">
+		<property name="name"  value="category 2"/>
+		<property name="subCategories">
+			<list>
+				<ref bean="Category11"/>
+				<ref bean="Category33"/>
+			</list>
+		</property>			
+	</bean>
+
+<!--Categoria Padre 3 -->
+	<bean id="Category3" class="domain.Category">
+		<property name="name"  value="category 3"/>
+		<property name="subCategories">
+			<list>
+				<ref bean="Category11"/>
+				<ref bean="Category22"/>
+				<ref bean="Category33"/>
+				<ref bean="Category44"/>
+				<ref bean="Category55"/>
+			</list>
+		</property>			
+	</bean>
+
+<!--Categoria Padre 4 -->
+	<bean id="Category4" class="domain.Category">
+		<property name="name"  value="category 4"/>
+		<property name="subCategories">
+			<list>
+				<ref bean="Category11"/>
+			</list>
+		</property>			
+	</bean>
+
+<!--Categoria Padre 5 -->
+	<bean id="Category5" class="domain.Category">
+		<property name="name"  value="category 5"/>
+		<property name="subCategories">
+			<list>
+				<ref bean="Category11"/>
+				<ref bean="Category55"/>
+			</list>	
+		</property>			
+	</bean>
+
+

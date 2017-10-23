@@ -16,7 +16,7 @@
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 	">
 	
-	<!-- User accounts -->
+		<!-- User accounts -->
 
 <bean id="userAccountAdmin1" class="security.UserAccount">
 		<property name="username" value="administrator1" />
@@ -32,6 +32,42 @@
 	
 	<bean id="userAccountAdmin2" class="security.UserAccount">
 		<property name="username" value="administrator2" />
+		<property name="password" value="21232f297a57a5a743894a0e4a801fc3" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="ADMINISTRATOR" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccountAdmin3" class="security.UserAccount">
+		<property name="username" value="administrator3" />
+		<property name="password" value="21232f297a57a5a743894a0e4a801fc3" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="ADMINISTRATOR" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccountAdmin4" class="security.UserAccount">
+		<property name="username" value="administrator4" />
+		<property name="password" value="21232f297a57a5a743894a0e4a801fc3" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="ADMINISTRATOR" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccountAdmin5" class="security.UserAccount">
+		<property name="username" value="administrator5" />
 		<property name="password" value="21232f297a57a5a743894a0e4a801fc3" />
 		<property name="authorities">
 			<list>
@@ -66,6 +102,42 @@
 		</property>
 	</bean>
 	
+	<bean id="userAccountManager3" class="security.UserAccount">
+		<property name="username" value="manager 3" />
+		<property name="password" value="1d0258c2440a8d19e716292b231e3190" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="MANAGER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccountManager4" class="security.UserAccount">
+		<property name="username" value="manager 4" />
+		<property name="password" value="1d0258c2440a8d19e716292b231e3190" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="MANAGER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccountManager5" class="security.UserAccount">
+		<property name="username" value="manager 5" />
+		<property name="password" value="1d0258c2440a8d19e716292b231e3190" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="MANAGER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
 	<bean id="userAccountRanger1" class="security.UserAccount">
 		<property name="username" value="ranger 1" />
 		<property name="password" value="ad92694923612da0600d7be498cc2e08" />
@@ -80,6 +152,42 @@
 	
 	<bean id="userAccountRanger2" class="security.UserAccount">
 		<property name="username" value="ranger 2" />
+		<property name="password" value="ad92694923612da0600d7be498cc2e08" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="RANGER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccountRanger3" class="security.UserAccount">
+		<property name="username" value="ranger 3" />
+		<property name="password" value="ad92694923612da0600d7be498cc2e08" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="RANGER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccountRanger4" class="security.UserAccount">
+		<property name="username" value="ranger 4" />
+		<property name="password" value="ad92694923612da0600d7be498cc2e08" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="RANGER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccountRanger5" class="security.UserAccount">
+		<property name="username" value="ranger 5" />
 		<property name="password" value="ad92694923612da0600d7be498cc2e08" />
 		<property name="authorities">
 			<list>
@@ -114,6 +222,45 @@
 		</property>
 	</bean>
 	
+	<bean id="userAccountSponsor3" class="security.UserAccount">
+		<property name="username" value="sponsor 3" />
+		<property name="password" value="08391c959fc8bd0b672c596c4d6bcdcd" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="SPONSOR" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccountSponsor4" class="security.UserAccount">
+		<property name="username" value="sponsor 4" />
+		<property name="password" value="08391c959fc8bd0b672c596c4d6bcdcd" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="SPONSOR" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccountSponsor5" class="security.UserAccount">
+		<property name="username" value="sponsor 5" />
+		<property name="password" value="08391c959fc8bd0b672c596c4d6bcdcd" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="SPONSOR" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	
+	
+	
 	<bean id="userAccountAuditor1" class="security.UserAccount">
 		<property name="username" value="auditor 1" />
 		<property name="password" value="f7d07071ed9431ecae3a8d45b4c82bb2" />
@@ -129,6 +276,42 @@
 	
 	<bean id="userAccountAuditor2" class="security.UserAccount">
 		<property name="username" value="auditor 2" />
+		<property name="password" value="f7d07071ed9431ecae3a8d45b4c82bb2" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="AUDITOR" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccountAuditor3" class="security.UserAccount">
+		<property name="username" value="auditor 3" />
+		<property name="password" value="f7d07071ed9431ecae3a8d45b4c82bb2" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="AUDITOR" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccountAuditor4" class="security.UserAccount">
+		<property name="username" value="auditor 4" />
+		<property name="password" value="f7d07071ed9431ecae3a8d45b4c82bb2" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="AUDITOR" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccountAuditor5" class="security.UserAccount">
+		<property name="username" value="auditor 5" />
 		<property name="password" value="f7d07071ed9431ecae3a8d45b4c82bb2" />
 		<property name="authorities">
 			<list>
@@ -164,6 +347,41 @@
 		</property>
 	</bean>
 	
+	<bean id="userAccountExplorer3" class="security.UserAccount">
+		<property name="username" value="explorer 3" />
+		<property name="password" value="09e592c4a21a21b39f22aa7d7170f162" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="EXPLORER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccountExplorer4" class="security.UserAccount">
+		<property name="username" value="explorer 4" />
+		<property name="password" value="09e592c4a21a21b39f22aa7d7170f162" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="EXPLORER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="userAccountExplorer5" class="security.UserAccount">
+		<property name="username" value="explorer 5" />
+		<property name="password" value="09e592c4a21a21b39f22aa7d7170f162" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="EXPLORER" />
+				</bean>
+			</list>
+		</property>
+	</bean>	
 	<!-- Messages -->
 	
 	<bean id="message1" class="domain.Message">
@@ -429,7 +647,361 @@
 		</property>
 	</bean>
 	
+<!-- GPS -->
+	<bean id="gps1" class="domain.GPS">
+		<property name="longitude" value="-5.98"/>
+		<property name="latitude" value="37.35"/>
+		<property name="name" value="Reina mercedes"/>
+	</bean>
+	<bean id="gps2" class="domain.GPS">
+		<property name="longitude" value="-5.49"/>
+		<property name="latitude" value="37.28"/>
+		<property name="name" value="Paradas"/>
+	</bean>
+	<bean id="gps3" class="domain.GPS">
+		<property name="longitude" value="5.5"/>
+		<property name="latitude" value="40.60"/>
+		<property name="name" value="Mar balear"/>
+	</bean>
+	<bean id="gps4" class="domain.GPS">
+		<property name="longitude" value="2.09"/>
+		<property name="latitude" value="41.34"/>
+		<property name="name" value="Barcelona"/>
+	</bean>
+	<bean id="gps5" class="domain.GPS">
+		<property name="longitude" value="7.08"/>
+		<property name="latitude" value="43.65"/>
+		<property name="name" value="Monaco"/>
+	</bean>
+
+<!-- CreditCard -->
 	
+	<bean id="creditCard1" class="domain.CreditCard">
+		<property name="holderName" value="Jose Angel Dominguez Espinaco"/>
+		<property name="brandName" value="La caixa"/>
+		<property name="number" value="1234123412341234"/>
+		<property name="expirationMonth" value="3"/>
+		<property name="expirationYear" value="20"/>
+		<property name="cvv" value="102"/>
+	</bean>
+	<bean id="creditCard2" class="domain.CreditCard">
+		<property name="holderName" value="Daniel Lozano"/>
+		<property name="brandName" value="Santander"/>
+		<property name="number" value="4440551927414885"/>
+		<property name="expirationMonth" value="5"/>
+		<property name="expirationYear" value="21"/>
+		<property name="cvv" value="103"/>
+	</bean>
+	<bean id="creditCard3" class="domain.CreditCard">
+		<property name="holderName" value="Maria Ruiz"/>
+		<property name="brandName" value="Santander"/>
+		<property name="number" value="4130551927414886"/>
+		<property name="expirationMonth" value="6"/>
+		<property name="expirationYear" value="17"/>
+		<property name="cvv" value="655"/>
+	</bean>
+	<bean id="creditCard4" class="domain.CreditCard">
+		<property name="holderName" value="Laura vera"/>
+		<property name="brandName" value="Bankia"/>
+		<property name="number" value="4577575799220880"/>
+		<property name="expirationMonth" value="4"/>
+		<property name="expirationYear" value="16"/>
+		<property name="cvv" value="876"/>
+	</bean>
+	<bean id="creditCard5" class="domain.CreditCard">
+		<property name="holderName" value="Joaquin rodriguez"/>
+		<property name="brandName" value="La caixa"/>
+		<property name="number" value="4130551927414885"/>
+		<property name="expirationMonth" value="5"/>
+		<property name="expirationYear" value="18"/>
+		<property name="cvv" value="724"/>
+	</bean>
+
+	<!-- Auditor -->
+	
+
+	<bean id="auditor1" class="domain.Auditor">
+		<property name="userAccount" ref="userAccountAuditor1"/>
+		<property name="name" value="auditor 1"/>
+		<property name="surname" value="auditor1 auditor1"/>
+		<property name="email" value="auditor1@acmeexplorer.com"/>
+		<property name="phone" value="+34 617557203"/>
+		<property name="address" value="C/ avenida del auditor"/>
+		<property name="activated" value="True"/>
+		<property name="socialIdentities">
+			<list>
+			</list>
+		</property>
+		<property name="messagesFolders">
+			<list>
+			</list>
+		</property>
+		<property name="auditRecords">
+			<list>
+				<ref bean="auditrecord1"/>
+				<ref bean="auditrecord2"/>
+				<ref bean="auditrecord3"/>
+			</list>
+		</property>
+		<property name="notes">
+			<list>
+				<ref bean="note1"/>
+				<ref bean="note2"/>
+			</list>
+		</property>
+	</bean>
+	<bean id="auditor2" class="domain.Auditor">
+		<property name="userAccount" ref="userAccountAuditor2"/>
+		<property name="name" value="auditor 2"/>
+		<property name="surname" value="auditor2 auditor2"/>
+		<property name="email" value="auditor2@acmeexplorer.com"/>
+		<property name="phone" value="+34 617557243"/>
+		<property name="address" value="C/ avenida del auditor"/>
+		<property name="activated" value="True"/>
+		<property name="socialIdentities">
+			<list>
+			</list>
+		</property>
+		<property name="messagesFolders">
+			<list>
+			</list>
+		</property>
+		<property name="auditRecords">
+			<list>
+				<ref bean="auditrecord4"/>
+			</list>
+		</property>
+		<property name="notes">
+			<list>
+				<ref bean="note3"/>
+				<ref bean="note4"/>
+			</list>
+		</property>
+	</bean>
+	<bean id="auditor3" class="domain.Auditor">
+		<property name="userAccount" ref="userAccountAuditor3"/>
+		<property name="name" value="auditor 3"/>
+		<property name="surname" value="auditor3 auditor3"/>
+		<property name="email" value="auditor3@acmeexplorer.com"/>
+		<property name="phone" value="+34 617357243"/>
+		<property name="address" value="C/ avenida del auditor"/>
+		<property name="activated" value="False"/>
+		<property name="socialIdentities">
+			<list>
+			</list>
+		</property>
+		<property name="messagesFolders">
+			<list>
+			</list>
+		</property>
+		<property name="auditRecords">
+			<list>
+				<ref bean="auditrecord5"/>
+			</list>
+		</property>
+		<property name="notes">
+			<list>
+				<ref bean="note5"/>
+			</list>
+		</property>
+	</bean>
+	<bean id="auditor4" class="domain.Auditor">
+		<property name="userAccount" ref="userAccountAuditor4"/>
+		<property name="name" value="auditor 4"/>
+		<property name="surname" value="auditor4 audito45"/>
+		<property name="email" value="auditor4@acmeexplorer.com"/>
+		<property name="phone" value="+34 677557243"/>
+		<property name="address" value="C/ avenida del auditor"/>
+		<property name="activated" value="True"/>
+		<property name="socialIdentities">
+			<list>
+			</list>
+		</property>
+		<property name="messagesFolders">
+			<list>
+			</list>
+		</property>
+		<property name="auditRecords">
+			<list>
+			</list>
+		</property>
+		<property name="notes">
+			<list>
+			</list>
+		</property>
+	</bean>
+	<bean id="auditor5" class="domain.Auditor">
+		<property name="userAccount" ref="userAccountAuditor5"/>
+		<property name="name" value="auditor 5"/>
+		<property name="surname" value="auditor5 auditor5"/>
+		<property name="email" value="auditor5@acmeexplorer.com"/>
+		<property name="phone" value="+34 617557243"/>
+		<property name="address" value="C/ avenida del auditor"/>
+		<property name="activated" value="True"/>
+		<property name="socialIdentities">
+			<list>
+			</list>
+		</property>
+		<property name="messagesFolders">
+			<list>
+			</list>
+		</property>
+		<property name="auditRecords">
+			<list>
+			</list>
+		</property>
+		<property name="notes">
+			<list>
+			</list>
+		</property>
+	</bean>
+	<!-- Notes-->
+	
+	<bean id="note1" class="domain.Note">
+		<property name="createdMoment" value="2017/10/01 15:25"/>
+		<property name="remark" value="3"/>
+		<property name="auditor" ref="auditor1"/>
+		<property name="trip" ref="trip 1"/>
+		
+	</bean>
+	
+	<bean id="note2" class="domain.Note">
+		<property name="createdMoment" value="2017/10/01 15:25"/>
+		<property name="remark" value="3"/>
+		<property name="auditor" ref="auditor1"/>
+		<property name="trip" ref="trip 3"/>
+		
+	</bean>
+	
+	<bean id="note3" class="domain.Note">
+		<property name="createdMoment" value="2017/10/01 15:25"/>
+		<property name="remark" value="3"/>
+		<property name="auditor" ref="auditor2"/>
+		<property name="trip" ref="trip 2"/>
+		
+	</bean>
+		<bean id="note4" class="domain.Note">
+		<property name="createdMoment" value="2017/10/01 15:25"/>
+		<property name="remark" value="3"/>
+		<property name="auditor" ref="auditor2"/>
+		<property name="trip" ref="trip 1"/>
+		
+	</bean>
+	
+	<bean id="note5" class="domain.Note">
+		<property name="createdMoment" value="2017/10/01 15:25"/>
+		<property name="remark" value="2"/>
+		<property name="auditor" ref="auditor3"/>
+		<property name="trip" ref="trip 2"/>
+		
+	</bean>
+	
+<!-- AuditRecord -->
+	<bean id="auditrecord1" class="domain.AuditRecord">
+		<property name="realisedMoment" value="2017/10/01 15:25"/>
+		<property name="title" value="auditrecord1"/>
+		<property name="description" value="attachments auditrecord 1"/>
+		<property name="attachments">
+			<list>
+				<value>prueba auditrecord1 de attachemen 1</value>
+				<value>prueba auditrecord1 de attachemen 2</value>
+			</list>
+		</property>
+		<property name="draftMode" value="true"/>
+		<property name="auditor" ref="auditor1"/>
+		<property name="trip" ref="trip 1"/>
+	</bean>
+	
+		<bean id="auditrecord2" class="domain.AuditRecord">
+		<property name="realisedMoment" value="2017/10/01 15:25"/>
+		<property name="title" value="auditrecord2"/>
+		<property name="description" value="attachments auditrecord 2"/>
+		<property name="attachments">
+			<list>
+				<value>prueba auditrecord2 de attachemen 1</value>
+				<value>prueba auditrecord2 de attachemen 2</value>
+			</list>
+		</property>
+		<property name="draftMode" value="true"/>
+		<property name="auditor" ref="auditor1"/>
+		<property name="trip" ref="trip 1"/>
+	</bean>
+		<bean id="auditrecord3" class="domain.AuditRecord">
+		<property name="realisedMoment" value="2017/10/01 15:25"/>
+		<property name="title" value="auditrecord3"/>
+		<property name="description" value="attachments auditrecord 3"/>
+		<property name="attachments">
+			<list>
+				<value>prueba auditrecord 3 de attachemen 1</value>
+				<value>prueba auditrecord 3 de attachemen 2</value>
+			</list>
+		</property>
+		<property name="draftMode" value="true"/>
+		<property name="auditor" ref="auditor1"/>
+		<property name="trip" ref="trip 2"/>
+	</bean>
+		<bean id="auditrecord4" class="domain.AuditRecord">
+		<property name="realisedMoment" value="2017/10/01 15:25"/>
+		<property name="title" value="auditrecord4"/>
+		<property name="description" value="attachments auditrecord 4"/>
+		<property name="attachments">
+			<list>
+				<value>prueba auditrecord 4 de attachemen 1</value>
+				<value>prueba auditrecord 4 de attachemen 2</value>
+			</list>
+		</property>
+		<property name="draftMode" value="true"/>
+		<property name="auditor" ref="auditor2"/>
+		<property name="trip" ref="trip 2"/>
+	</bean>
+		<bean id="auditrecord5" class="domain.AuditRecord">
+		<property name="realisedMoment" value="2017/10/01 15:25"/>
+		<property name="title" value="auditrecord5"/>
+		<property name="description" value="attachments auditrecord 5"/>
+		<property name="attachments">
+			<list>
+				<value>prueba auditrecord 5 de attachemen 1</value>
+				<value>prueba auditrecord 5 de attachemen 2</value>
+			</list>
+		</property>
+		<property name="draftMode" value="true"/>
+		<property name="auditor" ref="auditor3"/>
+		<property name="trip" ref="trip 3"/>
+	</bean>
+	
+	
+	
+<!-- ContactEmergency -->
+	<bean id="contactEmergency1" class="domain.ContactEmergency">
+	  <property name="name" value="contact 1"/>
+	  <property name="email" value="contact1@gmail.com"/>
+	  <property name="phone" value="+55 888846"/>
+ 	</bean>
+ 
+ 	<bean id="contactEmergency2" class="domain.ContactEmergency">
+	  <property name="name" value="contact 2"/>
+	  <property name="email" value="contact2@gmail.com"/>
+	  <property name="phone" value="+34 888846"/>
+ 	</bean>
+ 
+ 	<bean id="contactEmergency3" class="domain.ContactEmergency">
+	  <property name="name" value="contact 3"/>
+	  <property name="email" value="contact3@gmail.com"/>
+	  <property name="phone" value="+36 855846"/>
+ 	</bean>
+ 
+ 	<bean id="contactEmergency4" class="domain.ContactEmergency">
+	  <property name="name" value="contact 4"/>
+	  <property name="email" value="contact4@gmail.com"/>
+	  <property name="phone" value="+36 8857446"/>
+ 	</bean>
+ 
+ 	<bean id="contactEmergency5" class="domain.ContactEmergency">
+	  <property name="name" value="contact 5"/>
+	  <property name="email" value="contact5@gmail.com"/>
+	  <property name="phone" value="+88 6657446"/>
+ 	</bean>
+		
 	
 	
 	
