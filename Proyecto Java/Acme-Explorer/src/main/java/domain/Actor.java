@@ -36,7 +36,7 @@ public abstract class Actor extends DomainEntity {
 		return this.name;
 	}
 
-	public void setName(String name) {
+	public void setName(final String name) {
 		this.name = name;
 	}
 
@@ -46,7 +46,7 @@ public abstract class Actor extends DomainEntity {
 		return this.surname;
 	}
 
-	public void setSurname(String surname) {
+	public void setSurname(final String surname) {
 		this.surname = surname;
 	}
 
@@ -56,7 +56,7 @@ public abstract class Actor extends DomainEntity {
 		return this.email;
 	}
 
-	public void setEmail(String email) {
+	public void setEmail(final String email) {
 		this.email = email;
 	}
 
@@ -65,7 +65,7 @@ public abstract class Actor extends DomainEntity {
 		return this.phone;
 	}
 
-	public void setPhone(String phone) {
+	public void setPhone(final String phone) {
 		this.phone = phone;
 	}
 
@@ -73,7 +73,7 @@ public abstract class Actor extends DomainEntity {
 		return this.address;
 	}
 
-	public void setAddress(String address) {
+	public void setAddress(final String address) {
 		this.address = address;
 	}
 
@@ -81,7 +81,7 @@ public abstract class Actor extends DomainEntity {
 		return this.activated;
 	}
 
-	public void setActivated(boolean activated) {
+	public void setActivated(final boolean activated) {
 		this.activated = activated;
 	}
 
@@ -89,7 +89,7 @@ public abstract class Actor extends DomainEntity {
 	// Relationships ----------------------------------------------------------
 
 	private Collection<MessageFolder>	messagesFolders;
-	private Collection<SocialIdentity>	socialsIdentities;
+	private Collection<SocialIdentity>	socialIdentities;
 	private UserAccount					userAccount;
 
 
@@ -99,18 +99,18 @@ public abstract class Actor extends DomainEntity {
 		return this.messagesFolders;
 	}
 
-	public void setMessagesFolders(Collection<MessageFolder> messagesFolders) {
+	public void setMessagesFolders(final Collection<MessageFolder> messagesFolders) {
 		this.messagesFolders = messagesFolders;
 	}
 
 	@OneToMany
 	@NotNull
-	public Collection<SocialIdentity> getSocialsIdentities() {
-		return this.socialsIdentities;
+	public Collection<SocialIdentity> getSocialIdentities() {
+		return this.socialIdentities;
 	}
 
-	public void setSocialsIdentities(Collection<SocialIdentity> socialsIdentities) {
-		this.socialsIdentities = socialsIdentities;
+	public void setSocialsIdentities(final Collection<SocialIdentity> socialIdentities) {
+		this.socialIdentities = socialIdentities;
 	}
 
 	@NotNull
@@ -119,7 +119,7 @@ public abstract class Actor extends DomainEntity {
 		return this.userAccount;
 	}
 
-	public void setUserAccount(UserAccount userAccount) {
+	public void setUserAccount(final UserAccount userAccount) {
 		this.userAccount = userAccount;
 	}
 }
