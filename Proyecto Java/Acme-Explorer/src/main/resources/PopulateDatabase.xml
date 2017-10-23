@@ -1117,6 +1117,49 @@
 		
 	
 	
+	<!-- LegalText -->
+<!--COMPROBADO-->
+<bean id="legalText1" class="domain.LegalText">
+		<property name="title"  value="title 1"/>
+		<property name="body" value="body 1"/>
+		<property name="lawsNumber" value="1"></property>
+		<property name="moment" value="29/10/2017 23:59"></property>
+		<property name="draftMode" value="true"></property>
+</bean>
+
+<bean id="legalText2" class="domain.LegalText">
+		<property name="title"  value="title 2"/>
+		<property name="body" value="body 2"/>
+		<property name="lawsNumber" value="1"></property>
+		<property name="moment" value="2/11/2017 23:59"></property>
+		<property name="draftMode" value="true"></property>
+</bean>
+	
+	
+<bean id="legalText3" class="domain.LegalText">
+		<property name="title"  value="title 3"/>
+		<property name="body" value="body 3"/>
+		<property name="lawsNumber" value="1"></property>
+		<property name="moment" value="12/11/2017 23:59"></property>
+		<property name="draftMode" value="true"></property>
+</bean>
+	
+	
+<bean id="legalTex4" class="domain.LegalText">
+		<property name="title"  value="title 4"/>
+		<property name="body" value="body 4"/>
+		<property name="lawsNumber" value="4"></property>
+		<property name="moment" value="23/11/2017 23:59"></property>
+		<property name="draftMode" value="true"></property>
+</bean>
+
+<bean id="legalText5" class="domain.LegalText">
+		<property name="title"  value="title 5"/>
+		<property name="body" value="body 5"/>
+		<property name="lawsNumber" value="1"></property>
+		<property name="moment" value="23/12/2017 23:59"></property>
+		<property name="draftMode" value="true"></property>
+</bean>
 	
 	
 	
