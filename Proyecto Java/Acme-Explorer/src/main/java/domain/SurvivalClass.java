@@ -27,7 +27,6 @@ public class SurvivalClass extends DomainEntity {
 	private GPS		location;
 
 
-	@NotNull
 	@NotBlank
 	public String getTitle() {
 		return this.title;
@@ -37,7 +36,6 @@ public class SurvivalClass extends DomainEntity {
 		this.title = title;
 	}
 
-	@NotNull
 	@NotBlank
 	public String getDescription() {
 		return this.description;
@@ -75,6 +73,7 @@ public class SurvivalClass extends DomainEntity {
 	private Collection<Explorer>	explorers;
 
 
+	@Valid
 	@ManyToMany
 	public Collection<Explorer> getExplorers() {
 		return this.explorers;

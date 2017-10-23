@@ -57,6 +57,149 @@
 		</property>
 	</bean>
 	
+	
+	
+	<!-- TAGs -->
+	
+	<bean id="tag1" class="domain.Tag">
+		<property name="name"  value="name 1"/>
+	</bean>
+	
+	<bean id="tag2" class="domain.Tag">
+		<property name="name"  value="name 2"/>
+	</bean>
+	
+	<bean id="tag3" class="domain.Tag">
+		<property name="name"  value="name 3"/>
+	</bean>
+	
+	<bean id="tag4" class="domain.Tag">
+		<property name="name"  value="name 4"/>
+	</bean>
+	
+	<bean id="tag5" class="domain.Tag">
+		<property name="name"  value="name 5"/>
+	</bean>
+	
+	<!-- STAGEs -->
+	
+	<bean id="stage1" class="domain.Stage">
+		<property name="title"  value="title 1"/>
+		<property name="description" value="description 1"/>
+		<property name="price" value="1.0"></property>
+		<property name="number" value="1"></property>
+		<property name="iva" value="1.0"></property>
+		<property name="trip" ref="trip1"></property>
+	</bean>
+	
+	<bean id="stage2" class="domain.Stage">
+		<property name="title"  value="title 2"/>
+		<property name="description" value="description 2"/>
+		<property name="price" value="2.0"></property>
+		<property name="number" value="2"></property>
+		<property name="iva" value="2.0"></property>
+		<property name="trip" ref="trip1"></property>
+	</bean>
+	
+	<bean id="stage3" class="domain.Stage">
+		<property name="title"  value="title 3"/>
+		<property name="description" value="description 3"/>
+		<property name="price" value="3.0"></property>
+		<property name="number" value="3"></property>
+		<property name="iva" value="3.0"></property>
+		<property name="trip" ref="trip1"></property>
+	</bean>
+	
+	<bean id="stage4" class="domain.Stage">
+		<property name="title"  value="title 4"/>
+		<property name="description" value="description 4"/>
+		<property name="price" value="4.0"></property>
+		<property name="number" value="4"></property>
+		<property name="iva" value="4.0"></property>
+		<property name="trip" ref="trip2"></property>
+	</bean>
+	
+	<bean id="stage5" class="domain.Stage">
+		<property name="title"  value="title 5"/>
+		<property name="description" value="description 5"/>
+		<property name="price" value="5.0"></property>
+		<property name="number" value="5"></property>
+		<property name="iva" value="5.0"></property>
+		<property name="trip" ref="trip2"></property>
+	</bean>
+	
+	<bean id="trip 1" class="domain.Trip">
+		<property name="ticker" value="170112-WWWW"></property>
+		<property name="title" value="title 1"></property>
+		<property name="description" value="description 1"></property>
+		<property name="price" value="12.3"></property>
+		<property name="requirementsExplorers">
+			<list>
+			<value>requirementsExplorers 1</value>
+			<value>requirementsExplorers 2</value>
+			</list>
+		</property>
+		<property name="publicationDate" value="02/02/2017 22:45"></property>
+		<property name="startDate" value="03/02/2017 22:00"></property>
+		<property name="finishDate" value="04/02/2017 22:00"></property>
+		<property name="reasonWhy" value="reasonWhy 1"></property>
+		
+		<property name="ranger" ref=""></property>
+		<property name="manager" ref=""></property>
+		<property name="classes">
+			<list>
+			
+			</list>
+		</property>
+		<property name="stories">
+			<list>
+			
+			</list>
+		</property>
+		<property name="applicationsFor">
+			<list>
+			
+			</list>
+		</property>
+		<property name="auditRecords">
+			<list>
+			
+			</list>
+		</property>
+		<property name="notes">
+			<list>
+			
+			</list>
+		</property>
+		<property name="categories">
+			<list>
+			
+			</list>
+		</property>
+		<property name="sponsorships">
+			<list>
+			
+			</list>
+		</property>
+		<property name="stages">
+			<list>
+			
+			</list>
+		</property>
+		<property name="legalText" ref=""></property>
+		<property name="tags">
+			<list>
+			
+			</list>
+		</property>
+	</bean>
+	
+	
+	
+	
+	
+	
+	
 	<!-- Other domain beans come here -->	
 	
 </beans>
