@@ -27,7 +27,6 @@ public class EducationRecord extends DomainEntity {
 
 
 	@NotBlank
-	@NotNull
 	public String getDiplomaTitle() {
 		return this.diplomaTitle;
 	}
@@ -45,8 +44,8 @@ public class EducationRecord extends DomainEntity {
 	public void setStudyingPeriod(String studyingPeriod) {
 		this.studyingPeriod = studyingPeriod;
 	}
+
 	@NotBlank
-	@NotNull
 	public String getInstitution() {
 		return this.institution;
 	}
@@ -65,6 +64,7 @@ public class EducationRecord extends DomainEntity {
 	}
 
 	@ElementCollection
+	@NotNull
 	public Collection<String> getComments() {
 		return this.comments;
 	}

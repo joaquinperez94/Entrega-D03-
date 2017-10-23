@@ -25,7 +25,6 @@ public class PersonalRecord extends DomainEntity {
 
 
 	@NotBlank
-	@NotNull
 	public String getFullName() {
 		return this.fullName;
 	}

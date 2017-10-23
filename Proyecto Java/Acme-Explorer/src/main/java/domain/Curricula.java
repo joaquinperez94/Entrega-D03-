@@ -44,7 +44,6 @@ public class Curricula extends DomainEntity {
 
 
 	@OneToOne(optional = false)
-	@NotNull
 	@Valid
 	public PersonalRecord getPersonalRecord() {
 		return this.personalRecord;
@@ -53,6 +52,8 @@ public class Curricula extends DomainEntity {
 	public void setPersonalRecord(final PersonalRecord personalRecord) {
 		this.personalRecord = personalRecord;
 	}
+
+	@Valid
 	@NotNull
 	@OneToMany
 	public Collection<EducationRecord> getEducationRecords() {
@@ -62,6 +63,8 @@ public class Curricula extends DomainEntity {
 	public void setEducationRecords(final Collection<EducationRecord> educationRecords) {
 		this.educationRecords = educationRecords;
 	}
+
+	@Valid
 	@NotNull
 	@OneToMany
 	public Collection<ProfessionalRecord> getProfesionalRecords() {
@@ -71,6 +74,8 @@ public class Curricula extends DomainEntity {
 	public void setProfesionalRecords(final Collection<ProfessionalRecord> profesionalRecords) {
 		this.profesionalRecords = profesionalRecords;
 	}
+
+	@Valid
 	@NotNull
 	@OneToMany
 	public Collection<EndorserRecord> getEndorseRecords() {
@@ -80,6 +85,8 @@ public class Curricula extends DomainEntity {
 	public void setEndorseRecords(final Collection<EndorserRecord> endorseRecords) {
 		this.endorseRecords = endorseRecords;
 	}
+
+	@Valid
 	@NotNull
 	@OneToMany
 	public Collection<MiscellaneousRecord> getMiscellaneousRecords() {
