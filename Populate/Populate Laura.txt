@@ -1,0 +1,446 @@
+	<!-- CURRICULA -->
+	
+	<bean id="curricula1" class="domain.Curricula">
+		<property name="ticker" value="171023-ABCD" />
+		<property name="personalRecord" ref = "personalRecord1"/>
+		
+  		<property name="educationRecords">
+  			<list>
+  				<ref bean="educationRecord1"/>
+  				
+  			</list>
+  		</property>
+  		<property name="professionalRecords">
+  			<list>
+  				<ref bean="professionalRecord1"/>
+  			</list>
+  		</property>
+  		<property name="endorserRecords">
+  			<list>
+  				<ref bean="endorserRecord1"/>
+  			</list>
+  		</property>
+  		<property name="miscellaneousRecords">
+  			<list>
+  				<ref bean = "miscellaneousRecord1"/>
+  			</list>
+  		</property>
+	</bean>
+	
+		<bean id="curricula2" class="domain.Curricula">
+		<property name="ticker" value="171023-ABCE" />
+		<property name="personalRecord" ref = "personalRecord2"/>
+		
+  		<property name="educationRecords">
+  			<list>
+  				<ref bean="educationRecord2"/>
+  			</list>
+  		</property>
+  		<property name="professionalRecords">
+  			<list>
+  				<ref bean="professionalRecord2"/>
+  			</list>
+  		</property>
+  		<property name="endorserRecords">
+  			<list>
+  				<ref bean="endorserRecord2"/>
+  			</list>
+  		</property>
+  		<property name="miscellaneousRecords">
+  			<list>
+  				<ref bean = "miscellaneousRecord2"/>
+  			</list>
+  		</property>
+	</bean>
+
+	<bean id="curricula3" class="domain.Curricula">
+		<property name="ticker" value="171023-ABCF" />
+		<property name="personalRecord" ref = "personalRecord3"/>
+		
+  		<property name="educationRecords">
+  			<list>
+  				<ref bean="educationRecord3"/>
+  			</list>
+  		</property>
+  		<property name="professionalRecords">
+  			<list>
+  				<ref bean="professionalRecord3"/>
+  			</list>
+  		</property>
+  		<property name="endorserRecords">
+  			<list>
+  				<ref bean="endorserRecord3"/>
+  			</list>
+  		</property>
+  		<property name="miscellaneousRecords">
+  			<list>
+  				<ref bean = "miscellaneousRecord3"/>
+  			</list>
+  		</property>
+	</bean>
+	
+	<bean id="curricula4" class="domain.Curricula">
+		<property name="ticker" value="171023-ABCG" />
+		<property name="personalRecord" ref = "personalRecord4"/>
+		
+  		<property name="educationRecords">
+  			<list>
+  				<ref bean="educationRecord4"/>
+  			</list>
+  		</property>
+  		<property name="professionalRecords">
+  			<list>
+  				<ref bean="professionalRecord4"/>
+  			</list>
+  		</property>
+  		<property name="endorserRecords">
+  			<list>
+  				<ref bean="endorserRecord4"/>
+  			</list>
+  		</property>
+  		<property name="miscellaneousRecords">
+  			<list>
+  				
+  			</list>
+  		</property>
+	</bean>
+	
+	<bean id="curricula5" class="domain.Curricula">
+		<property name="ticker" value="171023-ABCH" />
+		<property name="personalRecord" ref = "personalRecord5"/>
+		
+  		<property name="educationRecords">
+  			<list>
+  				<ref bean="educationRecord5"/>
+  			</list>
+  		</property>
+  		<property name="professionalRecords">
+  			<list>
+  				
+  			</list>
+  		</property>
+  		<property name="endorserRecords">
+  			<list>
+  				<ref bean="endorserRecord5"/>
+  			</list>
+  		</property>
+  		<property name="miscellaneousRecords">
+  			<list>
+  				
+  			</list>
+  		</property>
+	</bean>
+	
+	
+	
+	
+	<!-- PERSONAL RECORD -->
+	
+	<bean id="personalRecord1" class="domain.PersonalRecord">
+		<property name="fullName" value="personalRecord 1" />
+		<property name="photo" value="https://www.example.com" />
+		<property name="email" value="personalRecord1@gmail.com" />
+		<property name="phone" value="+34(578)1234" />
+		<property name="linkedProfile" value="https://www.example.com" />
+	</bean>
+	
+	<bean id="personalRecord2" class="domain.PersonalRecord">
+		<property name="fullName" value="personalRecord 2" />
+		<property name="photo" value="https://www.example.com" />
+		<property name="email" value="personalRecord2@gmail.com" />
+		<property name="phone" value="+34(578)1235" />
+		<property name="linkedProfile" value="https://www.example.com" />
+	</bean>
+
+	<bean id="personalRecord3" class="domain.PersonalRecord">
+		<property name="fullName" value="personalRecord 3" />
+		<property name="photo" value="https://www.example.com" />
+		<property name="email" value="personalRecord3@gmail.com" />
+		<property name="phone" value="+34(578)1236" />
+		<property name="linkedProfile" value="https://www.example.com" />
+	</bean>
+	
+	<bean id="personalRecord4" class="domain.PersonalRecord">
+		<property name="fullName" value="personalRecord 4" />
+		<property name="photo" value="https://www.example.com" />
+		<property name="email" value="personalRecord4@gmail.com" />
+		<property name="phone" value="+34(578)1237" />
+		<property name="linkedProfile" value="https://www.example.com" />
+	</bean>
+
+	<bean id="personalRecord5" class="domain.PersonalRecord">
+		<property name="fullName" value="personalRecord 5" />
+		<property name="photo" value="https://www.example.com" />
+		<property name="email" value="personalRecord5@gmail.com" />
+		<property name="phone" value="+34(578)1237" />
+		<property name="linkedProfile" value="https://www.example.com" />
+	</bean>
+	
+	<!-- EDUCATION RECORD -->
+	
+	<bean id="educationRecord1" class="domain.EducationRecord">
+		<property name="diplomaTitle" value="educationRecord 1" />
+		<property name="studyingPeriod" value="2017/2018" />
+		<property name="institution" value="institution 1" />
+		<property name="link" value="https://www.example.com" />
+		<property name="comments"> 
+			<list>
+  				
+  			</list>
+		</property>
+	</bean>
+	
+	<bean id="educationRecord2" class="domain.EducationRecord">
+		<property name="diplomaTitle" value="educationRecord 2" />
+		<property name="studyingPeriod" value="2014/2017" />
+		<property name="institution" value="institution 2" />
+		<property name="link" value="https://www.example.com" />
+		<property name="comments"> 
+			<list>
+  				<value>hola1</value>
+				<value>hola2</value>
+				<value>hola3</value>
+  			</list>
+		</property>
+	</bean>
+	
+	<bean id="educationRecord3" class="domain.EducationRecord">
+		<property name="diplomaTitle" value="educationRecord 3" />
+		<property name="studyingPeriod" value="2015/2017" />
+		<property name="institution" value="institution 3" />
+		<property name="link" value="https://www.example.com" />
+		<property name="comments"> 
+			<list>
+  				<value>hola1</value>
+  			</list>
+		</property>
+	</bean>
+	
+	<bean id="educationRecord4" class="domain.EducationRecord">
+		<property name="diplomaTitle" value="educationRecord 4" />
+		<property name="studyingPeriod" value="2014/2015" />
+		<property name="institution" value="institution 4" />
+		<property name="link" value="https://www.example.com" />
+		<property name="comments"> 
+			<list>
+  				<value>hola1</value>
+				<value>hola3</value>
+  			</list>
+		</property>
+	</bean>
+	
+	<bean id="educationRecord5" class="domain.EducationRecord">
+		<property name="diplomaTitle" value="educationRecord 5" />
+		<property name="studyingPeriod" value="2012/2015" />
+		<property name="institution" value="institution 5" />
+		<property name="link" value="https://www.example.com" />
+		<property name="comments"> 
+			<list>
+  				
+  			</list>
+		</property>
+	</bean>
+	
+	<!-- PROFESSIONAL RECORD -->
+	
+	<bean id="professionalRecord1" class="domain.ProfessionalRecord">
+		<property name="companyName" value="professionalRecord 1" />
+		<property name="workPeriod" value="2014/2017" />
+		<property name="role" value="rol 1" />
+		<property name="link" value="https://www.example.com" />
+		<property name="comments"> 
+			<list>
+  				<value>hola1</value>
+				<value>hola2</value>
+				<value>hola3</value>
+				<value>hola4</value>
+				<value>hola5</value>
+  			</list>
+		</property>
+	</bean>
+	
+	<bean id="professionalRecord2" class="domain.ProfessionalRecord">
+		<property name="companyName" value="professionalRecord 2" />
+		<property name="workPeriod" value="2014/2015" />
+		<property name="role" value="rol 2" />
+		<property name="link" value="https://www.example.com" />
+		<property name="comments"> 
+			<list>
+  				<value>hola1</value>
+				<value>hola2</value>
+				<value>hola3</value>
+				<value>hola4</value>
+				<value>hola5</value>
+  			</list>
+		</property>
+	</bean>	
+	
+	<bean id="professionalRecord3" class="domain.ProfessionalRecord">
+		<property name="companyName" value="professionalRecord 3" />
+		<property name="workPeriod" value="2015/2017" />
+		<property name="role" value="rol 3" />
+		<property name="link" value="https://www.example.com" />
+		<property name="comments"> 
+			<list>
+  				<value>hola1</value>
+  			</list>
+		</property>
+	</bean>
+	
+	<bean id="professionalRecord4" class="domain.ProfessionalRecord">
+		<property name="companyName" value="professionalRecord 4" />
+		<property name="workPeriod" value="2012/2015" />
+		<property name="role" value="rol 4" />
+		<property name="link" value="https://www.example.com" />
+		<property name="comments"> 
+			<list>
+  				
+  			</list>
+		</property>
+	</bean>
+
+	<bean id="professionalRecord5" class="domain.ProfessionalRecord">
+		<property name="companyName" value="professionalRecord 5" />
+		<property name="workPeriod" value="2010/2017" />
+		<property name="role" value="rol 5" />
+		<property name="link" value="https://www.example.com" />
+		<property name="comments"> 
+			<list>
+  				<value>hola1</value>
+				<value>hola2</value>
+				<value>hola5</value>
+  			</list>
+		</property>
+	</bean>
+	
+	<!-- ENDORSER RECORD -->
+	
+	<bean id="endorserRecord1" class="domain.EndorserRecord">
+		<property name="fullName" value="endorserRecord 1" />
+		<property name="email" value="endorserRecord1@gmail.com" />
+		<property name="linkedProfile" value="https://endorsserRecord.com" />
+		<property name="comments"> 
+			<list>
+				<value>hola4</value>
+				<value>hola5</value>
+  			</list>
+		</property>
+		<property name="phone" value="+45(674)1234" />
+	</bean>
+	
+	<bean id="endorserRecord2" class="domain.EndorserRecord">
+		<property name="fullName" value="endorserRecord 2" />
+		<property name="email" value="endorserRecord2@gmail.com" />
+		<property name="linkedProfile" value="https://endorsserRecord.com" />
+		<property name="comments"> 
+			<list>
+  				<value>hola1</value>
+				<value>hola2</value>
+				<value>hola3</value>
+				<value>hola4</value>
+				<value>hola5</value>
+  			</list>
+		</property>
+		<property name="phone" value="+40(674)1234" />
+	</bean>
+	
+	<bean id="endorserRecord3" class="domain.EndorserRecord">
+		<property name="fullName" value="endorserRecord 3" />
+		<property name="email" value="endorserRecord3@gmail.com" />
+		<property name="linkedProfile" value="https://endorsserRecord.com" />
+		<property name="comments"> 
+			<list>
+  				<value>hola1</value>
+				<value>hola2</value>
+				<value>hola3</value>
+				<value>hola4</value>
+				<value>hola5</value>
+  			</list>
+		</property>
+		<property name="phone" value="+45(604)1634" />
+	</bean>
+	
+	<bean id="endorserRecord4" class="domain.EndorserRecord">
+		<property name="fullName" value="endorserRecord 4" />
+		<property name="email" value="endorserRecord4@gmail.com" />
+		<property name="linkedProfile" value="https://endorsserRecord.com" />
+		<property name="comments"> 
+			<list>
+  				<value>hola1</value>
+				<value>hola2</value>
+  			</list>
+		</property>
+		<property name="phone" value="+34(674)1454" />
+	</bean>
+	
+	
+	<bean id="endorserRecord5" class="domain.EndorserRecord">
+		<property name="fullName" value="endorserRecord 5" />
+		<property name="email" value="endorserRecord5@gmail.com" />
+		<property name="linkedProfile" value="https://endorsserRecord.com" />
+		<property name="comments"> 
+			<list>
+  				
+  			</list>
+		</property>
+		<property name="phone" value="+05(600)1234" />
+	</bean>
+	
+	<!-- MISCELLANEOUS RECORD -->
+	
+	<bean id="miscellaneousRecord1" class="domain.MiscellaneousRecord">
+		<property name="title" value="miscellaneousRecord 1" />
+		<property name="link" value="https://miscellaneousRecord.com" />
+		<property name="comments"> 
+			<list>
+  				
+  			</list>
+		</property>
+	</bean>
+	
+	<bean id="miscellaneousRecord2" class="domain.MiscellaneousRecord">
+		<property name="title" value="miscellaneousRecord 2" />
+		<property name="link" value="https://miscellaneousRecord.com" />
+		<property name="comments"> 
+			<list>
+  				<value>hola1</value>
+				<value>hola2</value>
+				<value>hola3</value>
+				<value>hola4</value>
+				<value>hola5</value>
+  			</list>
+		</property>
+	</bean>
+	
+	<bean id="miscellaneousRecord3" class="domain.MiscellaneousRecord">
+		<property name="title" value="miscellaneousRecord 3" />
+		<property name="link" value="https://miscellaneousRecord.com" />
+		<property name="comments"> 
+			<list>
+  				
+  			</list>
+		</property>
+	</bean>
+	
+	<bean id="miscellaneousRecord4" class="domain.MiscellaneousRecord">
+		<property name="title" value="miscellaneousRecord 4" />
+		<property name="link" value="https://miscellaneousRecord.com" />
+		<property name="comments"> 
+			<list>
+  				
+  			</list>
+		</property>
+	</bean>
+	
+	<bean id="miscellaneousRecord5" class="domain.MiscellaneousRecord">
+		<property name="title" value="miscellaneousRecord 5" />
+		<property name="link" value="https://miscellaneousRecord.com" />
+		<property name="comments"> 
+			<list>
+  				<value>hola1</value>
+				<value>hola2</value>
+				<value>hola3</value>
+				<value>hola4</value>
+  			</list>
+		</property>
+	</bean>
