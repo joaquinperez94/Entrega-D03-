@@ -38,8 +38,8 @@ public class Curricula extends DomainEntity {
 
 	private PersonalRecord					personalRecord;
 	private Collection<EducationRecord>		educationRecords;
-	private Collection<ProfessionalRecord>	profesionalRecords;
-	private Collection<EndorserRecord>		endorseRecords;
+	private Collection<ProfessionalRecord>	professionalRecords;
+	private Collection<EndorserRecord>		endorserRecords;
 	private Collection<MiscellaneousRecord>	miscellaneousRecords;
 
 
@@ -67,23 +67,23 @@ public class Curricula extends DomainEntity {
 	@Valid
 	@NotNull
 	@OneToMany
-	public Collection<ProfessionalRecord> getProfesionalRecords() {
-		return this.profesionalRecords;
+	public Collection<ProfessionalRecord> getProfessionalRecords() {
+		return this.professionalRecords;
 	}
 
-	public void setProfesionalRecords(final Collection<ProfessionalRecord> profesionalRecords) {
-		this.profesionalRecords = profesionalRecords;
+	public void setProfessionalRecords(final Collection<ProfessionalRecord> professionalRecords) {
+		this.professionalRecords = professionalRecords;
 	}
 
 	@Valid
 	@NotNull
 	@OneToMany
-	public Collection<EndorserRecord> getEndorseRecords() {
-		return this.endorseRecords;
+	public Collection<EndorserRecord> getEndorserRecords() {
+		return this.endorserRecords;
 	}
 
-	public void setEndorseRecords(final Collection<EndorserRecord> endorseRecords) {
-		this.endorseRecords = endorseRecords;
+	public void setEndorserRecords(final Collection<EndorserRecord> endorserRecords) {
+		this.endorserRecords = endorserRecords;
 	}
 
 	@Valid
