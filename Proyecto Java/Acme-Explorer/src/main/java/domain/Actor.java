@@ -109,7 +109,7 @@ public abstract class Actor extends DomainEntity {
 		return this.socialIdentities;
 	}
 
-	public void setSocialsIdentities(final Collection<SocialIdentity> socialIdentities) {
+	public void setSocialIdentities(final Collection<SocialIdentity> socialIdentities) {
 		this.socialIdentities = socialIdentities;
 	}
 
