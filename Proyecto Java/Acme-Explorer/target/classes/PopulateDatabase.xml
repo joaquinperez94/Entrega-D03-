@@ -717,6 +717,119 @@
 		<property name="cvv" value="724"/>
 	</bean>
 
+<!-- Ranger-->
+	<bean id="ranger1" class="domain.Auditor">
+		<property name="userAccount" ref="userAccountRanger1"/>
+		<property name="name" value="ranger 1"/>
+		<property name="surname" value="ranger1 ranger1"/>
+		<property name="email" value="ranger1@acmeexplorer.com"/>
+		<property name="phone" value="+34 617557203"/>
+		<property name="address" value="C/ avenida del ranger"/>
+		<property name="activated" value="True"/>
+		<property name="socialIdentities">
+			<list>
+			</list>
+		</property>
+		<property name="messagesFolders">
+			<list>
+			</list>
+		</property>
+		<property name="curricula" ref="curricula 1"/>
+		<property name="trips">
+			<list>
+			</list>
+		</property>
+	</bean>
+		<bean id="ranger2" class="domain.Auditor">
+		<property name="userAccount" ref="userAccountRanger2"/>
+		<property name="name" value="ranger 2"/>
+		<property name="surname" value="ranger2 ranger2"/>
+		<property name="email" value="ranger2@acmeexplorer.com"/>
+		<property name="phone" value="+34 617557203"/>
+		<property name="address" value="C/ avenida del ranger"/>
+		<property name="activated" value="True"/>
+		<property name="socialIdentities">
+			<list>
+			</list>
+		</property>
+		<property name="messagesFolders">
+			<list>
+			</list>
+		</property>
+		<property name="curricula" ref="curricula 2"/>
+		<property name="trips">
+			<list>
+			</list>
+		</property>
+	</bean>
+		<bean id="ranger3" class="domain.Auditor">
+		<property name="userAccount" ref="userAccountRanger3"/>
+		<property name="name" value="ranger 3"/>
+		<property name="surname" value="ranger3 ranger3"/>
+		<property name="email" value="ranger3@acmeexplorer.com"/>
+		<property name="phone" value="+34 617557203"/>
+		<property name="address" value="C/ avenida del ranger"/>
+		<property name="activated" value="True"/>
+		<property name="socialIdentities">
+			<list>
+			</list>
+		</property>
+		<property name="messagesFolders">
+			<list>
+			</list>
+		</property>
+		<property name="curricula" ref="curricula 3"/>
+		<property name="trips">
+			<list>
+			</list>
+		</property>
+	</bean>
+		<bean id="ranger4" class="domain.Auditor">
+		<property name="userAccount" ref="userAccountRanger4"/>
+		<property name="name" value="ranger 4"/>
+		<property name="surname" value="ranger1 ranger4"/>
+		<property name="email" value="ranger4@acmeexplorer.com"/>
+		<property name="phone" value="+34 617557203"/>
+		<property name="address" value="C/ avenida del ranger"/>
+		<property name="activated" value="True"/>
+		<property name="socialIdentities">
+			<list>
+			</list>
+		</property>
+		<property name="messagesFolders">
+			<list>
+			</list>
+		</property>
+		<property name="curricula" ref="curricula 4"/>
+		<property name="trips">
+			<list>
+			</list>
+		</property>
+	</bean>
+		<bean id="ranger5" class="domain.Auditor">
+		<property name="userAccount" ref="userAccountRanger5"/>
+		<property name="name" value="ranger 5"/>
+		<property name="surname" value="ranger5 ranger5"/>
+		<property name="email" value="ranger5@acmeexplorer.com"/>
+		<property name="phone" value="+34 617557203"/>
+		<property name="address" value="C/ avenida del ranger"/>
+		<property name="activated" value="True"/>
+		<property name="socialIdentities">
+			<list>
+			</list>
+		</property>
+		<property name="messagesFolders">
+			<list>
+			</list>
+		</property>
+		<property name="curricula" ref="curricula 5"/>
+		<property name="trips">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+
 	<!-- Auditor -->
 	
 
