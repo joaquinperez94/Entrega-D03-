@@ -43,8 +43,8 @@ public class LegalText extends DomainEntity {
 	}
 
 	public void setBody(final String body) {
-		if (this.draftMode == true)
-			this.body = body;
+		//if (this.draftMode == true)
+		this.body = body;
 	}
 
 	public int getLawsNumber() {
@@ -52,8 +52,8 @@ public class LegalText extends DomainEntity {
 	}
 
 	public void setLawsNumber(final int lawsNumber) {
-		if (this.draftMode == true)
-			this.lawsNumber = lawsNumber;
+		//if (this.draftMode == true)
+		this.lawsNumber = lawsNumber;
 	}
 	@NotNull
 	@Temporal(TemporalType.TIMESTAMP)
@@ -62,8 +62,8 @@ public class LegalText extends DomainEntity {
 	}
 
 	public void setMoment(final Date moment) {
-		if (this.draftMode == true)
-			this.moment = moment;
+		//if (this.draftMode == true)
+		this.moment = moment;
 	}
 
 	public boolean isDraftMode() {
