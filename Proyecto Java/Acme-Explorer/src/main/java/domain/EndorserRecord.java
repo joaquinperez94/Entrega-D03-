@@ -26,7 +26,6 @@ public class EndorserRecord extends DomainEntity {
 	private String				phone;
 
 
-	@NotNull
 	@NotBlank
 	public String getFullName() {
 		return this.fullName;
@@ -57,6 +56,7 @@ public class EndorserRecord extends DomainEntity {
 	}
 
 	@ElementCollection
+	@NotNull
 	public Collection<String> getComments() {
 		return this.comments;
 	}

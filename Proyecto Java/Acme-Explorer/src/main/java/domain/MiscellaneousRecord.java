@@ -22,7 +22,6 @@ public class MiscellaneousRecord extends DomainEntity {
 	private Collection<String>	comments;
 
 
-	@NotNull
 	@NotBlank
 	public String getTitle() {
 		return this.title;
@@ -42,6 +41,7 @@ public class MiscellaneousRecord extends DomainEntity {
 	}
 
 	@ElementCollection
+	@NotNull
 	public Collection<String> getComments() {
 		return this.comments;
 	}

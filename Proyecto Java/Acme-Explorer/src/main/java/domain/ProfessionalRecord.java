@@ -25,7 +25,6 @@ public class ProfessionalRecord extends DomainEntity {
 	private Collection<String>	comments;
 
 
-	@NotNull
 	@NotBlank
 	public String getCompanyName() {
 		return this.companyName;
@@ -45,7 +44,6 @@ public class ProfessionalRecord extends DomainEntity {
 		this.workPeriod = workPeriod;
 	}
 
-	@NotNull
 	@NotBlank
 	public String getRole() {
 		return this.role;
@@ -65,6 +63,7 @@ public class ProfessionalRecord extends DomainEntity {
 	}
 
 	@ElementCollection
+	@NotNull
 	public Collection<String> getComments() {
 		return this.comments;
 	}
