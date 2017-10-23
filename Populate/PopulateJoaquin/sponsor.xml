@@ -1,0 +1,127 @@
+<!-- Sponsors -->
+<!--COMPROBADO SIN LISTA DE SPONSORSHIP-->
+
+<!-- Sponsors 1-->
+<bean class="domain.Sponsor" id="sponsor1">
+	<property name="name" value="Sponsor1"/>
+	<property name="surname" value="Sponsor1 Surnames"/>
+	<property name="email" value="sponsor1@sponsor.com"/>
+	<property name="phone" value="+34 662657322"/>
+	<property name="address" value="Sponsor1 address"/>
+	<property name="activated" value="true"/>
+	<property name="userAccount" ref="userAccountSponsor1"/>
+	<property name="messagesFolders">
+		<list>
+			<ref bean="messageFolder3"/>		
+		</list>
+	</property>
+	<property name="socialIdentities">
+		<list> 
+			<ref bean="socialIdentity3"/>	
+		</list>
+	</property>
+	<property name="sponsorships">
+		<list>
+		</list>
+	</property>
+</bean>
+
+<!-- Sponsors 2-->
+<bean class="domain.Sponsor" id="sponsor1">
+	<property name="name" value="Sponsor1"/>
+	<property name="surname" value="Sponsor1 Surnames"/>
+	<property name="email" value="sponsor1@sponsor.com"/>
+	<property name="phone" value="+34 662657322"/>
+	<property name="address" value="Sponsor1 address"/>
+	<property name="activated" value="true"/>
+	<property name="userAccount" ref="userAccountSponsor2"/>
+	<property name="messagesFolders">
+		<list>
+			<ref bean="messageFolder3"/>		
+		</list>
+	</property>
+	<property name="socialIdentities">
+		<list> 
+			<ref bean="socialIdentity3"/>	
+		</list>
+	</property>
+	<property name="sponsorships">
+		<list>
+		</list>
+	</property>
+</bean>
+
+<!-- Sponsors 3-->
+<bean class="domain.Sponsor" id="sponsor1">
+	<property name="name" value="Sponsor1"/>
+	<property name="surname" value="Sponsor1 Surnames"/>
+	<property name="email" value="sponsor1@sponsor.com"/>
+	<property name="phone" value="+34 662657322"/>
+	<property name="address" value="Sponsor1 address"/>
+	<property name="activated" value="true"/>
+	<property name="userAccount" ref="userAccountSponsor3"/>
+	<property name="messagesFolders">
+		<list>
+			<ref bean="messageFolder3"/>		
+		</list>
+	</property>
+	<property name="socialIdentities">
+		<list> 
+			<ref bean="socialIdentity3"/>	
+		</list>
+	</property>
+	<property name="sponsorships">
+		<list>
+		</list>
+	</property>
+</bean>
+
+<!-- Sponsors 4-->
+<bean class="domain.Sponsor" id="sponsor1">
+	<property name="name" value="Sponsor1"/>
+	<property name="surname" value="Sponsor1 Surnames"/>
+	<property name="email" value="sponsor1@sponsor.com"/>
+	<property name="phone" value="+34 662657322"/>
+	<property name="address" value="Sponsor1 address"/>
+	<property name="activated" value="true"/>
+	<property name="userAccount" ref="userAccountSponsor4"/>
+	<property name="messagesFolders">
+		<list>
+			<ref bean="messageFolder3"/>		
+		</list>
+	</property>
+	<property name="socialIdentities">
+		<list> 
+			<ref bean="socialIdentity3"/>	
+		</list>
+	</property>
+	<property name="sponsorships">
+		<list>
+		</list>
+	</property>
+</bean>
+
+<!-- Sponsors 5-->
+<bean class="domain.Sponsor" id="sponsor1">
+	<property name="name" value="Sponsor1"/>
+	<property name="surname" value="Sponsor1 Surnames"/>
+	<property name="email" value="sponsor1@sponsor.com"/>
+	<property name="phone" value="+34 662657322"/>
+	<property name="address" value="Sponsor1 address"/>
+	<property name="activated" value="true"/>
+	<property name="userAccount" ref="userAccountSponsor5"/>
+	<property name="messagesFolders">
+		<list>
+			<ref bean="messageFolder3"/>		
+		</list>
+	</property>
+	<property name="socialIdentities">
+		<list> 
+			<ref bean="socialIdentity3"/>	
+		</list>
+	</property>
+	<property name="sponsorships">
+		<list>
+		</list>
+	</property>
+</bean>

@@ -1,0 +1,107 @@
+<!-- Administrator -->
+
+<!-- Administrator 1 -->
+<bean id="administrator1" class="domain.Administrator">
+	<property name="name" value="Administrator1"/>
+	<property name="surname" value="Administrator1 Surnames"/>
+	<property name="email" value="Administrator@administrator.com"/>
+	<property name="phone" value="+34 (587) 1234"/>
+	<property name="address" value="Administrator address"/>
+	<property name="activated" value="true"/>
+	<property name="userAccount" ref="userAccountAdmin1"/>
+	<property name="messageFolders">
+		<list>
+			<ref bean="messageFolder1"/>		
+		</list>
+	</property>
+	<property name="socialIdentities"/>
+		<list> 
+			<ref bean="socialIdentity1"/>	
+		</list>
+	</property>
+</bean>
+
+<!-- Administrator 2 -->
+<bean id="administrator1" class="domain.Administrator">
+	<property name="name" value="Administrator1"/>
+	<property name="surname" value="Administrator1 Surnames"/>
+	<property name="email" value="Administrator@administrator.com"/>
+	<property name="phone" value="+34 (587) 1234"/>
+	<property name="address" value="Administrator address"/>
+	<property name="activated" value="true"/>
+	<property name="userAccount" ref="userAccountAdmin2"/>
+	<property name="messageFolders">
+		<list>
+			<ref bean="messageFolder1"/>		
+		</list>
+	</property>
+	<property name="socialIdentities"/>
+		<list> 
+			<ref bean="socialIdentity1"/>	
+		</list>
+	</property>
+</bean>
+
+<!-- Administrator 3 -->
+<bean id="administrator1" class="domain.Administrator">
+	<property name="name" value="Administrator1"/>
+	<property name="surname" value="Administrator1 Surnames"/>
+	<property name="email" value="Administrator@administrator.com"/>
+	<property name="phone" value="+34 (587) 1234"/>
+	<property name="address" value="Administrator address"/>
+	<property name="activated" value="true"/>
+	<property name="userAccount" ref="userAccountAdmin3"/>
+	<property name="messageFolders">
+		<list>
+			<ref bean="messageFolder1"/>		
+		</list>
+	</property>
+	<property name="socialIdentities"/>
+		<list> 
+			<ref bean="socialIdentity1"/>	
+		</list>
+	</property>
+</bean>
+
+<!-- Administrator 4 -->
+<bean id="administrator1" class="domain.Administrator">
+	<property name="name" value="Administrator1"/>
+	<property name="surname" value="Administrator1 Surnames"/>
+	<property name="email" value="Administrator@administrator.com"/>
+	<property name="phone" value="+34 (587) 1234"/>
+	<property name="address" value="Administrator address"/>
+	<property name="activated" value="true"/>
+	<property name="userAccount" ref="userAccountAdmin4"/>
+	<property name="messageFolders">
+		<list>
+			<ref bean="messageFolder1"/>		
+		</list>
+	</property>
+	<property name="socialIdentities"/>
+		<list> 
+			<ref bean="socialIdentity1"/>	
+		</list>
+	</property>
+</bean>
+
+
+<!-- Administrator 5 -->
+<bean id="administrator1" class="domain.Administrator">
+	<property name="name" value="Administrator1"/>
+	<property name="surname" value="Administrator1 Surnames"/>
+	<property name="email" value="Administrator@administrator.com"/>
+	<property name="phone" value="+34 (587) 1234"/>
+	<property name="address" value="Administrator address"/>
+	<property name="activated" value="true"/>
+	<property name="userAccount" ref="userAccountAdmin5"/>
+	<property name="messageFolders">
+		<list>
+			<ref bean="messageFolder1"/>		
+		</list>
+	</property>
+	<property name="socialIdentities"/>
+		<list> 
+			<ref bean="socialIdentity1"/>	
+		</list>
+	</property>
+</bean>

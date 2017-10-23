@@ -1,15 +1,5 @@
-	<!-- Category-->
-
-<!--
-Categorias Padres:	Hijas:
-	Category1	Category11,Category33,Category44
-	Category2	Category11,Category33
-	Category3	Category11,Category22,Category33,Category44,Category55
-	Category4	Category11
-	Category5	Category11,Category55
--->
-
-
+<!-- Category-->
+<!--COMPROBADO-->
 
 <!--Categoria Hija 11 -->
 <bean id="Category11" class="domain.Category">
