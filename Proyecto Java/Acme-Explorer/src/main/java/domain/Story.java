@@ -25,7 +25,6 @@ public class Story extends DomainEntity {
 
 
 	@NotBlank
-	@NotNull
 	public String getTitle() {
 		return this.title;
 	}
@@ -35,7 +34,6 @@ public class Story extends DomainEntity {
 	}
 
 	@NotBlank
-	@NotNull
 	public String getText() {
 		return this.text;
 	}
