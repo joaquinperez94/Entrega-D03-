@@ -679,7 +679,7 @@
 	<property name="name" value="Administrator1"/>
 	<property name="surname" value="Administrator1 Surnames"/>
 	<property name="email" value="Administrator1@administrator.com"/>
-	<property name="phone" value="+34 662657322"/>
+	<property name="phone" value="+34662657322"/>
 	<property name="address" value="Administrator address"/>
 	<property name="activated" value="true"/>
 	<property name="userAccount" ref="userAccountAdmin1"/>
@@ -700,7 +700,7 @@
 	<property name="name" value="Administrator2"/>
 	<property name="surname" value="Administrator2 Surnames"/>
 	<property name="email" value="Administrator2@administrator.com"/>
-	<property name="phone" value="+34 662657322"/>
+	<property name="phone" value="+34662657322"/>
 	<property name="address" value="Administrator address"/>
 	<property name="activated" value="true"/>
 	<property name="userAccount" ref="userAccountAdmin2"/>
@@ -721,7 +721,7 @@
 	<property name="name" value="Administrator3"/>
 	<property name="surname" value="Administrator3 Surnames"/>
 	<property name="email" value="Administrator3@administrator.com"/>
-	<property name="phone" value="+34 662657323"/>
+	<property name="phone" value="+34662657323"/>
 	<property name="address" value="Administrator address"/>
 	<property name="activated" value="true"/>
 	<property name="userAccount" ref="userAccountAdmin3"/>
@@ -741,7 +741,7 @@
 	<property name="name" value="Administrator4"/>
 	<property name="surname" value="Administrator4 Surnames"/>
 	<property name="email" value="Administrator4@administrator.com"/>
-	<property name="phone" value="+34 662657324"/>
+	<property name="phone" value="+34662657324"/>
 	<property name="address" value="Administrator address"/>
 	<property name="activated" value="true"/>
 	<property name="userAccount" ref="userAccountAdmin4"/>
@@ -763,7 +763,7 @@
 	<property name="name" value="Administrator5"/>
 	<property name="surname" value="Administrator5 Surnames"/>
 	<property name="email" value="Administrator5@administrator.com"/>
-	<property name="phone" value="+34 662657325"/>
+	<property name="phone" value="+34662657325"/>
 	<property name="address" value="Administrator address"/>
 	<property name="activated" value="true"/>
 	<property name="userAccount" ref="userAccountAdmin5"/>
@@ -787,7 +787,7 @@
 	<property name="name" value="Sponsor1"/>
 	<property name="surname" value="Sponsor1 Surnames"/>
 	<property name="email" value="sponsor1@sponsor.com"/>
-	<property name="phone" value="+34 662657322"/>
+	<property name="phone" value="+34662657322"/>
 	<property name="address" value="Sponsor1 address"/>
 	<property name="activated" value="true"/>
 	<property name="userAccount" ref="userAccountSponsor1"/>
@@ -812,7 +812,7 @@
 	<property name="name" value="Sponsor2"/>
 	<property name="surname" value="Sponsor2 Surnames"/>
 	<property name="email" value="sponsor2@sponsor.com"/>
-	<property name="phone" value="+34 662657322"/>
+	<property name="phone" value="+34662657322"/>
 	<property name="address" value="Sponsor2 address"/>
 	<property name="activated" value="true"/>
 	<property name="userAccount" ref="userAccountSponsor2"/>
@@ -837,7 +837,7 @@
 	<property name="name" value="Sponsor3"/>
 	<property name="surname" value="Sponsor3 Surnames"/>
 	<property name="email" value="sponsor3@sponsor.com"/>
-	<property name="phone" value="+34 662657322"/>
+	<property name="phone" value="+34662657322"/>
 	<property name="address" value="Sponsor3 address"/>
 	<property name="activated" value="true"/>
 	<property name="userAccount" ref="userAccountSponsor3"/>
@@ -862,7 +862,7 @@
 	<property name="name" value="Sponsor4"/>
 	<property name="surname" value="Sponsor4 Surnames"/>
 	<property name="email" value="sponsor4@sponsor.com"/>
-	<property name="phone" value="+34 662657322"/>
+	<property name="phone" value="+34662657322"/>
 	<property name="address" value="Sponsor4 address"/>
 	<property name="activated" value="true"/>
 	<property name="userAccount" ref="userAccountSponsor4"/>
@@ -887,7 +887,7 @@
 	<property name="name" value="Sponsor5"/>
 	<property name="surname" value="Sponsor5 Surnames"/>
 	<property name="email" value="sponsor5@sponsor.com"/>
-	<property name="phone" value="+34 662657322"/>
+	<property name="phone" value="+34662657322"/>
 	<property name="address" value="Sponsor5 address"/>
 	<property name="activated" value="true"/>
 	<property name="userAccount" ref="userAccountSponsor5"/>
@@ -1117,7 +1117,7 @@
 		<property name="name" value="ranger 1"/>
 		<property name="surname" value="ranger1 ranger1"/>
 		<property name="email" value="ranger1@acmeexplorer.com"/>
-		<property name="phone" value="+34 617557203"/>
+		<property name="phone" value="+34617557203"/>
 		<property name="address" value="C/ avenida del ranger"/>
 		<property name="activated" value="True"/>
 		<property name="socialIdentities">
@@ -1140,7 +1140,7 @@
 		<property name="name" value="ranger 2"/>
 		<property name="surname" value="ranger2 ranger2"/>
 		<property name="email" value="ranger2@acmeexplorer.com"/>
-		<property name="phone" value="+34 617557203"/>
+		<property name="phone" value="+34617557203"/>
 		<property name="address" value="C/ avenida del ranger"/>
 		<property name="activated" value="True"/>
 		<property name="socialIdentities">
@@ -1162,7 +1162,7 @@
 		<property name="name" value="ranger 3"/>
 		<property name="surname" value="ranger3 ranger3"/>
 		<property name="email" value="ranger3@acmeexplorer.com"/>
-		<property name="phone" value="+34 617557203"/>
+		<property name="phone" value="+34617557203"/>
 		<property name="address" value="C/ avenida del ranger"/>
 		<property name="activated" value="True"/>
 		<property name="socialIdentities">
@@ -1184,7 +1184,7 @@
 		<property name="name" value="ranger 4"/>
 		<property name="surname" value="ranger1 ranger4"/>
 		<property name="email" value="ranger4@acmeexplorer.com"/>
-		<property name="phone" value="+34 617557203"/>
+		<property name="phone" value="+34617557203"/>
 		<property name="address" value="C/ avenida del ranger"/>
 		<property name="activated" value="True"/>
 		<property name="socialIdentities">
@@ -1206,7 +1206,7 @@
 		<property name="name" value="ranger 5"/>
 		<property name="surname" value="ranger5 ranger5"/>
 		<property name="email" value="ranger5@acmeexplorer.com"/>
-		<property name="phone" value="+34 617557203"/>
+		<property name="phone" value="+34617557203"/>
 		<property name="address" value="C/ avenida del ranger"/>
 		<property name="activated" value="True"/>
 		<property name="socialIdentities">
@@ -1233,7 +1233,7 @@
 		<property name="name" value="auditor 1"/>
 		<property name="surname" value="auditor1 auditor1"/>
 		<property name="email" value="auditor1@acmeexplorer.com"/>
-		<property name="phone" value="+34 617557203"/>
+		<property name="phone" value="+34617557203"/>
 		<property name="address" value="C/ avenida del auditor"/>
 		<property name="activated" value="True"/>
 		<property name="socialIdentities">
@@ -1262,7 +1262,7 @@
 		<property name="name" value="auditor 2"/>
 		<property name="surname" value="auditor2 auditor2"/>
 		<property name="email" value="auditor2@acmeexplorer.com"/>
-		<property name="phone" value="+34 617557243"/>
+		<property name="phone" value="+34617557243"/>
 		<property name="address" value="C/ avenida del auditor"/>
 		<property name="activated" value="True"/>
 		<property name="socialIdentities">
@@ -1289,7 +1289,7 @@
 		<property name="name" value="auditor 3"/>
 		<property name="surname" value="auditor3 auditor3"/>
 		<property name="email" value="auditor3@acmeexplorer.com"/>
-		<property name="phone" value="+34 617357243"/>
+		<property name="phone" value="+34617357243"/>
 		<property name="address" value="C/ avenida del auditor"/>
 		<property name="activated" value="False"/>
 		<property name="socialIdentities">
@@ -1315,7 +1315,7 @@
 		<property name="name" value="auditor 4"/>
 		<property name="surname" value="auditor4 audito45"/>
 		<property name="email" value="auditor4@acmeexplorer.com"/>
-		<property name="phone" value="+34 677557243"/>
+		<property name="phone" value="+34677557243"/>
 		<property name="address" value="C/ avenida del auditor"/>
 		<property name="activated" value="True"/>
 		<property name="socialIdentities">
@@ -1340,7 +1340,7 @@
 		<property name="name" value="auditor 5"/>
 		<property name="surname" value="auditor5 auditor5"/>
 		<property name="email" value="auditor5@acmeexplorer.com"/>
-		<property name="phone" value="+34 617557243"/>
+		<property name="phone" value="+34617557243"/>
 		<property name="address" value="C/ avenida del auditor"/>
 		<property name="activated" value="True"/>
 		<property name="socialIdentities">
@@ -1480,31 +1480,31 @@
 	<bean id="contactEmergency1" class="domain.ContactEmergency">
 	  <property name="name" value="contact 1"/>
 	  <property name="email" value="contact1@gmail.com"/>
-	  <property name="phone" value="+55 888846"/>
+	  <property name="phone" value="+55888846"/>
  	</bean>
  
  	<bean id="contactEmergency2" class="domain.ContactEmergency">
 	  <property name="name" value="contact 2"/>
 	  <property name="email" value="contact2@gmail.com"/>
-	  <property name="phone" value="+34 888846"/>
+	  <property name="phone" value="+34888846"/>
  	</bean>
  
  	<bean id="contactEmergency3" class="domain.ContactEmergency">
 	  <property name="name" value="contact 3"/>
 	  <property name="email" value="contact3@gmail.com"/>
-	  <property name="phone" value="+36 855846"/>
+	  <property name="phone" value="+36855846"/>
  	</bean>
  
  	<bean id="contactEmergency4" class="domain.ContactEmergency">
 	  <property name="name" value="contact 4"/>
 	  <property name="email" value="contact4@gmail.com"/>
-	  <property name="phone" value="+36 8857446"/>
+	  <property name="phone" value="+368857446"/>
  	</bean>
  
  	<bean id="contactEmergency5" class="domain.ContactEmergency">
 	  <property name="name" value="contact 5"/>
 	  <property name="email" value="contact5@gmail.com"/>
-	  <property name="phone" value="+88 6657446"/>
+	  <property name="phone" value="6657446"/>
  	</bean>
 		
 	
@@ -1518,7 +1518,7 @@
 		<property name="moment" value="29/10/2017 23:59"></property>
 		<property name="draftMode" value="true"></property>
 </bean>
-
+<!--
 <bean id="legalText2" class="domain.LegalText">
 		<property name="title"  value="title 2"/>
 		<property name="body" value="body 2"/>
@@ -1551,7 +1551,7 @@
 		<property name="lawsNumber" value="1"></property>
 		<property name="moment" value="23/12/2017 23:59"></property>
 		<property name="draftMode" value="true"></property>
-</bean>
+</bean>-->
 	
 	
 	<!-- SponsorShip -->

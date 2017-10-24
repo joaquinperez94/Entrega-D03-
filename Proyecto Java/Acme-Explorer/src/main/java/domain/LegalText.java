@@ -31,8 +31,7 @@ public class LegalText extends DomainEntity {
 		return this.title;
 	}
 
-	public void setTitle(String title) {
-		//if (this.draftMode == true)
+	public void setTitle(final String title) {
 		this.title = title;
 	}
 
@@ -42,8 +41,8 @@ public class LegalText extends DomainEntity {
 		return this.body;
 	}
 
-	public void setBody(String body) {
-		//if (this.draftMode == true)
+	public void setBody(final String body) {
+
 		this.body = body;
 	}
 
@@ -51,8 +50,8 @@ public class LegalText extends DomainEntity {
 		return this.lawsNumber;
 	}
 
-	public void setLawsNumber(int lawsNumber) {
-		//if (this.draftMode == true)
+	public void setLawsNumber(final int lawsNumber) {
+
 		this.lawsNumber = lawsNumber;
 	}
 	@NotNull
@@ -61,8 +60,8 @@ public class LegalText extends DomainEntity {
 		return this.moment;
 	}
 
-	public void setMoment(Date moment) {
-		//if (this.draftMode == true)
+	public void setMoment(final Date moment) {
+
 		this.moment = moment;
 	}
 
@@ -70,7 +69,7 @@ public class LegalText extends DomainEntity {
 		return this.draftMode;
 	}
 
-	public void setDraftMode(boolean draftMode) {
+	public void setDraftMode(final boolean draftMode) {
 		this.draftMode = draftMode;
 	}
 
