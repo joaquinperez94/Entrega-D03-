@@ -18,22 +18,10 @@ public class Explorer extends Actor {
 	// Attributes -------------------------------------------------------------
 
 	// Relationships ----------------------------------------------------------
-	private Collection<SurvivalClass>		classes;
 	private Collection<Story>				stories;
 	private Collection<ApplicationFor>		applicationsFor;
 	private Collection<ContactEmergency>	contactsEmergency;
 
-
-	@NotNull
-	@Valid
-	@ManyToMany
-	public Collection<SurvivalClass> getClasses() {
-		return this.classes;
-	}
-
-	public void setClasses(final Collection<SurvivalClass> classes) {
-		this.classes = classes;
-	}
 
 	@NotNull
 	@Valid
@@ -42,7 +30,7 @@ public class Explorer extends Actor {
 		return this.stories;
 	}
 
-	public void setStories(final Collection<Story> stories) {
+	public void setStories(Collection<Story> stories) {
 		this.stories = stories;
 	}
 
@@ -53,7 +41,7 @@ public class Explorer extends Actor {
 		return this.applicationsFor;
 	}
 
-	public void setApplicationsFor(final Collection<ApplicationFor> applicationsFor) {
+	public void setApplicationsFor(Collection<ApplicationFor> applicationsFor) {
 		this.applicationsFor = applicationsFor;
 	}
 
@@ -64,7 +52,7 @@ public class Explorer extends Actor {
 		return this.contactsEmergency;
 	}
 
-	public void setContactsEmergency(final Collection<ContactEmergency> contactsEmergency) {
+	public void setContactsEmergency(Collection<ContactEmergency> contactsEmergency) {
 		this.contactsEmergency = contactsEmergency;
 	}
 }

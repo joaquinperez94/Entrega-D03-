@@ -437,6 +437,25 @@
 		</property>
 	</bean>
 	
+	<bean id="messageFolder4" class="domain.MessageFolder">
+		<property name="name" value="folder 4"/>
+		<property name="modifiable" value="false"/>
+		<property name="messages">
+			<list>
+				<ref bean ="message2"/>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="messageFolder5" class="domain.MessageFolder">
+		<property name="name" value="folder 4"/>
+		<property name="modifiable" value="false"/>
+		<property name="messages">
+			<list>
+				<ref bean ="message2"/>
+			</list>
+		</property>
+	</bean>
 	<!-- SocialIdentity -->
 	
 		
@@ -658,7 +677,7 @@
 	<property name="name" value="Administrator1"/>
 	<property name="surname" value="Administrator1 Surnames"/>
 	<property name="email" value="Administrator1@administrator.com"/>
-	<property name="phone" value="+34 (587) 1234"/>
+	<property name="phone" value="+34 662657322"/>
 	<property name="address" value="Administrator address"/>
 	<property name="activated" value="true"/>
 	<property name="userAccount" ref="userAccountAdmin1"/>
@@ -679,7 +698,7 @@
 	<property name="name" value="Administrator2"/>
 	<property name="surname" value="Administrator2 Surnames"/>
 	<property name="email" value="Administrator2@administrator.com"/>
-	<property name="phone" value="+34 (587) 1234"/>
+	<property name="phone" value="+34 662657322"/>
 	<property name="address" value="Administrator address"/>
 	<property name="activated" value="true"/>
 	<property name="userAccount" ref="userAccountAdmin2"/>
@@ -700,7 +719,7 @@
 	<property name="name" value="Administrator3"/>
 	<property name="surname" value="Administrator3 Surnames"/>
 	<property name="email" value="Administrator3@administrator.com"/>
-	<property name="phone" value="+34 (587) 1234"/>
+	<property name="phone" value="+34 662657323"/>
 	<property name="address" value="Administrator address"/>
 	<property name="activated" value="true"/>
 	<property name="userAccount" ref="userAccountAdmin3"/>
@@ -721,7 +740,7 @@
 	<property name="name" value="Administrator4"/>
 	<property name="surname" value="Administrator4 Surnames"/>
 	<property name="email" value="Administrator4@administrator.com"/>
-	<property name="phone" value="+34 (587) 1234"/>
+	<property name="phone" value="+34 662657324"/>
 	<property name="address" value="Administrator address"/>
 	<property name="activated" value="true"/>
 	<property name="userAccount" ref="userAccountAdmin4"/>
@@ -743,7 +762,7 @@
 	<property name="name" value="Administrator5"/>
 	<property name="surname" value="Administrator5 Surnames"/>
 	<property name="email" value="Administrator5@administrator.com"/>
-	<property name="phone" value="+34 (587) 1234"/>
+	<property name="phone" value="+34 662657325"/>
 	<property name="address" value="Administrator address"/>
 	<property name="activated" value="true"/>
 	<property name="userAccount" ref="userAccountAdmin5"/>
@@ -937,23 +956,23 @@
 		<property name="trip" ref="trip1"></property>
 	</bean>
 	
-	<bean id="stage4" class="domain.Stage">
+<!-- 	<bean id="stage4" class="domain.Stage">
 		<property name="title"  value="title 4"/>
 		<property name="description" value="description 4"/>
 		<property name="price" value="4.0"></property>
 		<property name="number" value="4"></property>
 		<property name="iva" value="4.0"></property>
 		<property name="trip" ref="trip2"></property>
-	</bean>
+	</bean> -->
 	
-	<bean id="stage5" class="domain.Stage">
+	<!-- <bean id="stage5" class="domain.Stage">
 		<property name="title"  value="title 5"/>
 		<property name="description" value="description 5"/>
 		<property name="price" value="5.0"></property>
 		<property name="number" value="5"></property>
 		<property name="iva" value="5.0"></property>
 		<property name="trip" ref="trip2"></property>
-	</bean>
+	</bean> -->
 	
 	<bean id="trip1" class="domain.Trip">
 		<property name="ticker" value="170112-WWWW"></property>
@@ -1234,7 +1253,6 @@
 		<property name="notes">
 			<list>
 				<ref bean="note1"/>
-				<ref bean="note2"/>
 			</list>
 		</property>
 	</bean>
@@ -1261,8 +1279,7 @@
 		</property>
 		<property name="notes">
 			<list>
-				<ref bean="note3"/>
-				<ref bean="note4"/>
+				<ref bean="note1"/>
 			</list>
 		</property>
 	</bean>
@@ -1289,7 +1306,6 @@
 		</property>
 		<property name="notes">
 			<list>
-				<ref bean="note5"/>
 			</list>
 		</property>
 	</bean>
@@ -1353,36 +1369,36 @@
 		
 	</bean>
 	
-	<bean id="note2" class="domain.Note">
+<!-- 	<bean id="note2" class="domain.Note">
 		<property name="createdMoment" value="2017/10/01 15:25"/>
 		<property name="remark" value="3"/>
 		<property name="auditor" ref="auditor1"/>
-		<property name="trip" ref="trip 3"/>
+		<property name="trip" ref="trip3"/>
 		
-	</bean>
-	
+	</bean> -->
+<!-- 	
 	<bean id="note3" class="domain.Note">
 		<property name="createdMoment" value="2017/10/01 15:25"/>
 		<property name="remark" value="3"/>
 		<property name="auditor" ref="auditor2"/>
-		<property name="trip" ref="trip 2"/>
-		
-	</bean>
+		<property name="trip" ref="trip2"/>	
+	</bean> -->
+	
 		<bean id="note4" class="domain.Note">
 		<property name="createdMoment" value="2017/10/01 15:25"/>
 		<property name="remark" value="3"/>
 		<property name="auditor" ref="auditor2"/>
-		<property name="trip" ref="trip 1"/>
+		<property name="trip" ref="trip1"/>
 		
 	</bean>
 	
-	<bean id="note5" class="domain.Note">
+	<!-- <bean id="note5" class="domain.Note">
 		<property name="createdMoment" value="2017/10/01 15:25"/>
 		<property name="remark" value="2"/>
 		<property name="auditor" ref="auditor3"/>
 		<property name="trip" ref="trip 2"/>
 		
-	</bean>
+	</bean> -->
 	
 <!-- AuditRecord -->
 	<bean id="auditrecord1" class="domain.AuditRecord">
@@ -1556,7 +1572,7 @@
 </bean>
 
 <!-- SponsorShip 2-->
-<bean id="sponsorship2" class="domain.sponsorShip">
+<bean id="sponsorship2" class="domain.Sponsorship">
 		<property name="bannerURL"  value="www.banner.com"/>
 		<property name="link" value="www.link-banner.com"/>
 		<property name="creditCard">
@@ -1586,7 +1602,7 @@
 </bean>
 
 <!-- SponsorShip 4-->
-<bean id="sponsorship4" class="domain.Sponsorship">
+<!-- <bean id="sponsorship4" class="domain.Sponsorship">
 		<property name="bannerURL"  value="www.banner.com"/>
 		<property name="link" value="www.link-banner.com"/>
 		<property name="creditCard">
@@ -1600,7 +1616,7 @@
 		</property>
 </bean>
 
-<!-- SponsorShip 5-->
+SponsorShip 5
 <bean id="sponsorship5" class="domain.Sponsorship">
 		<property name="bannerURL"  value="www.banner.com"/>
 		<property name="link" value="www.link-banner.com"/>
@@ -1613,7 +1629,7 @@
 		<property name="sponsor">
 			<ref bean="sponsor5"/>
 		</property>
-</bean>
+</bean> -->
 	
 
 <!-- Category-->
@@ -2026,7 +2042,7 @@ Categorias Padres:	Hijas:
 			</list>
 		</property>
   	</bean>
-  	<bean id="survivalClass2" class="domain.SurvivalClass">
+<!--   	<bean id="survivalClass2" class="domain.SurvivalClass">
   		<property name="title" value="survivalClass 2" /> 
   		<property name="description" value="description survivalClass 2" /> 
   		<property name="organisedMoment" value="10/21/2017 10:10" /> 
@@ -2107,7 +2123,7 @@ Categorias Padres:	Hijas:
 			<ref bean="explorer5" />
 			</list>
 		</property>
-  	</bean>
+  	</bean> -->
   	<!-- Story -->
   	<bean id="story1" class="domain.Story">
   		<property name="title" value="Story 1" /> 
@@ -2122,7 +2138,7 @@ Categorias Padres:	Hijas:
 		 <property name="trip" ref="trip1"/>
 		<property name="explorer" ref="explorer1"/>
   	</bean>
-  	<bean id="story2" class="domain.Story">
+<!--   	<bean id="story2" class="domain.Story">
   		<property name="title" value="Story 2" /> 
   		<property name="text" value="text Story 2" /> 
 		<property name="attachments">
@@ -2173,7 +2189,7 @@ Categorias Padres:	Hijas:
 		</property>
 		<property name="trip" ref="trip5"/> 
 		<property name="explorer" ref="explorer5"/>
-  	</bean>
+  	</bean> -->
   	<!-- ApplicationFor -->
   	<bean id="applicationFor1" class="domain.ApplicationFor">
   		<property name="moment" value="10/21/2017 10:10" /> 
@@ -2191,7 +2207,7 @@ Categorias Padres:	Hijas:
 		<property name="explorer" ref="explorer1"/>
 		<property name="manager" ref="manager1"/>
   	</bean>
-  	<bean id="applicationFor2" class="domain.ApplicationFor">
+ <!--  	<bean id="applicationFor2" class="domain.ApplicationFor">
   		<property name="moment" value="10/21/2017 00:10" /> 
   		<property name="status" value="PENDING" /> 
   		<property name="reasonWhy" value="" /> 
@@ -2254,7 +2270,7 @@ Categorias Padres:	Hijas:
 	 <property name="trip" ref="trip5"/>
 		<property name="explorer" ref="explorer5"/>
 		<property name="manager" ref="manager5"/>
-  	</bean>
+  	</bean> -->
 
 <!-- CURRICULA -->
 	

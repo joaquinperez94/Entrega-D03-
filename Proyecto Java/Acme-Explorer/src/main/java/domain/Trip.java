@@ -39,7 +39,7 @@ public class Trip extends DomainEntity {
 	private String				reasonWhy;
 
 
-	@NotNull
+	@NotBlank
 	@Column(unique = true)
 	@Pattern(regexp = "^[0-9]{2}(0[1-9]{1}|1[0-2]{1})((0|1|2)[0-9]{1}|3[0-1]{1})\\-[A-Z]{4}$")
 	public String getTicker() {
@@ -50,7 +50,6 @@ public class Trip extends DomainEntity {
 		this.ticker = ticker;
 	}
 
-	@NotNull
 	@NotBlank
 	public String getTitle() {
 		return this.title;
@@ -60,7 +59,6 @@ public class Trip extends DomainEntity {
 		this.title = title;
 	}
 
-	@NotNull
 	@NotBlank
 	public String getDescription() {
 		return this.description;
@@ -203,6 +201,7 @@ public class Trip extends DomainEntity {
 		this.auditRecords = auditRecords;
 	}
 
+	@Valid
 	@NotNull
 	@OneToMany(mappedBy = "trip")
 	public Collection<Note> getNotes() {

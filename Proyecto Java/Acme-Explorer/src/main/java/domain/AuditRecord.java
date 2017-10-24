@@ -43,7 +43,6 @@ public class AuditRecord extends DomainEntity {
 	}
 
 	@NotBlank
-	@NotNull
 	public String getTitle() {
 		return this.title;
 	}
@@ -52,7 +51,7 @@ public class AuditRecord extends DomainEntity {
 		if (this.draftMode == true)
 			this.title = title;
 	}
-	@NotNull
+
 	@NotBlank
 	public String getDescription() {
 		return this.description;
