@@ -31,7 +31,6 @@ public abstract class Actor extends DomainEntity {
 
 
 	@NotBlank
-	@NotNull
 	public String getName() {
 		return this.name;
 	}
@@ -41,7 +40,6 @@ public abstract class Actor extends DomainEntity {
 	}
 
 	@NotBlank
-	@NotNull
 	public String getSurname() {
 		return this.surname;
 	}
@@ -49,7 +47,6 @@ public abstract class Actor extends DomainEntity {
 	public void setSurname(final String surname) {
 		this.surname = surname;
 	}
-
 	@NotNull
 	@Email
 	public String getEmail() {
