@@ -35,7 +35,6 @@ public class EndorserRecord extends DomainEntity {
 		this.fullName = fullName;
 	}
 
-	@NotNull
 	@Email
 	public String getEmail() {
 		return this.email;
@@ -45,7 +44,6 @@ public class EndorserRecord extends DomainEntity {
 		this.email = email;
 	}
 
-	@NotNull
 	@URL
 	public String getLinkedProfile() {
 		return this.linkedProfile;
