@@ -56,7 +56,6 @@ public class SurvivalClass extends DomainEntity {
 	}
 
 	@NotNull
-	@NotBlank
 	public GPS getLocation() {
 		return this.location;
 	}

@@ -16,8 +16,6 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 
-import org.hibernate.validator.constraints.CreditCardNumber;
-
 @Entity
 @Access(AccessType.PROPERTY)
 public class ApplicationFor extends DomainEntity {
@@ -67,7 +65,6 @@ public class ApplicationFor extends DomainEntity {
 		this.reasonWhy = reasonWhy;
 	}
 
-	@CreditCardNumber
 	@Valid
 	public CreditCard getCreditCard() {
 		return this.creditCard;
@@ -91,7 +88,7 @@ public class ApplicationFor extends DomainEntity {
 		return this.explorer;
 	}
 
-	public void setExplorer(Explorer explorer) {
+	public void setExplorer(final Explorer explorer) {
 		this.explorer = explorer;
 	}
 
@@ -101,7 +98,7 @@ public class ApplicationFor extends DomainEntity {
 		return this.manager;
 	}
 
-	public void setManager(Manager manager) {
+	public void setManager(final Manager manager) {
 		this.manager = manager;
 	}
 
@@ -112,7 +109,7 @@ public class ApplicationFor extends DomainEntity {
 		return this.trip;
 	}
 
-	public void setTrip(Trip trip) {
+	public void setTrip(final Trip trip) {
 		this.trip = trip;
 	}
 

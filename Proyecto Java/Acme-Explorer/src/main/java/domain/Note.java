@@ -13,8 +13,6 @@ import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 
-import org.hibernate.validator.constraints.NotBlank;
-
 @Entity
 @Access(AccessType.PROPERTY)
 public class Note extends DomainEntity {
@@ -34,7 +32,7 @@ public class Note extends DomainEntity {
 		return this.createdMoment;
 	}
 
-	public void setCreatedMoment(Date createdMoment) {
+	public void setCreatedMoment(final Date createdMoment) {
 		this.createdMoment = createdMoment;
 	}
 
@@ -42,16 +40,15 @@ public class Note extends DomainEntity {
 		return this.remark;
 	}
 
-	public void setRemark(int remark) {
+	public void setRemark(final int remark) {
 		this.remark = remark;
 	}
 
-	@NotBlank
 	public String getReply() {
 		return this.reply;
 	}
 
-	public void setReply(String reply) {
+	public void setReply(final String reply) {
 		this.reply = reply;
 	}
 
@@ -61,7 +58,7 @@ public class Note extends DomainEntity {
 		return this.replyMoment;
 	}
 
-	public void setReplyMoment(Date replyMoment) {
+	public void setReplyMoment(final Date replyMoment) {
 		this.replyMoment = replyMoment;
 	}
 
@@ -79,7 +76,7 @@ public class Note extends DomainEntity {
 		return this.trip;
 	}
 
-	public void setTrip(Trip trip) {
+	public void setTrip(final Trip trip) {
 		this.trip = trip;
 	}
 
@@ -90,7 +87,7 @@ public class Note extends DomainEntity {
 		return this.auditor;
 	}
 
-	public void setAuditor(Auditor auditor) {
+	public void setAuditor(final Auditor auditor) {
 		this.auditor = auditor;
 	}
 

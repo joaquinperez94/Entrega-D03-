@@ -8,7 +8,6 @@ import javax.persistence.ManyToOne;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 
-import org.hibernate.validator.constraints.CreditCardNumber;
 import org.hibernate.validator.constraints.URL;
 
 @Entity
@@ -42,7 +41,6 @@ public class Sponsorship extends DomainEntity {
 	}
 
 	@Valid
-	@CreditCardNumber
 	public CreditCard getCreditCard() {
 		return this.creditCard;
 	}

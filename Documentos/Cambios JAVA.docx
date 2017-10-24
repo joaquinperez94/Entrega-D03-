@@ -6,3 +6,6 @@ Setters añadidos:
 
 1. NOTE → setRemark, setCreatedMoment
 2. TRIP → setPublicationDate
+
+
+en la clase note hemos quitado @NotBlank del atributo reply
