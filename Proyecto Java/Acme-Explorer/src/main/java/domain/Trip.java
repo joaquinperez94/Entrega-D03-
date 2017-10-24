@@ -76,6 +76,7 @@ public class Trip extends DomainEntity {
 		this.price = price;
 	}
 
+	@NotNull
 	@ElementCollection
 	public Collection<String> getRequirementsExplorers() {
 		return this.requirementsExplorers;
