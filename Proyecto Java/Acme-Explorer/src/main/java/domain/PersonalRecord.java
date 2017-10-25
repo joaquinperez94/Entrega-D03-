@@ -33,6 +33,7 @@ public class PersonalRecord extends DomainEntity {
 		this.fullName = fullName;
 	}
 
+	@NotNull
 	@URL
 	public String getPhoto() {
 		return this.photo;
@@ -42,6 +43,7 @@ public class PersonalRecord extends DomainEntity {
 		this.photo = photo;
 	}
 
+	@NotNull
 	@Email
 	public String getEmail() {
 		return this.email;
@@ -61,6 +63,7 @@ public class PersonalRecord extends DomainEntity {
 		this.phone = phone;
 	}
 
+	@NotNull
 	@URL
 	public String getLinkedProfile() {
 		return this.linkedProfile;
