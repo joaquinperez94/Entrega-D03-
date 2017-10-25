@@ -20,6 +20,7 @@ public class Ranger extends Actor {
 	private boolean	suspicious;
 
 
+	@NotNull
 	public boolean isSuspicious() {
 		return this.suspicious;
 	}
