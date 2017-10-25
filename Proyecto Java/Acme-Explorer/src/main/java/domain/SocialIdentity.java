@@ -20,7 +20,6 @@ public class SocialIdentity extends DomainEntity {
 	private String	photo;
 
 
-	@NotNull
 	@NotBlank
 	public String getNick() {
 		return this.nick;
@@ -30,7 +29,6 @@ public class SocialIdentity extends DomainEntity {
 		this.nick = nick;
 	}
 
-	@NotNull
 	@NotBlank
 	public String getName() {
 		return this.name;

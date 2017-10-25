@@ -33,7 +33,7 @@ public class Message extends DomainEntity {
 		return this.moment;
 	}
 
-	public void setMoment(Date moment) {
+	public void setMoment(final Date moment) {
 		this.moment = moment;
 	}
 	@NotNull
@@ -41,7 +41,7 @@ public class Message extends DomainEntity {
 		return this.subject;
 	}
 
-	public void setSubject(String subject) {
+	public void setSubject(final String subject) {
 		this.subject = subject;
 	}
 	@NotNull
@@ -49,7 +49,7 @@ public class Message extends DomainEntity {
 		return this.body;
 	}
 
-	public void setBody(String body) {
+	public void setBody(final String body) {
 		this.body = body;
 	}
 
@@ -59,7 +59,7 @@ public class Message extends DomainEntity {
 		return this.priority;
 	}
 
-	public void setPriority(String priority) {
+	public void setPriority(final String priority) {
 		this.priority = priority;
 	}
 
@@ -71,14 +71,13 @@ public class Message extends DomainEntity {
 	private Actor			recipient;
 
 
-	@NotNull
 	@ManyToOne(optional = false)
 	@Valid
 	public MessageFolder getMessageFolder() {
 		return this.messageFolder;
 	}
 
-	public void setMessageFolder(MessageFolder messageFolder) {
+	public void setMessageFolder(final MessageFolder messageFolder) {
 		this.messageFolder = messageFolder;
 	}
 
@@ -89,7 +88,7 @@ public class Message extends DomainEntity {
 		return this.sender;
 	}
 
-	public void setSender(Actor sender) {
+	public void setSender(final Actor sender) {
 		this.sender = sender;
 	}
 
@@ -100,7 +99,7 @@ public class Message extends DomainEntity {
 		return this.recipient;
 	}
 
-	public void setRecipient(Actor recipient) {
+	public void setRecipient(final Actor recipient) {
 		this.recipient = recipient;
 	}
 
