@@ -37,7 +37,6 @@ public class Ranger extends Actor {
 
 	@OneToOne(optional = true)
 	@Valid
-	@NotNull
 	public Curricula getCurricula() {
 		return this.curricula;
 	}
