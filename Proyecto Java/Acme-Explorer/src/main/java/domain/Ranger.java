@@ -35,7 +35,7 @@ public class Ranger extends Actor {
 	private Collection<Trip>	trips;
 
 
-	@OneToOne(optional = false)
+	@OneToOne(optional = true)
 	@Valid
 	@NotNull
 	public Curricula getCurricula() {
