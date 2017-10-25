@@ -20,7 +20,6 @@ public class MessageFolder extends DomainEntity {
 	private boolean	modifiable;
 
 
-	@NotNull
 	@NotBlank
 	public String getName() {
 		return this.name;
