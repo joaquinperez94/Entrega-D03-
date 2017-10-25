@@ -8,6 +8,8 @@ import javax.persistence.AccessType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
+import javax.validation.Valid;
+import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.NotBlank;
 
@@ -36,6 +38,8 @@ public class Category extends DomainEntity {
 	private Collection<Category>	subCategories;
 
 
+	@NotNull
+	@Valid
 	@ManyToMany
 	public Collection<Category> getSubCategories() {
 		return this.subCategories;

@@ -26,7 +26,6 @@ public class LegalText extends DomainEntity {
 
 
 	@NotBlank
-	@NotNull
 	public String getTitle() {
 		return this.title;
 	}
@@ -36,7 +35,6 @@ public class LegalText extends DomainEntity {
 	}
 
 	@NotBlank
-	@NotNull
 	public String getBody() {
 		return this.body;
 	}
