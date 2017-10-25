@@ -22,7 +22,6 @@ public class ContactEmergency extends DomainEntity {
 
 
 	@NotBlank
-	@NotNull
 	public String getName() {
 		return this.name;
 	}
