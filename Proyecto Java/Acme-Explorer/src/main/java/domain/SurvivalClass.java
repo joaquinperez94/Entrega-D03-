@@ -54,8 +54,7 @@ public class SurvivalClass extends DomainEntity {
 	public void setOrganisedMoment(final Date organisedMoment) {
 		this.organisedMoment = organisedMoment;
 	}
-
-	@NotBlank
+	@NotNull
 	public GPS getLocation() {
 		return this.location;
 	}
