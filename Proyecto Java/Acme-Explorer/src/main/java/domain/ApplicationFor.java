@@ -49,6 +49,7 @@ public class ApplicationFor extends DomainEntity {
 		this.status = status;
 	}
 
+	@NotNull
 	@ElementCollection
 	public Collection<String> getComments() {
 		return this.comments;
@@ -65,6 +66,7 @@ public class ApplicationFor extends DomainEntity {
 		this.reasonWhy = reasonWhy;
 	}
 
+	@NotNull
 	@Valid
 	public CreditCard getCreditCard() {
 		return this.creditCard;
@@ -81,7 +83,6 @@ public class ApplicationFor extends DomainEntity {
 	private Trip		trip;
 
 
-	@NotNull
 	@Valid
 	@ManyToOne(optional = false)
 	public Explorer getExplorer() {
@@ -103,7 +104,6 @@ public class ApplicationFor extends DomainEntity {
 	}
 
 	@Valid
-	@NotNull
 	@ManyToOne(optional = false)
 	public Trip getTrip() {
 		return this.trip;

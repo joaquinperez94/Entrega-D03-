@@ -72,6 +72,7 @@ public class SurvivalClass extends DomainEntity {
 
 
 	@Valid
+	@NotNull
 	@ManyToMany
 	public Collection<Explorer> getExplorers() {
 		return this.explorers;
@@ -81,7 +82,6 @@ public class SurvivalClass extends DomainEntity {
 		this.explorers = explorers;
 	}
 
-	@NotNull
 	@Valid
 	@ManyToOne(optional = false)
 	public Manager getManager() {
@@ -92,7 +92,6 @@ public class SurvivalClass extends DomainEntity {
 		this.manager = manager;
 	}
 
-	@NotNull
 	@Valid
 	@ManyToOne(optional = false)
 	public Trip getTrip() {

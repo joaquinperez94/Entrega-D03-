@@ -42,6 +42,7 @@ public class Story extends DomainEntity {
 		this.text = text;
 	}
 
+	@NotNull
 	@ElementCollection
 	public Collection<String> getAttachments() {
 		return this.attachments;
@@ -58,7 +59,6 @@ public class Story extends DomainEntity {
 
 
 	@Valid
-	@NotNull
 	@ManyToOne(optional = false)
 	public Trip getTrip() {
 		return this.trip;
@@ -69,7 +69,6 @@ public class Story extends DomainEntity {
 	}
 
 	@Valid
-	@NotNull
 	@ManyToOne(optional = false)
 	public Explorer getExplorer() {
 		return this.explorer;
