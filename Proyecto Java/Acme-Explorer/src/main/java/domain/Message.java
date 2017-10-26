@@ -72,6 +72,7 @@ public class Message extends DomainEntity {
 
 
 	@ManyToOne(optional = false)
+	@NotNull
 	@Valid
 	public MessageFolder getMessageFolder() {
 		return this.messageFolder;
