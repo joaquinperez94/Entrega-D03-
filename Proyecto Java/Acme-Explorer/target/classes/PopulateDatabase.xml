@@ -1399,6 +1399,8 @@
 		<property name="curricula"><null/></property>
 		<property name="trips">
 			<list>
+				<ref bean="trip1"/>
+				<ref bean="trip2"/>
 			</list>
 		</property>
 	</bean>
@@ -1422,6 +1424,7 @@
 		<property name="curricula" ref="curricula2" />
 		<property name="trips">
 			<list>
+				<ref bean="trip3"/>
 			</list>
 		</property>
 	</bean>
@@ -1445,6 +1448,7 @@
 		<property name="curricula" ref="curricula3" />
 		<property name="trips">
 			<list>
+				<ref bean="trip5"/>
 			</list>
 		</property>
 	</bean>
@@ -1468,6 +1472,7 @@
 		<property name="curricula" ref="curricula4" />
 		<property name="trips">
 			<list>
+				<ref bean="trip4"/>
 			</list>
 		</property>
 	</bean>
