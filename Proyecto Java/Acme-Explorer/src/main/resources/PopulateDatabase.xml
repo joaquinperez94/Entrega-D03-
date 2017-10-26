@@ -965,7 +965,7 @@
 		<property name="price" value="5.0"></property>
 		<property name="number" value="5"></property>
 		<property name="iva" value="5.0"></property>
-		<property name="trip" ref="trip2"></property>
+		<property name="trip" ref="trip5"></property>
 	</bean>
 
 	<bean id="trip1" class="domain.Trip">
@@ -984,8 +984,8 @@
 		<property name="finishDate" value="04/02/2017 22:00"></property>
 		<property name="reasonWhy" value="reasonWhy 1"></property>
 
-		<property name="ranger" ref="ranger1"></property>
-		<property name="manager" ref="manager1"></property>
+		<property name="ranger" ref="ranger3"></property>
+		<property name="manager" ref="manager3"></property>
 		<property name="classes">
 			<list>
 				<ref bean="survivalClass1"></ref>
@@ -1091,7 +1091,6 @@
 		<property name="stages">
 			<list>
 				<ref bean="stage2"></ref>
-				<ref bean="stage5"></ref>
 			</list>
 		</property>
 		<property name="legalText" ref="legalText2"></property>
