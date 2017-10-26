@@ -83,6 +83,7 @@ public class SurvivalClass extends DomainEntity {
 	}
 
 	@Valid
+	@NotNull
 	@ManyToOne(optional = false)
 	public Manager getManager() {
 		return this.manager;
@@ -93,6 +94,7 @@ public class SurvivalClass extends DomainEntity {
 	}
 
 	@Valid
+	@NotNull
 	@ManyToOne(optional = false)
 	public Trip getTrip() {
 		return this.trip;

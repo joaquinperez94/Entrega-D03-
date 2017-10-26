@@ -6,6 +6,7 @@ import javax.persistence.AccessType;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.persistence.Transient;
+import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.NotBlank;
@@ -22,7 +23,6 @@ public class Stage extends DomainEntity {
 	private double	iva;
 
 
-	@NotNull
 	@NotBlank
 	public String getTitle() {
 		return this.title;
@@ -32,7 +32,6 @@ public class Stage extends DomainEntity {
 		this.title = title;
 	}
 
-	@NotNull
 	@NotBlank
 	public String getDescription() {
 		return this.description;
@@ -77,6 +76,8 @@ public class Stage extends DomainEntity {
 	private Trip	trip;
 
 
+	@Valid
+	@NotNull
 	@ManyToOne(optional = false)
 	public Trip getTrip() {
 		return this.trip;

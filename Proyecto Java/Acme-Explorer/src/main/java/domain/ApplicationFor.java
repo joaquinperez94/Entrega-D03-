@@ -84,6 +84,7 @@ public class ApplicationFor extends DomainEntity {
 
 
 	@Valid
+	@NotNull
 	@ManyToOne(optional = false)
 	public Explorer getExplorer() {
 		return this.explorer;
@@ -104,6 +105,7 @@ public class ApplicationFor extends DomainEntity {
 	}
 
 	@Valid
+	@NotNull
 	@ManyToOne(optional = false)
 	public Trip getTrip() {
 		return this.trip;
