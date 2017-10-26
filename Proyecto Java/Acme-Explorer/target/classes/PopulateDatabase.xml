@@ -2035,6 +2035,8 @@
 		</property>
 		<property name="trips">
 			<list>
+				<ref bean="trip1"></ref>
+				<ref bean="trip2"></ref>
 			</list>
 		</property>
 		<property name="applicationsFor">
@@ -2061,6 +2063,7 @@
 		</property>
 		<property name="trips">
 			<list>
+				<ref bean="trip3"></ref>
 			</list>
 		</property>
 		<property name="applicationsFor">
@@ -2113,6 +2116,7 @@
 		</property>
 		<property name="trips">
 			<list>
+				<ref bean="trip4"></ref>
 			</list>
 		</property>
 		<property name="applicationsFor">
@@ -2139,6 +2143,7 @@
 		</property>
 		<property name="trips">
 			<list>
+				<ref bean="trip5"></ref>
 			</list>
 		</property>
 		<property name="applicationsFor">
