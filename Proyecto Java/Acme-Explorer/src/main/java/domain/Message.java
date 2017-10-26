@@ -71,9 +71,9 @@ public class Message extends DomainEntity {
 	private Actor			recipient;
 
 
-	@ManyToOne(optional = false)
 	@NotNull
 	@Valid
+	@ManyToOne(optional = false)
 	public MessageFolder getMessageFolder() {
 		return this.messageFolder;
 	}
@@ -83,8 +83,8 @@ public class Message extends DomainEntity {
 	}
 
 	@NotNull
-	@ManyToOne(optional = false)
 	@Valid
+	@ManyToOne(optional = false)
 	public Actor getSender() {
 		return this.sender;
 	}
@@ -94,8 +94,8 @@ public class Message extends DomainEntity {
 	}
 
 	@NotNull
-	@ManyToOne(optional = false)
 	@Valid
+	@ManyToOne(optional = false)
 	public Actor getRecipient() {
 		return this.recipient;
 	}

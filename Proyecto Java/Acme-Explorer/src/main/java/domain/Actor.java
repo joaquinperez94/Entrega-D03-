@@ -9,6 +9,7 @@ import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
+import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
@@ -90,8 +91,9 @@ public abstract class Actor extends DomainEntity {
 	private UserAccount					userAccount;
 
 
-	@OneToMany
 	@NotNull
+	@Valid
+	@OneToMany
 	public Collection<MessageFolder> getMessagesFolders() {
 		return this.messagesFolders;
 	}
@@ -100,8 +102,9 @@ public abstract class Actor extends DomainEntity {
 		this.messagesFolders = messagesFolders;
 	}
 
-	@OneToMany
+	@Valid
 	@NotNull
+	@OneToMany
 	public Collection<SocialIdentity> getSocialIdentities() {
 		return this.socialIdentities;
 	}
@@ -111,6 +114,7 @@ public abstract class Actor extends DomainEntity {
 	}
 
 	@NotNull
+	@Valid
 	@OneToOne(cascade = CascadeType.ALL, optional = false)
 	public UserAccount getUserAccount() {
 		return this.userAccount;
