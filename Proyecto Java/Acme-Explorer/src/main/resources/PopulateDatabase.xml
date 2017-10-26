@@ -375,6 +375,18 @@
 			</list>
 		</property>
 	</bean>
+	
+	<bean id="userAccountExplorer6" class="security.UserAccount">
+		<property name="username" value="explorer 6" />
+		<property name="password" value="09e592c4a21a21b39f22aa7d7170f162" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="EXPLORER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
 	<!-- Messages -->
 
 	<bean id="message1" class="domain.Message">
@@ -994,7 +1006,6 @@
 		</property>
 		<property name="stories">
 			<list>
-				<ref bean="story1"></ref>
 			</list>
 		</property>
 		<property name="applicationsFor">
@@ -1278,6 +1289,7 @@
 		<property name="applicationsFor">
 			<list>
 				<ref bean="applicationFor5"></ref>
+				<ref bean="applicationFor6"></ref>
 			</list>
 		</property>
 		<property name="auditRecords">
@@ -1378,6 +1390,15 @@
 	</bean>
 	<bean id="creditCard5" class="domain.CreditCard">
 		<property name="holderName" value="Joaquin rodriguez" />
+		<property name="brandName" value="La caixa" />
+		<property name="number" value="4388576018410707" />
+		<property name="expirationMonth" value="5" />
+		<property name="expirationYear" value="18" />
+		<property name="cvv" value="724" />
+	</bean>
+	
+	<bean id="creditCard6" class="domain.CreditCard">
+		<property name="holderName" value="María rodriguez" />
 		<property name="brandName" value="La caixa" />
 		<property name="number" value="4388576018410707" />
 		<property name="expirationMonth" value="5" />
@@ -2310,6 +2331,37 @@
 			</list>
 		</property>
 	</bean>
+	
+	<bean id="explorer6" class="domain.Explorer">
+		<property name="name" value="Explorer 6" />
+		<property name="surname" value="surname Explorer 6" />
+		<property name="email" value="explorer6@mail.com" />
+		<property name="phone" value="+313(987)1131" />
+		<property name="address" value="Address explorer 6" />
+		<property name="activated" value="false" />
+		<property name="userAccount" ref="userAccountExplorer6" />
+		<property name="socialIdentities">
+			<list>
+			</list>
+		</property>
+		<property name="messagesFolders">
+			<list>
+			</list>
+		</property>
+		<property name="stories">
+			<list>
+			</list>
+		</property>
+		<property name="applicationsFor">
+			<list>
+				<ref bean="applicationFor6"></ref>
+			</list>
+		</property>
+		<property name="contactsEmergency">
+			<list>
+			</list>
+		</property>
+	</bean>
 	<!-- SurvivalClass -->
 	<bean id="survivalClass1" class="domain.SurvivalClass">
 		<property name="title" value="survivalClass 1" />
@@ -2569,6 +2621,23 @@
 		<property name="trip" ref="trip5" />
 		<property name="explorer" ref="explorer5" />
 		<property name="manager" ref="manager5" />
+	</bean>
+	
+	<bean id="applicationFor6" class="domain.ApplicationFor">
+		<property name="moment" value="10/21/2017 03:10" />
+		<property name="status" value="PENDING" />
+		<property name="reasonWhy" value="" />
+		<property name="comments">
+			<list>
+				<value>comment1 ApplicaciontFor5</value>
+				<value>comment2 ApplicaciontFor5</value>
+				<value>comment3 ApplicaciontFor5</value>
+			</list>
+		</property>
+		<property name="creditCard" ref="creditCard6" />
+		<property name="trip" ref="trip5" />
+		<property name="explorer" ref="explorer6" />
+		<property name="manager"><null/></property>
 	</bean>
 
 	<!-- CURRICULA -->
