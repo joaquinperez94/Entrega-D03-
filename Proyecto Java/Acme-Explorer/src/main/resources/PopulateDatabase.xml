@@ -1069,7 +1069,6 @@
 		</property>
 		<property name="auditRecords">
 			<list>
-				<ref bean="auditrecord2"></ref>
 			</list>
 		</property>
 		<property name="notes">
@@ -1206,7 +1205,7 @@
 		</property>
 		<property name="auditRecords">
 			<list>
-				<ref bean="auditrecord3"></ref>
+				<ref bean="auditrecord2"></ref>
 				<ref bean="auditrecord4"></ref>
 			</list>
 		</property>
@@ -1489,7 +1488,7 @@
 			<list>
 			</list>
 		</property>
-		<property name="curricula" ref="curricula5" />
+		<property name="curricula"><null/></property>
 		<property name="trips">
 			<list>
 			</list>
@@ -1701,7 +1700,7 @@
 		</property>
 		<property name="draftMode" value="true" />
 		<property name="auditor" ref="auditor1" />
-		<property name="trip" ref="trip1" />
+		<property name="trip" ref="trip4" />
 	</bean>
 	<bean id="auditrecord3" class="domain.AuditRecord">
 		<property name="realisedMoment" value="2017/10/01 15:25" />
@@ -1715,7 +1714,7 @@
 		</property>
 		<property name="draftMode" value="true" />
 		<property name="auditor" ref="auditor1" />
-		<property name="trip" ref="trip1" />
+		<property name="trip" ref="trip3" />
 	</bean>
 	<bean id="auditrecord4" class="domain.AuditRecord">
 		<property name="realisedMoment" value="2017/10/01 15:25" />
@@ -1729,7 +1728,7 @@
 		</property>
 		<property name="draftMode" value="true" />
 		<property name="auditor" ref="auditor2" />
-		<property name="trip" ref="trip1" />
+		<property name="trip" ref="trip4" />
 	</bean>
 	<bean id="auditrecord5" class="domain.AuditRecord">
 		<property name="realisedMoment" value="2017/10/01 15:25" />
@@ -1743,7 +1742,7 @@
 		</property>
 		<property name="draftMode" value="true" />
 		<property name="auditor" ref="auditor3" />
-		<property name="trip" ref="trip1" />
+		<property name="trip" ref="trip5" />
 	</bean>
 
 
