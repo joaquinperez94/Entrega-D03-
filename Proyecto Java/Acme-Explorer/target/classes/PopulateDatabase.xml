@@ -938,7 +938,7 @@
 		<property name="price" value="2.0"></property>
 		<property name="number" value="2"></property>
 		<property name="iva" value="2.0"></property>
-		<property name="trip" ref="trip1"></property>
+		<property name="trip" ref="trip2"></property>
 	</bean>
 
 	<bean id="stage3" class="domain.Stage">
@@ -947,7 +947,7 @@
 		<property name="price" value="3.0"></property>
 		<property name="number" value="3"></property>
 		<property name="iva" value="3.0"></property>
-		<property name="trip" ref="trip1"></property>
+		<property name="trip" ref="trip3"></property>
 	</bean>
 
 	<bean id="stage4" class="domain.Stage">
@@ -956,7 +956,7 @@
 		<property name="price" value="4.0"></property>
 		<property name="number" value="4"></property>
 		<property name="iva" value="4.0"></property>
-		<property name="trip" ref="trip2"></property>
+		<property name="trip" ref="trip4"></property>
 	</bean>
 
 	<bean id="stage5" class="domain.Stage">
@@ -1069,6 +1069,7 @@
 		</property>
 		<property name="auditRecords">
 			<list>
+			<ref bean="auditrecord2"></ref>
 			</list>
 		</property>
 		<property name="notes">
@@ -1090,6 +1091,7 @@
 		<property name="stages">
 			<list>
 				<ref bean="stage2"></ref>
+				<ref bean="stage5"></ref>
 			</list>
 		</property>
 		<property name="legalText" ref="legalText2"></property>
@@ -1153,6 +1155,7 @@
 		<property name="sponsorships">
 			<list>
 				<ref bean="sponsorship2"></ref>
+				<ref bean="sponsorship3"></ref>
 			</list>
 		</property>
 		<property name="stages">
@@ -1658,7 +1661,7 @@
 		<property name="createdMoment" value="2017/10/01 15:25" />
 		<property name="remark" value="3" />
 		<property name="auditor" ref="auditor2" />
-		<property name="trip" ref="trip2" />
+		<property name="trip" ref="trip3" />
 	</bean>
 
 	<bean id="note4" class="domain.Note">
@@ -1673,7 +1676,7 @@
 		<property name="createdMoment" value="2017/10/01 15:25" />
 		<property name="remark" value="2" />
 		<property name="auditor" ref="auditor3" />
-		<property name="trip" ref="trip2" />
+		<property name="trip" ref="trip5" />
 
 	</bean>
 
@@ -1705,7 +1708,7 @@
 		</property>
 		<property name="draftMode" value="true" />
 		<property name="auditor" ref="auditor1" />
-		<property name="trip" ref="trip4" />
+		<property name="trip" ref="trip2" />
 	</bean>
 	<bean id="auditrecord3" class="domain.AuditRecord">
 		<property name="realisedMoment" value="2017/10/01 15:25" />
@@ -1856,7 +1859,7 @@
 			<ref bean="creditCard1" />
 		</property>
 		<property name="trip">
-			<ref bean="trip1" />
+			<ref bean="trip2" />
 		</property>
 		<property name="sponsor">
 			<ref bean="sponsor2" />
@@ -1901,7 +1904,7 @@
 			<ref bean="creditCard2" />
 		</property>
 		<property name="trip">
-			<ref bean="trip2" />
+			<ref bean="trip5" />
 		</property>
 		<property name="sponsor">
 			<ref bean="sponsor5" />
