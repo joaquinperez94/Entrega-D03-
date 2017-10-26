@@ -983,6 +983,7 @@
 		<property name="startDate" value="03/02/2017 22:00"></property>
 		<property name="finishDate" value="04/02/2017 22:00"></property>
 		<property name="reasonWhy" value="reasonWhy 1"></property>
+		<property name="cancelled" value="true"></property>
 
 		<property name="ranger" ref="ranger3"></property>
 		<property name="manager" ref="manager3"></property>
@@ -1049,6 +1050,7 @@
 		<property name="startDate" value="11/07/2017 22:00"></property>
 		<property name="finishDate" value="04/08/2017 22:00"></property>
 		<property name="reasonWhy" value="reasonWhy 2"></property>
+		<property name="cancelled" value="false"></property>
 
 		<property name="ranger" ref="ranger1"></property>
 		<property name="manager" ref="manager1"></property>
@@ -1117,7 +1119,8 @@
 		<property name="startDate" value="11/07/2014 22:00"></property>
 		<property name="finishDate" value="04/08/2014 22:00"></property>
 		<property name="reasonWhy" value="reasonWhy 3"></property>
-
+		<property name="cancelled" value="true"></property>
+		
 		<property name="ranger" ref="ranger2"></property>
 		<property name="manager" ref="manager2"></property>
 		<property name="classes">
@@ -1186,7 +1189,8 @@
 		<property name="startDate" value="21/02/2015 22:00"></property>
 		<property name="finishDate" value="04/08/2015 22:00"></property>
 		<property name="reasonWhy" value="reasonWhy 4"></property>
-
+		<property name="cancelled" value="true"></property>
+		
 		<property name="ranger" ref="ranger4"></property>
 		<property name="manager" ref="manager4"></property>
 		<property name="classes">
@@ -1257,7 +1261,8 @@
 		<property name="startDate" value="21/02/2014 22:00"></property>
 		<property name="finishDate" value="04/08/2015 22:00"></property>
 		<property name="reasonWhy" value="reasonWhy 5"></property>
-
+		<property name="cancelled" value="false"></property>
+		
 		<property name="ranger" ref="ranger3"></property>
 		<property name="manager" ref="manager5"></property>
 		<property name="classes">

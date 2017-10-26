@@ -37,6 +37,7 @@ public class Trip extends DomainEntity {
 	private Date				startDate;
 	private Date				finishDate;
 	private String				reasonWhy;
+	private boolean				cancelled;
 
 
 	@NotBlank
@@ -123,6 +124,14 @@ public class Trip extends DomainEntity {
 	public void setReasonWhy(final String reasonWhy) {
 		if (!this.publicationDate.equals(null))
 			this.reasonWhy = reasonWhy;
+	}
+
+	public boolean isCancelled() {
+		return this.cancelled;
+	}
+
+	public void setCancelled(boolean cancelled) {
+		this.cancelled = cancelled;
 	}
 
 
