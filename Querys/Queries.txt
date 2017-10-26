@@ -1,0 +1,83 @@
+**********************************
+************ C-LEVEL *************
+**********************************
+1* The average, the minimum, the maximum, and the standard deviation of the number of applications per trip.
+QUERY:
+DESCRIPCIÓN:
+
+2* The average, the minimum, the maximum, and the standard deviation of the number of trips managed per manager.
+QUERY:
+DESCRIPCIÓN:
+
+3* The average, the minimum, the maximum, and the standard deviation of the price of the trips.
+QUERY:
+DESCRIPCIÓN:
+
+4* The average, the minimum, the maximum, and the standard deviation of the number trips guided per ranger.
+QUERY:
+DESCRIPCIÓN:
+
+5* The ratio of applications with status “PENDING”.
+QUERY:
+DESCRIPCIÓN:
+
+6* The ratio of applications with status “DUE”.
+QUERY:
+DESCRIPCIÓN:
+
+7* The ratio of applications with status “ACCEPTED”.
+QUERY:
+DESCRIPCIÓN:
+
+8* The ratio of applications with status “CANCELLED”.
+QUERY:
+DESCRIPCIÓN:
+
+9* The ratio of trips that have been cancelled versus the total number of trips that have been organised.
+QUERY:
+DESCRIPCIÓN:
+
+10* The listing of trips that have got at least 10% more applications than the av- erage, ordered by number of applications.
+QUERY:
+DESCRIPCIÓN:
+
+11* A table with the number of times that each legal text’s been referenced.
+QUERY:
+DESCRIPCIÓN:
+
+
+
+**********************************
+************ B-LEVEL *************
+**********************************
+1* The minimum, the maximum, the average, and the standard deviation of the number of notes per trip.
+QUERY:
+DESCRIPCIÓN:
+
+2* The minimum, the maximum, the average, and the standard deviation of the number of audit records per trip.
+QUERY: select min(t.auditRecords.size),max(t.auditRecords.size),avg(t.auditRecords.size),sqrt(sum(t.auditRecords.size * t.auditRecords.size) / count(t.auditRecords.size) - (avg(t.auditRecords.size) * avg(t.auditRecords.size))) from Trip t;
+DESCRIPCIÓN:
+
+3* The ratio of trips with an audit record.
+QUERY:select count(r)/(select count(t) from Trip t)*1.0 from Trip r where r.auditRecords.size>0;
+DESCRIPCIÓN:
+
+4* The ratio of rangers who have registered their curricula.
+QUERY: 
+select count(r)/(select count(s) from Ranger s)*1.0 from Ranger r where r.curricula!=null;
+DESCRIPCIÓN:
+
+5* The ratio of rangers whose curriculum’s been endorsed.
+QUERY:
+DESCRIPCIÓN:
+
+6* The ratio of suspicious managers.
+QUERY:
+DESCRIPCIÓN:
+
+7* The ratio of suspicious rangers.
+QUERY:
+DESCRIPCIÓN:
+
+
+
