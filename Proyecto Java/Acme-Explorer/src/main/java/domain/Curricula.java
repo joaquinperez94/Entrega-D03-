@@ -43,8 +43,9 @@ public class Curricula extends DomainEntity {
 	private Collection<MiscellaneousRecord>	miscellaneousRecords;
 
 
-	@OneToOne(optional = false)
 	@Valid
+	@NotNull
+	@OneToOne(optional = false)
 	public PersonalRecord getPersonalRecord() {
 		return this.personalRecord;
 	}
