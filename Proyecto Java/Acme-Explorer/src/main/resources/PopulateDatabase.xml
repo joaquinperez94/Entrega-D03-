@@ -2074,6 +2074,7 @@
 		</property>
 		<property name="applicationsFor">
 			<list>
+				<ref bean="applicationFor1"></ref>
 			</list>
 		</property>
 	</bean>
@@ -2101,6 +2102,7 @@
 		</property>
 		<property name="applicationsFor">
 			<list>
+				<ref bean="applicationFor2"></ref>
 			</list>
 		</property>
 	</bean>
@@ -2127,6 +2129,7 @@
 		</property>
 		<property name="applicationsFor">
 			<list>
+				<ref bean="applicationFor3"></ref>
 			</list>
 		</property>
 	</bean>
@@ -2154,6 +2157,7 @@
 		</property>
 		<property name="applicationsFor">
 			<list>
+				<ref bean="applicationFor4"></ref>
 			</list>
 		</property>
 	</bean>
@@ -2181,6 +2185,7 @@
 		</property>
 		<property name="applicationsFor">
 			<list>
+				<ref bean="applicationFor5"></ref>
 			</list>
 		</property>
 	</bean>
