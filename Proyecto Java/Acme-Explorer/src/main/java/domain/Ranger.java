@@ -35,8 +35,9 @@ public class Ranger extends Actor {
 	private Collection<Trip>	trips;
 
 
-	@OneToOne(optional = true)
 	@Valid
+	@NotNull
+	@OneToOne(optional = true)
 	public Curricula getCurricula() {
 		return this.curricula;
 	}
@@ -46,8 +47,8 @@ public class Ranger extends Actor {
 	}
 
 	@NotNull
-	@OneToMany(mappedBy = "ranger")
 	@Valid
+	@OneToMany(mappedBy = "ranger")
 	public Collection<Trip> getTrips() {
 		return this.trips;
 	}
