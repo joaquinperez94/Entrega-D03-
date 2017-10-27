@@ -1,0 +1,23 @@
+
+5.
+
+esta consulta esta compuesta de dos consultas la primera cuenta todao los ranger que tengan en su curricula algun EndorseRecord y en la otra se calcula el numero total de Curriculas que hay que a su vez equivale al numero de Ranger. despues estos se dividen y asi se calcula el ratio. Se ha multiplicado el dividendo * 1.0 para que el resultado sea un double
+
+select (select count(c) from Ranger r join r.curricula c where c.endorserRecords.size>0)*1.0/count(c) from Curricula c;
+
+6.
+
+
+Esta consulta esta conpuesta por dos consultas la que hace referencia al objeto m te cuenta el numero total de Manager y la otra que hace referencia al objeto m1 te cuenta el numero de Manager que son sospechosos depues se calcula el ratio
+de esta forma m1*1.0/m se multiplica por 1.0 para que el dividendo sea double y al hacer la division tambien lo sea.
+
+select (select count(m1) from Manager m1 where m1.suspicious=false)*1.0/count(m) from Manager m ;
+
+
+
+7.
+
+Esta consulta esta conpuesta por dos consultas la que hace referencia al objeto r te cuenta el numero total de Ranger y la otra que hace referencia al objeto r1 te cuenta el numero de ranger que son sospechosos despues se calcula el ratio
+de esta forma r1*1.0/r se multiplica por 1.0 para que el dividendo sea double y al hacer la division tambien lo sea.
+
+select (select count(r1) from Ranger r1 where r1.suspicious=false)*1.0/count(r) from Ranger r ;
