@@ -1,15 +1,39 @@
 2* The minimum, the maximum, the average, and the standard deviation of the number of audit records per trip.
-QUERY: select min(t.auditRecords.size),max(t.auditRecords.size),avg(t.auditRecords.size),sqrt(sum(t.auditRecords.size * t.auditRecords.size) / count(t.auditRecords.size) - (avg(t.auditRecords.size) * avg(t.auditRecords.size))) from Trip t;
-DESCRIPCIÓN:
-RESULTADO:
+-QUERY: select min(t.auditRecords.size),max(t.auditRecords.size),avg(t.auditRecords.size),sqrt(sum(t.auditRecords.size * t.auditRecords.size) / count(t.auditRecords.size) - (avg(t.auditRecords.size) * avg(t.auditRecords.size))) from Trip t;
+-DESCRIPCIÓN: La consulta selecciona el número minimo, máximo, la media y la desviación estándar de auditRecords que tiene un Trip de entre todos los Trips.
+-RESULTADO:	1 object selected
+		[0, 2, 1.0, 0.6324555320336759]
 
 3* The ratio of trips with an audit record.
-QUERY:select count(r)/(select count(t) from Trip t)*1.0 from Trip r where r.auditRecords.size>0;
-DESCRIPCIÓN:
-RESULTADO:
+-QUERY: select count(r)/(select count(t) from Trip t)*1.0 from Trip r where r.auditRecords.size>0;
+-DESCRIPCIÓN: La consulta selecciona el número de Trips que tengan auditRecords y los divide entre el número total de trips.
+-RESULTADO:	1 object selected
+		0.8
 
 4* The ratio of rangers who have registered their curricula.
-QUERY: 
-select count(r)/(select count(s) from Ranger s)*1.0 from Ranger r where r.curricula!=null;
-DESCRIPCIÓN:
-RESULTADO:
+-QUERY: select count(r)/(select count(s) from Ranger s)*1.0 from Ranger r where r.curricula!=null;
+-DESCRIPCIÓN: La consulta selecciona el número de Rangers que tengan curricula y los divide entre el número total de Rangers.
+-RESULTADO:	1 object selected
+		0.6
+
+
+
+	
+trip1: tiene "auditRecord1"
+trip2: NO tiene auditRecord
+trip3: tiene "auditRecord3"
+trip4: tiene "auditRecord2" y "auditRecord4"
+trip5: tiene "auditRecord5"
+
+auditRecord1: tiene "trip1"
+auditRecord2: tiene "trip4"
+auditRecord3: tiene "trip3"
+auditRecord4: tiene "trip4"
+auditRecord5: tiene "trip5"
+
+
+ranger1: NO tiene curricula
+ranger2: tiene "curricula2"
+ranger3: tiene "curricula3"
+ranger4: tiene "curricula4"
+ranger5: NO tiene curricula

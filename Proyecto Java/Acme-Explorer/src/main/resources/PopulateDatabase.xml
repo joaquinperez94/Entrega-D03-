@@ -1082,7 +1082,6 @@
 		</property>
 		<property name="auditRecords">
 			<list>
-			<ref bean="auditrecord2"></ref>
 			</list>
 		</property>
 		<property name="notes">
@@ -1733,7 +1732,7 @@
 		</property>
 		<property name="draftMode" value="true" />
 		<property name="auditor" ref="auditor1" />
-		<property name="trip" ref="trip2" />
+		<property name="trip" ref="trip4" />
 	</bean>
 	<bean id="auditrecord3" class="domain.AuditRecord">
 		<property name="realisedMoment" value="2017/10/01 15:25" />
