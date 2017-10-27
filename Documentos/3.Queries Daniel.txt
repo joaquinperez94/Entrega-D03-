@@ -1,0 +1,14 @@
+7* The ratio of applications with status “ACCEPTED”.
+QUERY:
+DESCRIPCIÓN:
+RESULTADO:
+
+8* The ratio of applications with status “CANCELLED”.
+QUERY:
+DESCRIPCIÓN:
+RESULTADO:
+
+9* The ratio of trips that have been cancelled versus the total number of trips that have been organised.
+QUERY:
+DESCRIPCIÓN:
+RESULTADO:

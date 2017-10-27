@@ -1,0 +1,14 @@
+10* The listing of trips that have got at least 10% more applications than the av- erage, ordered by number of applications.
+QUERY:
+DESCRIPCIÓN:
+RESULTADO:
+
+11* A table with the number of times that each legal text’s been referenced.
+QUERY:
+DESCRIPCIÓN:
+RESULTADO:
+
+1* The minimum, the maximum, the average, and the standard deviation of the number of notes per trip.
+QUERY:
+DESCRIPCIÓN:
+RESULTADO:

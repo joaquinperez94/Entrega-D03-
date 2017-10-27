@@ -1,0 +1,15 @@
+2* The minimum, the maximum, the average, and the standard deviation of the number of audit records per trip.
+QUERY: select min(t.auditRecords.size),max(t.auditRecords.size),avg(t.auditRecords.size),sqrt(sum(t.auditRecords.size * t.auditRecords.size) / count(t.auditRecords.size) - (avg(t.auditRecords.size) * avg(t.auditRecords.size))) from Trip t;
+DESCRIPCIÓN:
+RESULTADO:
+
+3* The ratio of trips with an audit record.
+QUERY:select count(r)/(select count(t) from Trip t)*1.0 from Trip r where r.auditRecords.size>0;
+DESCRIPCIÓN:
+RESULTADO:
+
+4* The ratio of rangers who have registered their curricula.
+QUERY: 
+select count(r)/(select count(s) from Ranger s)*1.0 from Ranger r where r.curricula!=null;
+DESCRIPCIÓN:
+RESULTADO:
