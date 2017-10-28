@@ -2370,7 +2370,7 @@
 	<bean id="survivalClass1" class="domain.SurvivalClass">
 		<property name="title" value="survivalClass 1" />
 		<property name="description" value="description survivalClass 1" />
-		<property name="organisedMoment" value="10/22/2017 10:10" />
+		<property name="organisedMoment" value="2017/10/22 10:10" />
 		<property name="location">
 			<bean id="GPS6" class="domain.GPS">
 				<property name="longitude" value="23.5" />
@@ -2390,7 +2390,7 @@
 	<bean id="survivalClass2" class="domain.SurvivalClass">
 		<property name="title" value="survivalClass 2" />
 		<property name="description" value="description survivalClass 2" />
-		<property name="organisedMoment" value="10/21/2017 10:10" />
+		<property name="organisedMoment" value="2017/10/21 10:10" />
 		<property name="location">
 			<bean id="GPS7" class="domain.GPS">
 				<property name="longitude" value="21.5" />
@@ -2411,7 +2411,7 @@
 	<bean id="survivalClass3" class="domain.SurvivalClass">
 		<property name="title" value="survivalClass 3" />
 		<property name="description" value="description survivalClass 3" />
-		<property name="organisedMoment" value="10/21/2017 10:10" />
+		<property name="organisedMoment" value="2017/10/21 10:10" />
 		<property name="location">
 			<bean id="GPS8" class="domain.GPS">
 				<property name="longitude" value="10.5" />
@@ -2432,7 +2432,7 @@
 	<bean id="survivalClass4" class="domain.SurvivalClass">
 		<property name="title" value="survivalClass 4" />
 		<property name="description" value="description survivalClass 4" />
-		<property name="organisedMoment" value="10/21/2017 08:10" />
+		<property name="organisedMoment" value="2017/10/21 08:10" />
 		<property name="location">
 			<bean id="GPS9" class="domain.GPS">
 				<property name="longitude" value="14.5" />
@@ -2451,7 +2451,7 @@
 	<bean id="survivalClass5" class="domain.SurvivalClass">
 		<property name="title" value="survivalClass 5" />
 		<property name="description" value="description survivalClass 5" />
-		<property name="organisedMoment" value="10/21/2017 09:10" />
+		<property name="organisedMoment" value="2017/10/21 09:10" />
 		<property name="location">
 			<bean id="GPS10" class="domain.GPS">
 				<property name="longitude" value="14.5" />
@@ -2544,7 +2544,7 @@
 	<!-- ApplicationFor -->
 
 	<bean id="applicationFor1" class="domain.ApplicationFor">
-		<property name="moment" value="10/21/2017 10:10" />
+		<property name="moment" value="2017/10/21 10:10" />
 		<property name="status" value="PENDING" />
 		<property name="reasonWhy" value="" />
 		<property name="comments">
@@ -2560,7 +2560,7 @@
 		<property name="manager" ref="manager1" />
 	</bean>
 	<bean id="applicationFor2" class="domain.ApplicationFor">
-		<property name="moment" value="10/21/2017 00:10" />
+		<property name="moment" value="2017/10/21 00:10" />
 		<property name="status" value="REJECTED" />
 		<property name="reasonWhy" value="" />
 		<property name="comments">
@@ -2577,7 +2577,7 @@
 	</bean>
 
 	<bean id="applicationFor3" class="domain.ApplicationFor">
-		<property name="moment" value="10/21/2017 01:10" />
+		<property name="moment" value="2017/10/21 01:10" />
 		<property name="status" value="ACCEPTED" />
 		<property name="reasonWhy" value="" />
 		<property name="comments">
@@ -2594,7 +2594,7 @@
 	</bean>
 
 	<bean id="applicationFor4" class="domain.ApplicationFor">
-		<property name="moment" value="10/21/2017 02:10" />
+		<property name="moment" value="2017/10/21 02:10" />
 		<property name="status" value="ACCEPTED" />
 		<property name="reasonWhy" value="" />
 		<property name="comments">
@@ -2611,7 +2611,7 @@
 	</bean>
 
 	<bean id="applicationFor5" class="domain.ApplicationFor">
-		<property name="moment" value="10/21/2017 03:10" />
+		<property name="moment" value="2017/10/21 03:10" />
 		<property name="status" value="CANCELLED" />
 		<property name="reasonWhy" value="" />
 		<property name="comments">
@@ -2628,7 +2628,7 @@
 	</bean>
 	
 	<bean id="applicationFor6" class="domain.ApplicationFor">
-		<property name="moment" value="10/21/2017 03:10" />
+		<property name="moment" value="2017/10/21 03:10" />
 		<property name="status" value="PENDING" />
 		<property name="reasonWhy" value="" />
 		<property name="comments">
