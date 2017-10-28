@@ -1317,7 +1317,7 @@
 				<ref bean="stage5"></ref>
 			</list>
 		</property>
-		<property name="legalText" ref="legalText5"></property>
+		<property name="legalText" ref="legalText1"></property>
 		<property name="tags">
 			<list>
 				<ref bean="tag5"></ref>
