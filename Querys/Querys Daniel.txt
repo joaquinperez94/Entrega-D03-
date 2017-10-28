@@ -2,18 +2,20 @@
 **The ratio of applications with status “ACCEPTED”.**
 --select (select count(c) from ApplicationFor c where c.status='ACCEPTED') *1.0 / count(r) from ApplicationFor r;
 
-Esta query lo que hace es comparar el numero total de applicationFor entre el numero de applicationFor cuyo estado es aceptado.
+Esta query consta de dos consultas, la primera cuenta el numero de applicationFor que tienen como estado aceptado y se multiplica por 1.0 para poder dividir bien y que el resultado sea un double, posteriormente a la multiplicacion se hace una division entre el numero total de ApplicationFor
 
 =====8=======
 **The ratio of applications with status “CANCELLED”.**
 --select (select count(c) from ApplicationFor c where c.status='CANCELLED') *1.0 / count(r) from ApplicationFor r;
 
-Esta query lo que hace es comparar el numero total de applicationFor entre el numero de applicationFor cuyo estado es cancelado.
+Esta query consta de dos consultas, la primera cuenta el numero de applicationFor que tienen como estado cancelado y se multiplica por 1.0 para poder dividir bien y que el resultado sea un double, posteriormente a la multiplicacion se hace una division entre el numero total de ApplicationFor
 
 ======9======
 The ratio of trips that have been cancelled versus the total number of trips that have been organised.
+
 select (select count(c) from Trip c where c.cancelled=true) * 1.0 / count(r) from Trip r where r.publicationDate is null;
 
-Esta query lo que hace es compara el numero de trips que han sido canceladas entre el numero total de trips.
+Esta query consta de dos consultas, la primera consulta lo que hace es contar el numero de trips que han sido canceladas y se multiplica por 1.0 para que posteriormente el resultado sea un double, luego de la multiplicacion se hace la segunda consulta que lo que hace es contar el numero de trips que han sido organizadas
+
 
 Se ha añadido el atributo booelan cancelado en trip
