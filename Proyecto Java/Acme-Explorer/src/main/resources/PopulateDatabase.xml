@@ -998,7 +998,7 @@
 		<property name="cancelled" value="true"></property>
 
 		<property name="ranger" ref="ranger3"></property>
-		<property name="manager" ref="manager3"></property>
+		<property name="manager" ref="manager1"></property>
 		<property name="classes">
 			<list>
 				<ref bean="survivalClass1"></ref>

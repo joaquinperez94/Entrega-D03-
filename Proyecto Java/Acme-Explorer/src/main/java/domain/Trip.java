@@ -173,6 +173,7 @@ public class Trip extends DomainEntity {
 
 	@NotNull
 	@OneToMany(mappedBy = "trip")
+	@Valid
 	public Collection<SurvivalClass> getClasses() {
 		return this.classes;
 	}
@@ -183,6 +184,7 @@ public class Trip extends DomainEntity {
 
 	@NotNull
 	@OneToMany(mappedBy = "trip")
+	@Valid
 	public Collection<Story> getStories() {
 		return this.stories;
 	}
@@ -193,6 +195,7 @@ public class Trip extends DomainEntity {
 
 	@NotNull
 	@OneToMany(mappedBy = "trip")
+	@Valid
 	public Collection<ApplicationFor> getApplicationsFor() {
 		return this.applicationsFor;
 	}
@@ -203,6 +206,7 @@ public class Trip extends DomainEntity {
 
 	@NotNull
 	@OneToMany(mappedBy = "trip")
+	@Valid
 	public Collection<AuditRecord> getAuditRecords() {
 		return this.auditRecords;
 	}
@@ -225,6 +229,7 @@ public class Trip extends DomainEntity {
 	@NotNull
 	@NotEmpty
 	@ManyToMany
+	@Valid
 	public Collection<Category> getCategories() {
 		return this.categories;
 	}
@@ -235,6 +240,7 @@ public class Trip extends DomainEntity {
 
 	@NotNull
 	@OneToMany(mappedBy = "trip")
+	@Valid
 	public Collection<Sponsorship> getSponsorships() {
 		return this.sponsorships;
 	}
@@ -246,6 +252,7 @@ public class Trip extends DomainEntity {
 	@NotNull
 	@NotEmpty
 	@OneToMany(cascade = CascadeType.ALL)
+	@Valid
 	public Collection<Stage> getStages() {
 		return this.stages;
 	}
@@ -267,6 +274,7 @@ public class Trip extends DomainEntity {
 
 	@NotNull
 	@ManyToMany
+	@Valid
 	public Collection<Tag> getTags() {
 		return this.tags;
 	}
