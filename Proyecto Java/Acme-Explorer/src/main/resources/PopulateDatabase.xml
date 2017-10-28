@@ -71,17 +71,7 @@
 		</property>
 	</bean>
 
-		<bean id="userAccountAdmin6" class="security.UserAccount">
-		<property name="username" value="administrator5" />
-		<property name="password" value="21232f297a57a5a743894a0e4a801fc3" />
-		<property name="authorities">
-			<list>
-				<bean class="security.Authority">
-					<property name="authority" value="ADMINISTRATOR" />
-				</bean>
-			</list>
-		</property>
-		</bean>
+
 	<bean id="userAccountManager1" class="security.UserAccount">
 		<property name="username" value="manager 1" />
 		<property name="password" value="1d0258c2440a8d19e716292b231e3190" />
