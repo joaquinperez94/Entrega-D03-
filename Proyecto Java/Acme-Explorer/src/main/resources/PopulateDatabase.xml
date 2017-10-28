@@ -376,7 +376,7 @@
 			</list>
 		</property>
 	</bean>
-	
+
 	<bean id="userAccountExplorer6" class="security.UserAccount">
 		<property name="username" value="explorer 6" />
 		<property name="password" value="09e592c4a21a21b39f22aa7d7170f162" />
@@ -1007,11 +1007,13 @@
 		</property>
 		<property name="stories">
 			<list>
+				<ref bean="story1"></ref>
 			</list>
 		</property>
 		<property name="applicationsFor">
 			<list>
 				<ref bean="applicationFor1"></ref>
+				<ref bean="applicationFor7"></ref>
 			</list>
 		</property>
 		<property name="auditRecords">
@@ -1131,7 +1133,7 @@
 		<property name="finishDate" value="2014/08/04 22:00"></property>
 		<property name="reasonWhy" value="reasonWhy 3"></property>
 		<property name="cancelled" value="true"></property>
-		
+
 		<property name="ranger" ref="ranger2"></property>
 		<property name="manager" ref="manager2"></property>
 		<property name="classes">
@@ -1201,13 +1203,12 @@
 		<property name="finishDate" value="2015/08/04 22:00"></property>
 		<property name="reasonWhy" value="reasonWhy 4"></property>
 		<property name="cancelled" value="true"></property>
-		
+
 		<property name="ranger" ref="ranger4"></property>
 		<property name="manager" ref="manager4"></property>
 		<property name="classes">
 			<list>
 				<ref bean="survivalClass4"></ref>
-				<ref bean="survivalClass3"></ref>
 			</list>
 		</property>
 		<property name="stories">
@@ -1268,12 +1269,14 @@
 				<value>requirementsExplorers 9</value>
 			</list>
 		</property>
-		<property name="publicationDate"><null/></property>
+		<property name="publicationDate">
+			<null />
+		</property>
 		<property name="startDate" value="2014/02/21 22:00"></property>
 		<property name="finishDate" value="2015/08/04 22:00"></property>
 		<property name="reasonWhy" value="reasonWhy 5"></property>
 		<property name="cancelled" value="false"></property>
-		
+
 		<property name="ranger" ref="ranger3"></property>
 		<property name="manager" ref="manager5"></property>
 		<property name="classes">
@@ -1396,7 +1399,7 @@
 		<property name="expirationYear" value="18" />
 		<property name="cvv" value="724" />
 	</bean>
-	
+
 	<bean id="creditCard6" class="domain.CreditCard">
 		<property name="holderName" value="María rodriguez" />
 		<property name="brandName" value="La caixa" />
@@ -1424,11 +1427,13 @@
 			<list>
 			</list>
 		</property>
-		<property name="curricula"><null/></property>
+		<property name="curricula">
+			<null />
+		</property>
 		<property name="trips">
 			<list>
-				<ref bean="trip1"/>
-				<ref bean="trip2"/>
+				<ref bean="trip1" />
+				<ref bean="trip2" />
 			</list>
 		</property>
 	</bean>
@@ -1452,7 +1457,7 @@
 		<property name="curricula" ref="curricula2" />
 		<property name="trips">
 			<list>
-				<ref bean="trip3"/>
+				<ref bean="trip3" />
 			</list>
 		</property>
 	</bean>
@@ -1476,7 +1481,7 @@
 		<property name="curricula" ref="curricula3" />
 		<property name="trips">
 			<list>
-				<ref bean="trip5"/>
+				<ref bean="trip5" />
 			</list>
 		</property>
 	</bean>
@@ -1500,7 +1505,7 @@
 		<property name="curricula" ref="curricula4" />
 		<property name="trips">
 			<list>
-				<ref bean="trip4"/>
+				<ref bean="trip4" />
 			</list>
 		</property>
 	</bean>
@@ -1521,7 +1526,9 @@
 			<list>
 			</list>
 		</property>
-		<property name="curricula"><null/></property>
+		<property name="curricula">
+			<null />
+		</property>
 		<property name="trips">
 			<list>
 			</list>
@@ -1941,12 +1948,9 @@
 
 
 
-	<!-- Category:		 Category Padres: 		Hijas: 
-	
-	   					 Category1: 			Category11,Category33,Category44 
-		CATEGORY		 Category2: 			Category11,Category33 
-						 Category3: 			Category11,Category22,Category33,Category44,Category55 
-						 Category4: 			Category11 Category5: Category11,Category55 -->
+	<!-- Category: Category Padres: Hijas: Category1: Category11,Category33,Category44 
+		CATEGORY Category2: Category11,Category33 Category3: Category11,Category22,Category33,Category44,Category55 
+		Category4: Category11 Category5: Category11,Category55 -->
 
 	<!--Categoria Hija 11 -->
 	<bean id="category11" class="domain.Category">
@@ -2051,8 +2055,8 @@
 			</list>
 		</property>
 	</bean>
-	
-		<!--Categoria Padre De Todas -->
+
+	<!--Categoria Padre De Todas -->
 	<bean id="category" class="domain.Category">
 		<property name="name" value="CATEGORY" />
 		<property name="subCategories">
@@ -2092,6 +2096,7 @@
 		<property name="applicationsFor">
 			<list>
 				<ref bean="applicationFor1"></ref>
+				<ref bean="applicationFor7"></ref>
 			</list>
 		</property>
 	</bean>
@@ -2226,14 +2231,17 @@
 		</property>
 		<property name="stories">
 			<list>
+				<ref bean="story1"></ref>
 			</list>
 		</property>
 		<property name="applicationsFor">
 			<list>
+				<ref bean="applicationFor1"></ref>
 			</list>
 		</property>
 		<property name="contactsEmergency">
 			<list>
+				<ref bean="contactEmergency1"></ref>
 			</list>
 		</property>
 	</bean>
@@ -2255,14 +2263,18 @@
 		</property>
 		<property name="stories">
 			<list>
+				<ref bean="story2"></ref>
 			</list>
 		</property>
 		<property name="applicationsFor">
 			<list>
+				<ref bean="applicationFor2"></ref>
 			</list>
 		</property>
 		<property name="contactsEmergency">
 			<list>
+				<ref bean="contactEmergency1"></ref>
+				<ref bean="contactEmergency2"></ref>
 			</list>
 		</property>
 	</bean>
@@ -2284,14 +2296,19 @@
 		</property>
 		<property name="stories">
 			<list>
+				<ref bean="story3"></ref>
 			</list>
 		</property>
 		<property name="applicationsFor">
 			<list>
+				<ref bean="applicationFor3"></ref>
 			</list>
 		</property>
 		<property name="contactsEmergency">
 			<list>
+				<ref bean="contactEmergency1"></ref>
+				<ref bean="contactEmergency2"></ref>
+				<ref bean="contactEmergency3"></ref>
 			</list>
 		</property>
 	</bean>
@@ -2313,14 +2330,20 @@
 		</property>
 		<property name="stories">
 			<list>
+				<ref bean="story4"></ref>
 			</list>
 		</property>
 		<property name="applicationsFor">
 			<list>
+				<ref bean="applicationFor4"></ref>
 			</list>
 		</property>
 		<property name="contactsEmergency">
 			<list>
+				<ref bean="contactEmergency1"></ref>
+				<ref bean="contactEmergency2"></ref>
+				<ref bean="contactEmergency3"></ref>
+				<ref bean="contactEmergency4"></ref>
 			</list>
 		</property>
 	</bean>
@@ -2342,18 +2365,22 @@
 		</property>
 		<property name="stories">
 			<list>
+				<ref bean="story5"></ref>
 			</list>
 		</property>
 		<property name="applicationsFor">
 			<list>
+				<ref bean="applicationFor5"></ref>
+				<ref bean="applicationFor7"></ref>
 			</list>
 		</property>
 		<property name="contactsEmergency">
 			<list>
+				<ref bean="contactEmergency5"></ref>
 			</list>
 		</property>
 	</bean>
-	
+
 	<bean id="explorer6" class="domain.Explorer">
 		<property name="name" value="Explorer 6" />
 		<property name="surname" value="surname Explorer 6" />
@@ -2389,13 +2416,7 @@
 		<property name="title" value="survivalClass 1" />
 		<property name="description" value="description survivalClass 1" />
 		<property name="organisedMoment" value="2017/10/22 10:10" />
-		<property name="location">
-			<bean id="GPS6" class="domain.GPS">
-				<property name="longitude" value="23.5" />
-				<property name="latitude" value="22.5" />
-				<property name="name" value="gps 6" />
-			</bean>
-		</property>
+		<property name="location" ref="gps1" />
 		<property name="manager" ref="manager1" />
 		<property name="trip" ref="trip1" />
 		<property name="explorers">
@@ -2409,13 +2430,7 @@
 		<property name="title" value="survivalClass 2" />
 		<property name="description" value="description survivalClass 2" />
 		<property name="organisedMoment" value="2017/10/21 10:10" />
-		<property name="location">
-			<bean id="GPS7" class="domain.GPS">
-				<property name="longitude" value="21.5" />
-				<property name="latitude" value="22.5" />
-				<property name="name" value="gps 7" />
-			</bean>
-		</property>
+		<property name="location" ref="gps2" />
 		<property name="manager" ref="manager2" />
 		<property name="trip" ref="trip2" />
 		<property name="explorers">
@@ -2430,13 +2445,7 @@
 		<property name="title" value="survivalClass 3" />
 		<property name="description" value="description survivalClass 3" />
 		<property name="organisedMoment" value="2017/10/21 10:10" />
-		<property name="location">
-			<bean id="GPS8" class="domain.GPS">
-				<property name="longitude" value="10.5" />
-				<property name="latitude" value="22.5" />
-				<property name="name" value="gps 8" />
-			</bean>
-		</property>
+		<property name="location" ref="gps3" />
 		<property name="manager" ref="manager3" />
 		<property name="trip" ref="trip3" />
 		<property name="explorers">
@@ -2451,13 +2460,7 @@
 		<property name="title" value="survivalClass 4" />
 		<property name="description" value="description survivalClass 4" />
 		<property name="organisedMoment" value="2017/10/21 08:10" />
-		<property name="location">
-			<bean id="GPS9" class="domain.GPS">
-				<property name="longitude" value="14.5" />
-				<property name="latitude" value="22.5" />
-				<property name="name" value="gps 9" />
-			</bean>
-		</property>
+		<property name="location" ref="gps4" />
 		<property name="manager" ref="manager4" />
 		<property name="trip" ref="trip4" />
 		<property name="explorers">
@@ -2470,13 +2473,7 @@
 		<property name="title" value="survivalClass 5" />
 		<property name="description" value="description survivalClass 5" />
 		<property name="organisedMoment" value="2017/10/21 09:10" />
-		<property name="location">
-			<bean id="GPS10" class="domain.GPS">
-				<property name="longitude" value="14.5" />
-				<property name="latitude" value="22.5" />
-				<property name="name" value="gps 10" />
-			</bean>
-		</property>
+		<property name="location" ref="gps5" />
 		<property name="manager" ref="manager5" />
 		<property name="trip" ref="trip5" />
 		<property name="explorers">
@@ -2558,7 +2555,7 @@
 		<property name="trip" ref="trip5" />
 		<property name="explorer" ref="explorer5" />
 	</bean>
-	
+
 	<!-- ApplicationFor -->
 
 	<bean id="applicationFor1" class="domain.ApplicationFor">
@@ -2644,7 +2641,7 @@
 		<property name="explorer" ref="explorer5" />
 		<property name="manager" ref="manager5" />
 	</bean>
-	
+
 	<bean id="applicationFor6" class="domain.ApplicationFor">
 		<property name="moment" value="2017/10/21 03:10" />
 		<property name="status" value="PENDING" />
@@ -2659,7 +2656,23 @@
 		<property name="creditCard" ref="creditCard6" />
 		<property name="trip" ref="trip5" />
 		<property name="explorer" ref="explorer6" />
-		<property name="manager"><null/></property>
+		<property name="manager">
+			<null />
+		</property>
+	</bean>
+
+	<bean id="applicationFor7" class="domain.ApplicationFor">
+		<property name="moment" value="2017/10/27 03:10" />
+		<property name="status" value="DUE" />
+		<property name="reasonWhy" value="" />
+		<property name="comments">
+			<list>
+			</list>
+		</property>
+		<property name="creditCard" ref="creditCard5" />
+		<property name="trip" ref="trip1" />
+		<property name="explorer" ref="explorer5" />
+		<property name="manager" ref="manager1" />
 	</bean>
 
 	<!-- CURRICULA -->
