@@ -12,7 +12,7 @@ Esta query lo que hace es comparar el numero total de applicationFor entre el nu
 
 ======9======
 The ratio of trips that have been cancelled versus the total number of trips that have been organised.
-select (select count(c) from Trip c where c.cancelled=true) * 1.0 / count(r) from Trip r where r.cancelled=false);
+select (select count(c) from Trip c where c.cancelled=true) * 1.0 / count(r) from Trip r where r.publicationDate is null;
 
 Esta query lo que hace es compara el numero de trips que han sido canceladas entre el numero total de trips.
 

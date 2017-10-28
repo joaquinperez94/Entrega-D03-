@@ -121,8 +121,7 @@ public class Trip extends DomainEntity {
 	}
 
 	public void setReasonWhy(final String reasonWhy) {
-		if (!this.publicationDate.equals(null))
-			this.reasonWhy = reasonWhy;
+		this.reasonWhy = reasonWhy;
 	}
 
 	public boolean isCancelled() {
