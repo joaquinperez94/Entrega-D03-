@@ -13,7 +13,7 @@ Esta query consta de dos consultas, la primera cuenta el numero de applicationFo
 ======9======
 The ratio of trips that have been cancelled versus the total number of trips that have been organised.
 
-select (select count(c) from Trip c where c.cancelled=true) * 1.0 / count(r) from Trip r where r.publicationDate is null;
+select (select count(c) from Trip c where c.cancelled=true) * 1.0 / count(r) from Trip r where r.publicationDate is not null;
 
 Esta query consta de dos consultas, la primera consulta lo que hace es contar el numero de trips que han sido canceladas y se multiplica por 1.0 para que posteriormente el resultado sea un double, luego de la multiplicacion se hace la segunda consulta que lo que hace es contar el numero de trips que han sido organizadas
 
