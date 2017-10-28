@@ -1940,9 +1940,12 @@
 
 
 
-	<!-- Categorias Padres: Hijas: Category1: Category11,Category33,Category44 
-		Category2: Category11,Category33 Category3: Category11,Category22,Category33,Category44,Category55 
-		Category4: Category11 Category5: Category11,Category55 -->
+	<!-- Category:		 Category Padres: 		Hijas: 
+	
+	   					 Category1: 			Category11,Category33,Category44 
+		CATEGORY		 Category2: 			Category11,Category33 
+						 Category3: 			Category11,Category22,Category33,Category44,Category55 
+						 Category4: 			Category11 Category5: Category11,Category55 -->
 
 	<!--Categoria Hija 11 -->
 	<bean id="category11" class="domain.Category">
@@ -2044,6 +2047,20 @@
 			<list>
 				<ref bean="category11" />
 				<ref bean="category55" />
+			</list>
+		</property>
+	</bean>
+	
+		<!--Categoria Padre De Todas -->
+	<bean id="category" class="domain.Category">
+		<property name="name" value="CATEGORY" />
+		<property name="subCategories">
+			<list>
+				<ref bean="category1" />
+				<ref bean="category2" />
+				<ref bean="category3" />
+				<ref bean="category4" />
+				<ref bean="category5" />
 			</list>
 		</property>
 	</bean>
