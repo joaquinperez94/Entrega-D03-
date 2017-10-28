@@ -19,11 +19,17 @@ import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
+import org.hibernate.search.annotations.Analyze;
+import org.hibernate.search.annotations.Field;
+import org.hibernate.search.annotations.Index;
+import org.hibernate.search.annotations.Indexed;
+import org.hibernate.search.annotations.Store;
 import org.hibernate.validator.constraints.NotBlank;
 import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
 @Access(AccessType.PROPERTY)
+@Indexed //L03A+
 public class Trip extends DomainEntity {
 
 	// Attributes -------------------------------------------------------------
@@ -42,6 +48,7 @@ public class Trip extends DomainEntity {
 	@NotBlank
 	@Column(unique = true)
 	@Pattern(regexp = "^[0-9]{2}(0[1-9]{1}|1[0-2]{1})((0|1|2)[0-9]{1}|3[0-1]{1})\\-[A-Z]{4}$")
+	@Field(index = Index.YES, analyze = Analyze.NO, store = Store.YES)
 	public String getTicker() {
 		return this.ticker;
 	}
@@ -51,6 +58,7 @@ public class Trip extends DomainEntity {
 	}
 
 	@NotBlank
+	@Field(index = Index.YES, analyze = Analyze.NO, store = Store.YES)
 	public String getTitle() {
 		return this.title;
 	}
@@ -60,6 +68,7 @@ public class Trip extends DomainEntity {
 	}
 
 	@NotBlank
+	@Field(index = Index.YES, analyze = Analyze.NO, store = Store.YES)
 	public String getDescription() {
 		return this.description;
 	}
