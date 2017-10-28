@@ -87,7 +87,6 @@ public class Trip extends DomainEntity {
 		this.requirementsExplorers = requirementsExplorers;
 	}
 
-	@NotNull
 	@Temporal(TemporalType.TIMESTAMP)
 	public Date getPublicationDate() {
 		return this.publicationDate;
