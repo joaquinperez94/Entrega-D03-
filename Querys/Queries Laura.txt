@@ -1,4 +1,4 @@
-1.select t from Trip t where t.applicationsFor.size > 1.1*(select avg(t.applicationsFor.size) from Trip t); 
+1.select t from Trip t where t.applicationsFor.size > 1.1*(select avg(t.applicationsFor.size) from Trip t) order by t.applicationsFor.size; 
 
 2. select l, l.trips.size from LegalText l;
 
