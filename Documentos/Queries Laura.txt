@@ -1,5 +1,23 @@
-1.select t from Trip t where t.applicationsFor.size > 1.1*(select avg(t.applicationsFor.size) from Trip t) order by t.applicationsFor.size; 
+QUERY C/10:
 
-2. select count(t) from Trip t group by t.legalText;
+select t from Trip t where t.applicationsFor.size > 1.1*(select avg(t.applicationsFor.size) from Trip t) order by t.applicationsFor.size;
 
-3. select min(t.notes.size), max(t.notes.size), avg(t.notes.size), stddev(t.notes.size) from Trip t;
+Descripción:
+
+Esta consulta nos muestra las Trips que tiene al menos un 10% más ApplicationsFor de la media de ApplicationsFor que tiene cada Trip y todo ordenado por el número de ApplicationsFor. Por tanto está compuesta de dos consultas, una que nos devuelve la media de ApplicationsFor por Trip, lo que nos devuelve lo multiplicamos por 1.1 para hacerle el 10% y consultamos la Trips que tienen más applicationsFor del número que nos devuelve la consulta anterior.  
+
+QUERY C/11:
+select count(t) from Trip t group by t.legalText;
+
+Descripción:
+
+Esta query nos devuelve el número de veces que un LegalText ha sido referenciado. Para ello contamos el número de Trip que tienen ese LegalText, esto lo hacemos agrupando las Trip por los legalTexts. 
+
+QUERY B/1
+
+select min(t.notes.size), max(t.notes.size), avg(t.notes.size), stddev(t.notes.size) from Trip t;
+
+
+Descripción: 
+
+En esta consulta devolvemos el mínimo, máximo, media y desviación típica de las notas que tienen las Trips. Para ello usamos las funciones definidas en jpql (min, max, avg y stddev). Esas operaciones se las aplicamos al número de notes que tiene cada Trip.
