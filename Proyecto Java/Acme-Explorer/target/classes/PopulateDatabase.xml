@@ -1218,7 +1218,7 @@
 		</property>
 		<property name="applicationsFor">
 			<list>
-				<ref bean="applicationFor4"></ref>
+				
 			</list>
 		</property>
 		<property name="auditRecords">
@@ -1230,6 +1230,7 @@
 		<property name="notes">
 			<list>
 				<ref bean="note4"></ref>
+				<ref bean="note5"></ref>
 			</list>
 		</property>
 		<property name="categories">
@@ -1291,6 +1292,7 @@
 		</property>
 		<property name="applicationsFor">
 			<list>
+				<ref bean="applicationFor4"/>
 				<ref bean="applicationFor5"></ref>
 				<ref bean="applicationFor6"></ref>
 			</list>
@@ -1302,7 +1304,7 @@
 		</property>
 		<property name="notes">
 			<list>
-				<ref bean="note5"></ref>
+				
 			</list>
 		</property>
 		<property name="categories">
@@ -1708,7 +1710,7 @@
 		<property name="createdMoment" value="2017/10/01 15:25" />
 		<property name="remark" value="2" />
 		<property name="auditor" ref="auditor3" />
-		<property name="trip" ref="trip5" />
+		<property name="trip" ref="trip4" />
 
 	</bean>
 
@@ -2620,7 +2622,7 @@
 			</list>
 		</property>
 		<property name="creditCard" ref="creditCard4" />
-		<property name="trip" ref="trip4" />
+		<property name="trip" ref="trip5" />
 		<property name="explorer" ref="explorer4" />
 		<property name="manager" ref="manager4" />
 	</bean>
