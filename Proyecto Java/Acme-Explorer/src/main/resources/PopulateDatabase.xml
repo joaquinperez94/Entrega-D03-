@@ -2073,7 +2073,7 @@
 	</bean>
 
 	<bean id="manager1" class="domain.Manager">
-		<property name="suspicious" value="True"></property>
+		<property name="suspicious" value="False"></property>
 		<property name="name" value="Manager 1" />
 		<property name="surname" value="surname Manager 1" />
 		<property name="email" value="manager1@mail.com" />
@@ -2103,7 +2103,7 @@
 		</property>
 	</bean>
 	<bean id="manager2" class="domain.Manager">
-		<property name="suspicious" value="True"></property>
+		<property name="suspicious" value="False"></property>
 		<property name="name" value="Manager 2" />
 		<property name="surname" value="surname Manager 2" />
 		<property name="email" value="manager2@mail.com" />
@@ -2131,7 +2131,7 @@
 		</property>
 	</bean>
 	<bean id="manager3" class="domain.Manager">
-		<property name="suspicious" value="True"></property>
+		<property name="suspicious" value="False"></property>
 		<property name="name" value="Manager 3" />
 		<property name="surname" value="surname Manager 3" />
 		<property name="email" value="manager3@mail.com" />
