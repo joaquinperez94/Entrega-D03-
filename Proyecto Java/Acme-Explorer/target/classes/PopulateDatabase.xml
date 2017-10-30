@@ -905,15 +905,15 @@
 	<!-- TAGs -->
 
 	<bean id="tag1" class="domain.Tag">
-		<property name="name" value="name 1" />
+		<property name="name" value="country" />
 	</bean>
 
 	<bean id="tag2" class="domain.Tag">
-		<property name="name" value="name 2" />
+		<property name="name" value="expertise" />
 	</bean>
 
 	<bean id="tag3" class="domain.Tag">
-		<property name="name" value="name 3" />
+		<property name="name" value="dangerousness" />
 	</bean>
 
 	<bean id="tag4" class="domain.Tag">
