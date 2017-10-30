@@ -27,7 +27,6 @@ public abstract class Actor extends DomainEntity {
 	private String	email;
 	private String	phone;
 	private String	address;
-	private boolean	activated;
 
 
 	@NotBlank
@@ -71,14 +70,6 @@ public abstract class Actor extends DomainEntity {
 
 	public void setAddress(final String address) {
 		this.address = address;
-	}
-
-	public boolean isActivated() {
-		return this.activated;
-	}
-
-	public void setActivated(final boolean activated) {
-		this.activated = activated;
 	}
 
 
