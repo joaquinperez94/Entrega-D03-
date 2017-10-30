@@ -20,7 +20,6 @@ public class Stage extends DomainEntity {
 	private String	description;
 	private double	price;
 	private int		number;
-	private double	iva;
 
 
 	@NotBlank
@@ -57,17 +56,9 @@ public class Stage extends DomainEntity {
 		this.number = number;
 	}
 
-	public double getIva() {
-		return this.iva;
-	}
-
-	public void setIva(final double iva) {
-		this.iva = iva;
-	}
-
 	@Transient
 	public double getTotalPrice() {
-		return this.price + (this.price * this.iva);
+		return this.price + (this.price);
 	}
 
 
