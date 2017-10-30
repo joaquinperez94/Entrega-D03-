@@ -29,7 +29,8 @@ import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
 @Access(AccessType.PROPERTY)
-@Indexed //L03A+
+@Indexed
+//L03A+
 public class Trip extends DomainEntity {
 
 	// Attributes -------------------------------------------------------------
@@ -105,7 +106,7 @@ public class Trip extends DomainEntity {
 	}
 
 	@NotNull
-	@Temporal(TemporalType.TIMESTAMP)
+	@Temporal(TemporalType.DATE)
 	public Date getStartDate() {
 		return this.startDate;
 	}
@@ -115,7 +116,7 @@ public class Trip extends DomainEntity {
 	}
 
 	@NotNull
-	@Temporal(TemporalType.TIMESTAMP)
+	@Temporal(TemporalType.DATE)
 	public Date getFinishDate() {
 		return this.finishDate;
 	}

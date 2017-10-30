@@ -17,7 +17,7 @@ UML
 
 MODELO DE PERSISTENCIA JAVA
 --A+ en proyectos separados.
---fecha de inicio y final serian con horas o sin horas. Comprobar si es timestamp o date. TRIP
+X--fecha de inicio y final serian con horas o sin horas. Comprobar si es timestamp o date. TRIP
 --Entregar todo en projetsii es decir repositorio.
 --sttdv comprobar que da el resultado correcto. Sino mediante formula. sttdv da la desviacion muestracional. La formula es modulacional.
 
