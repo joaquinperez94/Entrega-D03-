@@ -1,0 +1,23 @@
+UML
+
+--Planificar una reunion de recapitulacion para saber las cosas bien y las cosas mal para mejorar la siguiente entrega
+--Requisito no funcional, patrones para telefonos. Eliminar pattern en el uml puesto que se puede guardar aunque no lo cumpla, mejorar el pattern debido a los 0-9 (Para la siguiente y documentar)
+--Useraccount viene  preparado para activar y desactivar cuentas. (Eliminar el activated de actor)
+--Atributo derivada el suspicius  y ver como se calcula (@Transient en caso de que sea) 
+--ContactEmergency el phone ocurre lo mismo que en actor(Para la siguiente y documentar)
+--En UML no existen el tipo primitivo
+--En coordenadas faltan restricciones para las longuitud y latitud
+--Trip: distinguir entre notas con restricciones y comentarios. Recomendacion usar colores para distinguir entre informacion y restricciones
+--VAT es el iva en ingles.
+--Parametros de configuracion del sistema como palabras spam, banner url. Guardar en: crear clase configuration con atributos para configuracion y que se persista en la base de datos. Palabras clave un atributo multivaluado.(Intentar la configuracion para esta entrega)
+--En general los patrones son muy complejos, para la siguiente entrega simplificar patrones.
+--En personal record ocurre lo mismo con los phone.
+--Relaciones en categoria. Consejo es siempre que sea asociacion relefexiva poner los roles en los dos extremos.
+
+
+MODELO DE PERSISTENCIA JAVA
+--A+ en proyectos separados.
+--fecha de inicio y final serian con horas o sin horas. Comprobar si es timestamp o date. TRIP
+--Entregar todo en projetsii es decir repositorio.
+--sttdv comprobar que da el resultado correcto. Sino mediante formula. sttdv da la desviacion muestracional. La formula es modulacional.
+
