@@ -8,6 +8,27 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+		
+	<!-- configurationSystem -->
+
+	<bean id="configurationSystem" class="domain.ConfigurationSystem">
+		<property name="VAT" value="0.21" />
+		<property name="banner" value="http://creek-tours.com/wp-content/uploads/Kenya-Tanzania-Family-Safari-banner.jpg" />
+		<property name="spamWords">
+			<list>
+				<value>viagra</value>
+				<value>cialis</value>
+				<value>sex</value>
+				<value>jes extender</value>
+			</list>
+		</property>
+		<property name="welcomeMessages">
+			<list>
+				<value>Tanzanika is an adven-ture company that makes your explorer’s dreams true</value>
+				<value>Tanzanika es la empresa de aven-turas que hará tus sueños de explorador realidad</value>
+			</list>
+		</property>
+	</bean>
 
 	<!-- User accounts -->
 
