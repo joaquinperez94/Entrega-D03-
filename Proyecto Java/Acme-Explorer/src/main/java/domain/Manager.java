@@ -1,6 +1,7 @@
 
 package domain;
 
+import java.beans.Transient;
 import java.util.Collection;
 
 import javax.persistence.Access;
@@ -18,7 +19,7 @@ public class Manager extends Actor {
 	private boolean	suspicious;
 
 
-	@NotNull
+	@Transient
 	public boolean isSuspicious() {
 		return this.suspicious;
 	}
