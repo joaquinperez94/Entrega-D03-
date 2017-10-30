@@ -687,7 +687,6 @@
 		<property name="email" value="Administrator1@administrator.com" />
 		<property name="phone" value="+34662657322" />
 		<property name="address" value="Administrator address" />
-		<property name="activated" value="true" />
 		<property name="userAccount" ref="userAccountAdmin1" />
 		<property name="messagesFolders">
 			<list>
@@ -708,7 +707,6 @@
 		<property name="email" value="Administrator2@administrator.com" />
 		<property name="phone" value="+34662657322" />
 		<property name="address" value="Administrator address" />
-		<property name="activated" value="true" />
 		<property name="userAccount" ref="userAccountAdmin2" />
 		<property name="messagesFolders">
 			<list>
@@ -729,7 +727,6 @@
 		<property name="email" value="Administrator3@administrator.com" />
 		<property name="phone" value="+34662657323" />
 		<property name="address" value="Administrator address" />
-		<property name="activated" value="true" />
 		<property name="userAccount" ref="userAccountAdmin3" />
 		<property name="messagesFolders">
 			<list>
@@ -749,7 +746,6 @@
 		<property name="email" value="Administrator4@administrator.com" />
 		<property name="phone" value="+34662657324" />
 		<property name="address" value="Administrator address" />
-		<property name="activated" value="true" />
 		<property name="userAccount" ref="userAccountAdmin4" />
 		<property name="messagesFolders">
 			<list>
@@ -771,7 +767,6 @@
 		<property name="email" value="Administrator5@administrator.com" />
 		<property name="phone" value="+34662657325" />
 		<property name="address" value="Administrator address" />
-		<property name="activated" value="true" />
 		<property name="userAccount" ref="userAccountAdmin5" />
 		<property name="messagesFolders">
 			<list>
@@ -795,7 +790,6 @@
 		<property name="email" value="sponsor1@sponsor.com" />
 		<property name="phone" value="+34662657322" />
 		<property name="address" value="Sponsor1 address" />
-		<property name="activated" value="true" />
 		<property name="userAccount" ref="userAccountSponsor1" />
 		<property name="messagesFolders">
 			<list>
@@ -820,7 +814,6 @@
 		<property name="email" value="sponsor2@sponsor.com" />
 		<property name="phone" value="+34662657322" />
 		<property name="address" value="Sponsor2 address" />
-		<property name="activated" value="true" />
 		<property name="userAccount" ref="userAccountSponsor2" />
 		<property name="messagesFolders">
 			<list>
@@ -845,7 +838,6 @@
 		<property name="email" value="sponsor3@sponsor.com" />
 		<property name="phone" value="+34662657322" />
 		<property name="address" value="Sponsor3 address" />
-		<property name="activated" value="true" />
 		<property name="userAccount" ref="userAccountSponsor3" />
 		<property name="messagesFolders">
 			<list>
@@ -870,7 +862,6 @@
 		<property name="email" value="sponsor4@sponsor.com" />
 		<property name="phone" value="+34662657322" />
 		<property name="address" value="Sponsor4 address" />
-		<property name="activated" value="true" />
 		<property name="userAccount" ref="userAccountSponsor4" />
 		<property name="messagesFolders">
 			<list>
@@ -895,7 +886,6 @@
 		<property name="email" value="sponsor5@sponsor.com" />
 		<property name="phone" value="+34662657322" />
 		<property name="address" value="Sponsor5 address" />
-		<property name="activated" value="true" />
 		<property name="userAccount" ref="userAccountSponsor5" />
 		<property name="messagesFolders">
 			<list>
@@ -941,7 +931,6 @@
 		<property name="description" value="description 1" />
 		<property name="price" value="1.0"></property>
 		<property name="number" value="1"></property>
-		<property name="iva" value="1.0"></property>
 		<property name="trip" ref="trip1"></property>
 	</bean>
 
@@ -950,7 +939,6 @@
 		<property name="description" value="description 2" />
 		<property name="price" value="2.0"></property>
 		<property name="number" value="2"></property>
-		<property name="iva" value="2.0"></property>
 		<property name="trip" ref="trip2"></property>
 	</bean>
 
@@ -959,7 +947,6 @@
 		<property name="description" value="description 3" />
 		<property name="price" value="3.0"></property>
 		<property name="number" value="3"></property>
-		<property name="iva" value="3.0"></property>
 		<property name="trip" ref="trip3"></property>
 	</bean>
 
@@ -968,7 +955,6 @@
 		<property name="description" value="description 4" />
 		<property name="price" value="4.0"></property>
 		<property name="number" value="4"></property>
-		<property name="iva" value="4.0"></property>
 		<property name="trip" ref="trip4"></property>
 	</bean>
 
@@ -977,7 +963,6 @@
 		<property name="description" value="description 5" />
 		<property name="price" value="5.0"></property>
 		<property name="number" value="5"></property>
-		<property name="iva" value="5.0"></property>
 		<property name="trip" ref="trip5"></property>
 	</bean>
 
@@ -1419,7 +1404,6 @@
 		<property name="email" value="ranger1@acmeexplorer.com" />
 		<property name="phone" value="+34617557203" />
 		<property name="address" value="C/ avenida del ranger" />
-		<property name="activated" value="True" />
 		<property name="socialIdentities">
 			<list>
 			</list>
@@ -1447,7 +1431,6 @@
 		<property name="email" value="ranger2@acmeexplorer.com" />
 		<property name="phone" value="+34617557203" />
 		<property name="address" value="C/ avenida del ranger" />
-		<property name="activated" value="True" />
 		<property name="socialIdentities">
 			<list>
 			</list>
@@ -1471,7 +1454,6 @@
 		<property name="email" value="ranger3@acmeexplorer.com" />
 		<property name="phone" value="+34617557203" />
 		<property name="address" value="C/ avenida del ranger" />
-		<property name="activated" value="True" />
 		<property name="socialIdentities">
 			<list>
 			</list>
@@ -1495,7 +1477,6 @@
 		<property name="email" value="ranger4@acmeexplorer.com" />
 		<property name="phone" value="+34617557203" />
 		<property name="address" value="C/ avenida del ranger" />
-		<property name="activated" value="True" />
 		<property name="socialIdentities">
 			<list>
 			</list>
@@ -1519,7 +1500,6 @@
 		<property name="email" value="ranger5@acmeexplorer.com" />
 		<property name="phone" value="+34617557203" />
 		<property name="address" value="C/ avenida del ranger" />
-		<property name="activated" value="True" />
 		<property name="socialIdentities">
 			<list>
 			</list>
@@ -1548,7 +1528,6 @@
 		<property name="email" value="auditor1@acmeexplorer.com" />
 		<property name="phone" value="+34617557203" />
 		<property name="address" value="C/ avenida del auditor" />
-		<property name="activated" value="True" />
 		<property name="socialIdentities">
 			<list>
 			</list>
@@ -1577,7 +1556,6 @@
 		<property name="email" value="auditor2@acmeexplorer.com" />
 		<property name="phone" value="+34617557243" />
 		<property name="address" value="C/ avenida del auditor" />
-		<property name="activated" value="True" />
 		<property name="socialIdentities">
 			<list>
 			</list>
@@ -1604,7 +1582,6 @@
 		<property name="email" value="auditor3@acmeexplorer.com" />
 		<property name="phone" value="+34617357243" />
 		<property name="address" value="C/ avenida del auditor" />
-		<property name="activated" value="False" />
 		<property name="socialIdentities">
 			<list>
 			</list>
@@ -1630,7 +1607,6 @@
 		<property name="email" value="auditor4@acmeexplorer.com" />
 		<property name="phone" value="+34677557243" />
 		<property name="address" value="C/ avenida del auditor" />
-		<property name="activated" value="True" />
 		<property name="socialIdentities">
 			<list>
 			</list>
@@ -1655,7 +1631,6 @@
 		<property name="email" value="auditor5@acmeexplorer.com" />
 		<property name="phone" value="+34617557243" />
 		<property name="address" value="C/ avenida del auditor" />
-		<property name="activated" value="True" />
 		<property name="socialIdentities">
 			<list>
 			</list>
@@ -2079,7 +2054,6 @@
 		<property name="email" value="manager1@mail.com" />
 		<property name="phone" value="+313(987)1111" />
 		<property name="address" value="Address Manager 1" />
-		<property name="activated" value="false" />
 		<property name="userAccount" ref="userAccountManager1" />
 		<property name="socialIdentities">
 			<list>
@@ -2109,7 +2083,6 @@
 		<property name="email" value="manager2@mail.com" />
 		<property name="phone" value="+313(987)1112" />
 		<property name="address" value="Address Manager 2" />
-		<property name="activated" value="false" />
 		<property name="userAccount" ref="userAccountManager2" />
 		<property name="socialIdentities">
 			<list>
@@ -2137,7 +2110,6 @@
 		<property name="email" value="manager3@mail.com" />
 		<property name="phone" value="+313(987)1113" />
 		<property name="address" value="Address Manager 3" />
-		<property name="activated" value="false" />
 		<property name="userAccount" ref="userAccountManager3" />
 		<property name="socialIdentities">
 			<list>
@@ -2164,7 +2136,6 @@
 		<property name="email" value="manager4@mail.com" />
 		<property name="phone" value="+313(987)1114" />
 		<property name="address" value="Address Manager 4" />
-		<property name="activated" value="false" />
 		<property name="userAccount" ref="userAccountManager4" />
 		<property name="socialIdentities">
 			<list>
@@ -2192,7 +2163,6 @@
 		<property name="email" value="manager5@mail.com" />
 		<property name="phone" value="+313(987)1115" />
 		<property name="address" value="Address Manager 5" />
-		<property name="activated" value="false" />
 		<property name="userAccount" ref="userAccountManager5" />
 		<property name="socialIdentities">
 			<list>
@@ -2221,7 +2191,6 @@
 		<property name="email" value="explorer1@mail.com" />
 		<property name="phone" value="+313(987)1121" />
 		<property name="address" value="Address explorer 1" />
-		<property name="activated" value="false" />
 		<property name="userAccount" ref="userAccountExplorer1" />
 		<property name="socialIdentities">
 			<list>
@@ -2253,7 +2222,6 @@
 		<property name="email" value="explorer2@mail.com" />
 		<property name="phone" value="+313(987)1131" />
 		<property name="address" value="Address explorer 2" />
-		<property name="activated" value="false" />
 		<property name="userAccount" ref="userAccountExplorer2" />
 		<property name="socialIdentities">
 			<list>
@@ -2286,7 +2254,6 @@
 		<property name="email" value="explorer3@mail.com" />
 		<property name="phone" value="+313(987)1141" />
 		<property name="address" value="Address explorer 3" />
-		<property name="activated" value="false" />
 		<property name="userAccount" ref="userAccountExplorer3" />
 		<property name="socialIdentities">
 			<list>
@@ -2320,7 +2287,6 @@
 		<property name="email" value="explorer4@mail.com" />
 		<property name="phone" value="+313(987)1131" />
 		<property name="address" value="Address explorer 4" />
-		<property name="activated" value="false" />
 		<property name="userAccount" ref="userAccountExplorer4" />
 		<property name="socialIdentities">
 			<list>
@@ -2355,7 +2321,6 @@
 		<property name="email" value="explorer5@mail.com" />
 		<property name="phone" value="+313(987)1131" />
 		<property name="address" value="Address explorer 5" />
-		<property name="activated" value="false" />
 		<property name="userAccount" ref="userAccountExplorer5" />
 		<property name="socialIdentities">
 			<list>
@@ -2389,7 +2354,6 @@
 		<property name="email" value="explorer6@mail.com" />
 		<property name="phone" value="+313(987)1131" />
 		<property name="address" value="Address explorer 6" />
-		<property name="activated" value="false" />
 		<property name="userAccount" ref="userAccountExplorer6" />
 		<property name="socialIdentities">
 			<list>
