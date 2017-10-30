@@ -18,7 +18,7 @@ public class GPS {
 	private String	name;
 
 
-	@Range(min = -108, max = 180)
+	@Range(min = -180, max = 180)
 	public double getLongitude() {
 		return this.longitude;
 	}
