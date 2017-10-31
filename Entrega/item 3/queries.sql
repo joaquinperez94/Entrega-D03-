@@ -47,6 +47,9 @@ Descripción: En esta consulta estamos usando las funciones max, min, avg y stdde
 
 Resultado: 
 
+1 object selected
+[1.0, 0, 2, 0.6325]
+
 Query C/5
 
 Título: The ratio of applications with status “PENDING”.
